@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Adjacent Functions</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+  (function () {
+    const globalA = "globalish binding";
+
+    function local() {
+      const localA = "local binding";
+
+      console.log(globalA); //*RESOLVES
+      console.log(anotherLocalA); //!ReferenceError
+    }
+
+    function anotherLocal() {
+      const anotherLocalA = "anotherLocal binding";
+
+      console.log(globalA); //*RESOLVES
+      console.log(localA); //!ReferenceError
+
+    }
+
+    local()
+    anotherLocal()
+
+  }());
+
+</script>
+
+</html>

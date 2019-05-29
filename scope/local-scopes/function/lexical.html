@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lexical(Nested) Example</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+  (function () {
+    const a = "globalish binding";
+
+    function local() {
+      const b = "local binding";
+
+      console.log(a); //*RESOLVES
+      console.log(c); //!ReferenceError
+
+      function anotherLocal() {
+        const c = "anotherLocal binding";
+
+        console.log(a); //*RESOLVES
+        console.log(b); //*RESOLVES
+        console.log(c); //*RESOLVES
+
+      }
+      anotherLocal();
+
+    }
+
+    local();
+
+  }());
+
+</script>
+
+</html>
