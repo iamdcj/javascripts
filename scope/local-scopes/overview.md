@@ -1,10 +1,10 @@
 # Local Scope
+
+### What is it?
 Any bindings which do not live in the global environment are in a local scope; they are part of a local lexical environment.
 
-### **Types of Local Scope**
-JavaScript supports the following types of local scope;
+### How to use it?
+Block scoping can be achieved using let and const statements.
 
-**Function Scope** - any bindings wrapped by a function create a new lexical environment.
-
-**Block** - a let or const statement wrapped inside a block will be bound to that block's lexical environment.
-
+### Why use it?
+Block scoping allows for code to be scoped to a certain part of the program, much like function scope.
