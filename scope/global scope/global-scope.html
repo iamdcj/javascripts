@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Global Scope - Basic Example</title>
+</head>
+
+<body>
+  <table>
+    <tbody>
+     <tr>
+      <th scope="row" style="width: 40%;">Command</th>
+      <th scope="col">Windows</th>
+      <th scope="col">macOS</th>
+      <th scope="col">Linux</th>
+     </tr>
+     <tr>
+      <th scope="row">Inspect Element</th>
+      <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd></td>
+      <td><kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd></td>
+      <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd></td>
+     </tr>
+    </tbody>
+   </table>
+</body>
+
+<script>
+
+  // The following declarations will all become members
+  // of the global object
+  var globalVariable = "Look at me, on the window";
+  var anotherGlobalVariable = "I am also on the window";
+  var anotherAnotherGlobalVariable = "I am on the window too";
+
+  // This function will become a method on the global object
+  function globalMethod() {
+    console.log(window.globalVariable); // Look at me, on the window
+    console.log(window.anotherGlobalVariable); // I am also on the window
+    console.log(window.anotherAnotherGlobalVariable); //I am on the window too
+    console.log(this); // Window{...}
+  }
+  globalMethod()
+
+
+</script>
+
+
+</html>

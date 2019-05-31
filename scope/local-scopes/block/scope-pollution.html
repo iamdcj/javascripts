@@ -29,9 +29,43 @@
 <script>
   (function () {
     
-    function trash(params) {
-      
+    // Polluting example
+    function testA() {
+      const foo = true;
+
+      // The bar declaration will become
+      // a member of testA's lexical environment
+      // despite only being used inside the if block
+      if(foo) {
+        var bar = "baz";
+
+        // ...do thing with bar
+      }
+
+      console.log(bar); // "baz"
     }
+    testA();
+
+    // Non-polluting example
+    function testB() {
+      const foo = true;
+
+      // The bar declaration will not become
+      // a member of testA's lexical environment
+      // due to the const statement usage
+      if(foo) {
+        const bar = "baz";
+        // ...do thing with bar
+      }
+
+      console.log(bar); //! ReferenceError: bar is not defined
+
+    }
+    testB(); 
+
+    // The above might seem frivolous, but it builds on the Principle of Least Privilege;
+    // IF we only need something in place X, don't expose it to other parts of the program
+
   }());
 </script>
 
