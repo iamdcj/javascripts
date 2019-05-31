@@ -5,9 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Basic Function Scope Example</title>
+  <style>
+
+    pre {
+      display: flex;
+    }
+
+    code { 
+      background-color: #eee;
+      border: 1px solid #000;
+      display: block;
+      padding: 20px;
+    }
+    
+  </style>
 </head>
 
 <body>
+
+  <header>
+    <h1>Basic Function Scope Example</h1>
+  </header>
+  <pre>
+    <code>
+    (function() {
+      const a = "Global Binding";
+    }());
+  
+    console.log(a) //!ReferenceError
+    </code>
+  </pre>
 
 </body>
 
@@ -16,7 +43,9 @@
     const a = "Global Binding";
   }());
 
-  console.log(a) //!ReferenceError
+  console.log(a) //!ReferenceError - 
+
+  // The 'a' binding is not accessible in the global environment; the IIFE creates a new lexical environment, which the global environment cannot access.
 </script>
 
 </html>
