@@ -20,7 +20,8 @@ document.documentElement.addEventListener('click', function(){
 
 //! Uncaught TypeError: User is not a function
 // Another script has declared a variable for User in the global scope
-// the value is an empty string; when the user clicks on the document
-// the User binding is no longer a function, hence the error
+// the value is an empty string; so when the binding is referenced later on
+// in this program, e.g. a click event or some async operation
+// the User binding is no longer a function, but now an empty string
 
 
