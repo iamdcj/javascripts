@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Block Scope - For Loops</title>
+</head>
+
+<body>
+  <table>
+    <tbody>
+     <tr>
+      <th scope="row" style="width: 40%;">Command</th>
+      <th scope="col">Windows</th>
+      <th scope="col">macOS</th>
+      <th scope="col">Linux</th>
+     </tr>
+     <tr>
+      <th scope="row">Inspect Element</th>
+      <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd></td>
+      <td><kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd></td>
+      <td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd></td>
+     </tr>
+    </tbody>
+   </table>
+</body>
+
+<script>
+  (function () {
+    
+    // Non-block-scoped example
+    for (var i = 0; i < 10; i++) {
+      // ...do something with i
+    }
+
+    // Variable declaration for loop index is now part of the lexical environment
+    // where the loop was declared;
+    console.log(i) // 10
+
+    // There is a good chance that the index variable is only to be used inside the loop body
+    // enter let
+    for (let i2 = 0; i2 < 10; i2++) {
+      // ...do something with i2
+    }
+
+    // The i2(index) declaration is now scoped to the loop,
+    // it cannot be accessed in the lexical scope of the loop
+    console.log(i2) // ReferenceError: i2 is not defined
+  }());
+
+
+
+</script>
+
+</html>
