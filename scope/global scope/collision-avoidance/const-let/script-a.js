@@ -3,6 +3,9 @@
 // we do not pollute the global object
 // and our code is safe from collision
 {
-  const a = "david"
-  let b = "jones"
+  const a = "David"
+  let b = "Jones"
+
+  console.info("==== BLOCK SCOPE ====");
+  console.log(a, b); // David Jones
 }
