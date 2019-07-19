@@ -42,11 +42,13 @@
     // enter let
     for (let i2 = 0; i2 < 10; i2++) {
       // ...do something with i2
+      // i2 will be reinitialized for each iteration
     }
 
     // The i2(index) declaration is now scoped to the loop,
     // it cannot be accessed in the lexical scope of the loop
     console.log(i2) // ReferenceError: i2 is not defined
+    
   }());
 
 
