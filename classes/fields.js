@@ -9,14 +9,6 @@ class Human {
     this.race = race;
   }
 
-  speak(person) {
-    console.log(`${person} is speaking`);
-  }
-
-  walk(person) {
-    console.log(`${person} is walking`);
-  }
-
 }
 
 const Person = new Human("White");
