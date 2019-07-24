@@ -55,5 +55,5 @@ Each time a module is created in the source code, a new lexical environment is c
 
 ----
 ##### Resources
-[2ality - LexicalEnvironment versus VariableEnvironment](https://2ality.com/2011/04/ecmascript-5-spec-lexicalenvironment.html)
-[ECMAScript® 2020 Language Specification](https://tc39.es/ecma262/#sec-lexical-environments)
+* [2ality - LexicalEnvironment versus VariableEnvironment](https://2ality.com/2011/04/ecmascript-5-spec-lexicalenvironment.html)
+* [ECMAScript® 2020 Language Specification](https://tc39.es/ecma262/#sec-lexical-environments)
