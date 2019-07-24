@@ -1,6 +1,6 @@
 
-#  javascripts
-A bunch of snippets and information related to the JavaScript language.
+#  Javascripts
+Information and corresponding coee related to the JavaScript language's core aspects.
 
   
 ##  Core Aspects
