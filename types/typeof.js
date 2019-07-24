@@ -1,6 +1,11 @@
 // === typeof Operator === //
+// typeof returns the type for whatever is in a variable.
+//
 // The typeof operator will return a string for whatever value
-// is given to it;
+// is given to it - the returned strings are not a one-to-one match
+// with the types stated in the spec, e.g. function is typeof function
+// however functions are really a subtype of object.
+
 
 // === Primitives === //
 
