@@ -17,7 +17,7 @@ When the code is being compiled/interpreted the program's scope is defined lexic
 
 JavaScript possesses two varieties of scope, and the bindings we define belong to either one;
 
-- __Global Scope__ - code which can be accessed at all points of a program, i.e live in the global environment.
+- __Global Scope__ - code which can be accessed at all points of a program, i.e lives in the global environment.
   
 - __Local Scope__ - code which is stored inside of one of the following creates its own lexical environment, and is not part of the global environment;
   - Function
