@@ -1,6 +1,6 @@
 
 #  Javascripts
-Information and corresponding coee related to the JavaScript language's core aspects.
+Information and corresponding code related to the JavaScript language's core aspects.
 
   
 ##  Core Aspects
