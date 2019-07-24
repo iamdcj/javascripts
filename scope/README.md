@@ -5,7 +5,7 @@
 Scope is how we look for code in our applications; it defines what code is available at a given point in a program, e.g.
 what bindings can be accessed inside function X when it is executing.
 
-__Scope is the set of rules which govern where bindings are stored and retrieved.__
+__*Scope is the set of rules which govern where bindings are stored and retrieved.*__
 
 #### How is scope created?
 
