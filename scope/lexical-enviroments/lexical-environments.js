@@ -1,3 +1,5 @@
+import { moduleLogger } from './module-logger';
+
 // GLOBAL LEXICAL ENVIRONMENT
 // (NO CLOSING ENVIRONMENT)
 
@@ -12,4 +14,4 @@ function globalLogger(sumink) {
 
 }
 
-
+moduleLogger("oi oi");
