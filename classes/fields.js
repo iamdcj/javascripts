@@ -1,6 +1,4 @@
 // Adding fields in Classes
-
-
 class Human {
 
   // Add race field inside constructor
@@ -12,4 +10,3 @@ class Human {
 }
 
 const Person = new Human("White");
-console.log(Person.race)
