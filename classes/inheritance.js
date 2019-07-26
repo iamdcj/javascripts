@@ -11,8 +11,11 @@ class Human {
 }
 
 // Define child class
+// extend from Human
 class Person extends Human {
   action(person) {
+    // We can now call any methods
+    // from the parent(human) class
     this.speak(person)
     this.walk(person)
   }

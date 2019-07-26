@@ -1,5 +1,6 @@
-// Inheritance occurs when methods and propreties are set on
-// constructor functions; all new instances will inherit these props/methods
+// Inheritance occurs when methods and properties are set on
+// constructor functions; all new instances will inherit these 
+// props and methods from the prototype object of the constructor
 
 
 // CONSTRUCTOR

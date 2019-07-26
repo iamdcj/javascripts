@@ -1,6 +1,6 @@
 // Class constructors
 // Each time we initiaise a new instance of a class
-// the constructor function is called on the class.
+// the constructor function is invoked on the class.
 // they construct the intial state of a class instance
 
 // Log constructor call
@@ -24,6 +24,7 @@ class User {
 
 const Steffie = new User("Steffie", 32);
 console.log(Steffie.name, Steffie.age); // Steffie 32
+
 
 
 

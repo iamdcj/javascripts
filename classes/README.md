@@ -3,7 +3,7 @@
 ## What is a Class?
 A class represents a particular type of thing, e.g. a car, a user, a job.
 
-* Classes utilise the prototypal inheritance mechanism.
+* Classes utilises the prototypal inheritance mechanism - they work pretty much the same.
 * Classes act as blueprints for one of these things.
 * Classes contain fields and methods which can be referenced throughout a program's lifecycle.
 
