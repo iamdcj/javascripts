@@ -39,8 +39,7 @@ A list of the JavaScript language's core aspects;
 
 ---
 ##### Resources
-[YDKJS](https://github.com/getify/You-Dont-Know-JS)
-[JS is Sexy](http://javascriptissexy.com/)
-[Eloquent JS](http://eloquentjavascript.net)
-[JS.com](https://www.javascript.com)
-[Cheat Sheet](http://overapi.com/javascript)
+* [YDKJS](https://github.com/getify/You-Dont-Know-JS)
+* [JS is Sexy](http://javascriptissexy.com/)
+* [Eloquent JS](http://eloquentjavascript.net)
+* [JS.com](https://www.javascript.com)
