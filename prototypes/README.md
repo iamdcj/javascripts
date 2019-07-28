@@ -1,11 +1,11 @@
 # **Prototypes**
 
 ### What are Prototypes in JavaScript?
-A prototype `[[Prototype]]` is an internal property for each object(inc. functions). 
+A prototype `[[Prototype]]` is an internal property for each object.
 
 *The prototype proerty is a reference to another object - a prototype object*
 
-JS is a prototype-based language; inheritance is achieved via the prototype objects - these prototype objects can be thought of as templates, and objects can inherit methods and properties from these prototype objects.
+These prototype objects can be thought of as templates, and objects can inherit methods and properties from these prototype objects; defining the inheritance model in JavaScript.
 
 Prototype objects can also have prototype objects linked to them - this linkage forms what is know as the __Prototype chain__.
 

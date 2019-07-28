@@ -1,17 +1,19 @@
-# Inheritance in JS
+# Inheritance
 
 ### What is it?
-Inheritance a mechanism which allows one object to successfully reference/utilise properties/methods from another object.
+Inheritance a mechanism which allows one thing to successfully reference/utilise properties/methods from another thing. 
 
-### How it works?
-Inheritance is achieved by utilising prototype objects;
+
+### How it works in JS?
+JS is a prototype-based language, and inheritance is achieved via prototypes;
 
 > Objects have an internal `prototype` property which points an object; a prototype object. These prototype objects act as templates which other objects can inherit properties and methods from.
 
+### How to utilisie it
+In order to utilises inheritance in JS, we first need a starting point, something which can be used multiple times - a thing which other things will inherit from.
 
 #### 'Constructor' functions
-A key component of making inheritance work in JavaScript are what are referred to as 'Constructor' functions**; functions which construct a thing(object).
-
+A key component of making inheritance work in JavaScript are what are referred to as 'Constructor' functions**; functions which construct a thing(object) - this thing will then be use to form multiple instances of thing.
 
 
 The following is an example of a constructor function:
