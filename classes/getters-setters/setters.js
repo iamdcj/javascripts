@@ -1,15 +1,15 @@
-// CLASSES: Getters
+// Setters
 // ---
-// Getters bind properties to a function
-// allowing the getter to be called
-// when property retrieval is attempted
-// getters take no params, and simply return a value
+// Set bind a property to a function
+// allowing the setter to be called
+// when setting a propery
 class David {
 
   constructor() {
     this.surname = "Jones"
   }
   
+  // setter: setName
   set setName(name) {
     this.forename = name;
   }
@@ -29,3 +29,8 @@ Dave.setName = "David";
 // via getter
 console.log(Dave.returnName); // "Davud"
 
+
+// ----------
+// References
+// ----------
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set

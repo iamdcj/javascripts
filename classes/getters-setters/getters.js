@@ -1,4 +1,4 @@
-// CLASSES: Getters
+// Getters
 // ---
 // Getters bind properties to a function
 // allowing the getter to be called
@@ -11,10 +11,16 @@ class David {
   }
 
   get returnName() {
-    return this.forename;
+    return this.surname;
   }
 }
 
 // Returns result of name getter function
 // note no invocation braces
-console.log(David.name);
+console.log(David.returnName); // Jones
+
+
+// ----------
+// References
+// ----------
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get

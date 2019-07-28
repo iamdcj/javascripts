@@ -1,1 +1,0 @@
-// Getters are used to retrieve object properties
