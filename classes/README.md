@@ -5,8 +5,6 @@ A class represents a particular type of thing, e.g. a car, a user, a job.
 
 They are a key component of Object Oriented Programming.
 
-
-
 * Classes utilises the prototypal inheritance mechanism - they work pretty much the same, the syntatical sugar makes things clearer.
 * Classes act as blueprints for one of these things.
 * Classes contain fields and methods which can be referenced throughout a program's lifecycle.
