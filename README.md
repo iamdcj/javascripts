@@ -4,8 +4,6 @@ Information and corresponding code related to the JavaScript language's core asp
 
 ## Core Aspects
 
----
-
 A list of the JavaScript language's core aspects;
 
 - Lexical Structure
