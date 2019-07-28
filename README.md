@@ -26,7 +26,9 @@ A list of the JavaScript language's core aspects;
   - Promises
   - Async...Await
 - Objects
+  - Object-Oriented JavaScript
   - Prototypes and Inheritance
+  - JSON
 - Arrays
 - _this_
   - Apply, Call, Bind.
