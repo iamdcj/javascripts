@@ -17,7 +17,7 @@ const Bianca = new Cat('Bianca', 'Persian');
 
 // Methods and props can be added to the 
 // prototype of a constructor
-Cat.prototype.meow = function() {
+Cat.meow = function() {
   console.log(`Meowww meowww! My name is ${this.name}`);
 }
 

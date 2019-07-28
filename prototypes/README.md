@@ -1,11 +1,11 @@
 # **Prototypes**
 
 ### What are Prototypes in JavaScript?
-A prototype `[[Prototype]]` is an internal property for each object(inc. functions). The `Prototype` is
+A prototype `[[Prototype]]` is an internal property for each object(inc. functions). 
 
-*The prototype is a reference to another object.*
+*The prototype proerty is a reference to another object - a prototype object*
 
-JS is a prototype-based language; inheritance is achieved via the prototypes - the prototype objects can be though of as templates, and objects can inherit methods and properties from these proto objects.
+JS is a prototype-based language; inheritance is achieved via the prototype objects - these prototype objects can be thought of as templates, and objects can inherit methods and properties from these prototype objects.
 
 Prototype objects can also have prototype objects linked to them - this linkage forms what is know as the __Prototype chain__.
 
@@ -19,7 +19,7 @@ __Accessing Object Properties and the Prototype Chain__
 
 `Person.name`
 
-If we attempt to access property `name` on the `Person` object, the look-up will first start at `Person`, if the property cannot be found, it will then go 'up' the chain and look at `Person`s `Protoptype` object, subsequently the look-up will continue if the property cannot be found on the `Person`'s prototype - it will look at the `Prototype`s prototype.
+If we attempt to access property `name` on the `Person` object, the look-up will first start at `Person`, if the property cannot be found, it will then go 'up' the chain and look at `Person`s `Protoptype` object, subsequently the look-up will continue if the property cannot be found on the `Person`'s prototype - it will look at the `Prototype`s prototype, until the chain ends.
 
 If the property look-up cannot be resolved on the chain, a reference error will be thrown.
 
@@ -38,6 +38,7 @@ Nowadays it is much more common for JS programmers to run with `class`es - it is
 #### References
 * [YDKJS](https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch5.md)
 * [MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
+* [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 * [Backticks and Tildes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
 * [Hackernoon](https://hackernoon.com/prototypes-in-javascript-5bba2990e04b)
 * [W3S](https://www.w3schools.com/js/js_object_prototypes.asp)
