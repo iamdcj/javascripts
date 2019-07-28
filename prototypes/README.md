@@ -10,18 +10,20 @@ JS is a prototype-based language; inheritance is achieved via the prototype obje
 Prototype objects can also have prototype objects linked to them - this linkage forms what is know as the __Prototype chain__.
 
 #### Prototype Chain
+The prototype chain is a look-up resolution mechanism; objects can inherit from other objects via their prototypes, when this inheritance occurs it forms a chain of prototypes, thus when a property of an object is referenced, the prototypes of each object related by the prototyopes will queried for that propety.
+
 The following is a rough example of how prototype chains are/can be formed"
 ```
-Person{} -- Prototype -- Prototype -- Prototype
+Person object -- Prototype of Human -- Prototype of Animal -- Prototype of Object
 ```
 
 __Accessing Object Properties and the Prototype Chain__
 
 `Person.name`
 
-If we attempt to access property `name` on the `Person` object, the look-up will first start at `Person`, if the property cannot be found, it will then go 'up' the chain and look at `Person`s `Protoptype` object, subsequently the look-up will continue if the property cannot be found on the `Person`'s prototype - it will look at the `Prototype`s prototype, until the chain ends.
+If we attempt to access property `name` on the `Person` object, the look-up will first start at the `Person` object, if the property cannot be found, it will then go 'up' the chain and look at `Person`s `Protoptype` object, subsequently the look-up will continue if the property cannot be found on the `Person`'s prototype - it will look at the `Prototype`s prototype and so on until the chain ends.
 
-If the property look-up cannot be resolved on the chain, a reference error will be thrown.
+If the property look-up cannot be resolved on the chain, `undefined` is returned.
 
 *The Prototype chain examplifies how inheritance can be achieved using Prototypes.*
 
