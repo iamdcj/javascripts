@@ -31,7 +31,7 @@ const Xavi = new Player("Xavi Hernandez, "CM");
 
 We can use the `Player()` constructor to generate as many instances we desire, each one inheriting properties and methods from the original.
 
-#### Adding additional things
+#### Adding members things
 If we want to add additional things to the constructor function, which will then be inherited by any instances created by the constructor, we must add them to the constructors prototype; the prototype is used for inheritance in JavaScript.
 
 ```

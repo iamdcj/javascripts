@@ -1,31 +1,41 @@
-// Inheritance occurs when methods and properties are set on
-// constructor functions; all new instances will inherit these 
-// props and methods from the prototype object of the constructor
-
-
-// CONSTRUCTOR
-// each new instance of this function
-// will construct a new Cat
-// with a name and a breed
-function Cat(name, breed) {
+// Blueprint constructor for Player
+// generate instance of player with:
+// name, age and position
+function Player(name, age, position, skillLevel) {
   this.name = name;
-  this.breed = breed;
+  this.age = age;
+  this.position = position;
+  this.skillLevel = skillLevel;
 }
 
-// New instance of Cat
-const Bianca = new Cat('Bianca', 'Persian');
 
-// Methods and props can be added to the 
-// prototype of a constructor
-Cat.meow = function() {
-  console.log(`Meowww meowww! My name is ${this.name}`);
+// Create Player instances
+const Ronaldinho = new Player("Ronaldinho Gaucho", 38, "AM", 96);
+const Messi = new Player("Lio Messi", 32, "AM", 99);
+
+// We want to log a bio for each player
+// so we add a method to the Person constructor
+Player.bio = function() {
+  console.log(`
+    ${this.name} is a ${this.age}-year old ${this.position}, 
+    with a skill level of ${this.skillLevel}
+  `);
 }
 
-Bianca.meow(); // Meowww meowww! My name is Bianca
-
-// Protos. can be modified at any point
-Cat.prototype.meow = function() {
-  console.log(`Meowww meowww! My name is ${this.name}  😻 `);
+// Messi.bio();
+//! NO!
+// this does not work, we need the method to be added
+// to the prototype of the constructor, not the constructor itself
+// the constructor function is a separate object to it's constructor
+// instances get their properties from the constructors prototype, not
+// the constructor function itself, so
+Player.prototype.bio = function() {
+  console.log(`
+    ${this.name} is a ${this.age}-year old ${this.position}, 
+    with a skill level of ${this.skillLevel}
+  `);
 }
 
-Bianca.meow(); // Meowww meowww! My name is Bianca 😻 
+Ronaldinho.bio();
+//* YES!
+// Ronaldinho Gaucho is a 38-year old AM, with a skill level of 96
