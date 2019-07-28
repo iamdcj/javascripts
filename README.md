@@ -18,7 +18,6 @@ A list of the JavaScript language's core aspects;
 - Statements
 - Expressions
 - Operators
-  - new()
 - Functions
   - IIFE
   - Callbacks
