@@ -3,24 +3,21 @@
 // Set bind a property to a function
 // allowing the setter to be called
 // when setting a propery
-const person = {
-
-  // setter: setName
-  set setName(name) {
-     this.name = name;
+const Person = {
+  givenName: "",
+  familyName: "",
+  get fullName() {
+    return `${givenName} ${familyName}`
   },
-  get returnName() {
-    return this.name;
+  set fullName(name) {
+    const nameParts = name.split(' ');
+
+    this.givenName = nameParts[0];
+    this.familyName = nameParts[1];
   }
 }
 
-// Set property via setter
-person.setName = "David Jones"
-// Retrieve as prop. via getter
-console.log(person.returnName); // David Jones
+Person.fullName = 'Nole Jones';
+console.log(Person.givenName);
+console.log(Person.familyName);
 
-
-// ----------
-// References
-// ----------
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set

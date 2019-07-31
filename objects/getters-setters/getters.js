@@ -3,20 +3,13 @@
 // Getters bind a property to a function
 // allowing the getter to be called
 // when property retrieval is attempted
-const person = {
-  name: "David",
-
-
-  // getter: returnName
-  get returnName() {
-    return this.name;
+const Person = {
+  givenName: "David",
+  familyName: "Jones",
+  get fullName() {
+    return `${this.givenName} ${this.familyName}`
   }
 }
 
 // Retrieve as prop. via getter
-console.log(person.returnName); // David
-
-// ----------
-// References
-// ----------
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get
+console.log(Person.fullName);
