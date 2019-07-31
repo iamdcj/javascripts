@@ -8,11 +8,9 @@ JS provides methods and properties for its various datatypes.
 
 It is argued that JS doesn't have types, due to its dynamic/loose nature, however the spec. uses the term "type". It is best to think of values of having types, not the bindings; a variable can hold different types at any point in the lifecycle of a program.
 
---
-
 There are a total of seven built-in JS types, and they fall into two categories of types; Primitive and Composite.
 
-### Primitive Types
+### __Primitive Types__
 These types are the lowest-level types in the language, do not possess and properties;
 
 #### number (typeof number)
@@ -52,13 +50,12 @@ If you want to treat a string as an array, there are many methods and approaches
 
 #### boolean (typeof boolean)
 #### null (typeof object)
-null is a particularly odd type in JS,
-
 #### undefined (typeof undefined)
 #### symbol (typeof symbol)
 
 
-### Composite Types
+---
+### __Composite Types__
 
 #### object 
 The `object` type covers objects, functions and arrays. It might make sense for functions and arrays to be distinct types, but nope, they are all types of objects in the JS language.
@@ -83,8 +80,36 @@ The above object is made-up of three members, two of which contain related data,
 
 
 ##### Arrays (typeof object)
- 
+Arrays are ordered collections of data; they tend to contain numerous pieces of related data.
+
+###### String array
+```
+const names = ["David", "Stephanie", "Nole"];
+
+const David = names[0] // retrieve item by index
+
+```
+
+JS arrays can contain an mixture of any valid datatype:
+```
+const mixedBag = [1, "two", { number: 3 }];
+```
+
+Arrays are typeof object, but can be better considered a subtype of object; they are objects but with numerically indexed members, and they possess an updating `.length` property
+
+```
+console.log(names.length) // 3
+```
+
 ##### Functions (typeof function)
-Function
+Functions are reusable pieces of executable code; they perform a specific task, and can return a value once complete.
+
+```
+function returnFullName(givenName, familyName) {
+  return `${givenName} ${familyName}`
+}
+
+const fullName = returnFullName("David", "Jones");
+```
 
 Functions are technically subtypes of objects, despite what `typeof aFunc()` may return. Functions are callable objects, they can possess properties, and they have a length property.
