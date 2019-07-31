@@ -1,26 +1,22 @@
-// Getters
-// ---
-// Getters bind properties to a function
-// allowing the getter to be called
-// when property retrieval is attempted
-// getters take no params, and simply return a value
-class David {
-
+//* Getters
+//* ---
+//* Get binds a property to a function
+//* allowing the getter to be called
+//* when retrieving a propery
+class Person {
   constructor() {
-    this.surname = "Jones"
+    this.givenName = "David";
+    this.familyName = "Jones";
   }
 
-  get returnName() {
-    return this.surname;
+  get fullName() {
+    return `${this.givenName} ${this.familyName}`
   }
 }
 
-// Returns result of name getter function
-// note no invocation braces
-console.log(David.returnName); // Jones
+//* new instance of David
+const person = new Person();
 
+//* retrieve fullName property via getter
+console.log(person.fullName); //{} David Jones
 
-// ----------
-// References
-// ----------
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get

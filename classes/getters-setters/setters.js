@@ -1,36 +1,32 @@
-// Setters
-// ---
-// Set bind a property to a function
-// allowing the setter to be called
-// when setting a propery
-class David {
-
+//* Setters
+//* ---
+//* Set bind a property to a function
+//* allowing the setter to be called
+//* when setting a propery
+class Person {
   constructor() {
-    this.surname = "Jones"
-  }
-  
-  // setter: setName
-  set setName(name) {
-    this.forename = name;
+    this.givenName = "";
+    this.familyName = "";
   }
 
-  get returnName() {
-    return this.forename;
+  get fullName() {
+    return `${this.givenName} ${this.familyName}`
+  }
+
+  set fullName(name) {
+    const nameParts = name.split(' ');
+
+    this.givenName = nameParts[0];
+    this.familyName = nameParts[1];
   }
 }
 
-// new instance of David
-const Dave = new David();
+//* new instance of David
+const person = new Person();
 
-// Use setter to set forename property
-Dave.setName = "David";
+//* Use setter to set fullName property
+person.fullName = "David Jones";
 
-// retrieve forename property
-// via getter
-console.log(Dave.returnName); // "Davud"
+//* retrieve fullName property via getter
+console.log(person.fullName); //{} David Jones
 
-
-// ----------
-// References
-// ----------
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set

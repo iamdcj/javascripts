@@ -1,17 +1,20 @@
 # Getters and Setters
-The `get` and `set` methods are functions which provide a cleaner API for retrieving and defining properties from/on objects.
+The `get` and `set` methods are functions which provide a cleaner API for retrieving and defining properties from/on classess.
 
 
 ### `get` accessor
-This accessor function allows retrieval of data from an object using property syntax.
+This accessor function allows retrieval of data from an class using property syntax.
 
 The `get` accessor does not take an parameters.
 
-1. Create Person object
+1. Create Person class
 ```
-const Person = {
-  givenName: "David",
-  familyName: "Jones",
+class Person {
+  constructor() {
+    this.givenName = "David";
+    this.familyName = "Jones";
+  }
+
   get fullName() {
     return `${this.givenName} ${this.familyName}`
   }
@@ -27,18 +30,22 @@ console.log(Person.fullName);
 
 ---
 ### `set` accessor
-This accessor function allows addition of data to an object using property syntax.
+This accessor function allows addition of data to an class using property syntax.
 
 The `set` accessor takes one argument.
 
-1. Create Person object
+1. Create Person class
 ```
-const Person = {
-  givenName: "",
-  familyName: "",
+class Person {
+  constructor() {
+    this.givenName = "";
+    this.familyName = "";
+  }
+
   get fullName() {
     return `${this.givenName} ${this.familyName}`
-  },
+  }
+
   set fullName(name) {
     const nameParts = name.split(' ');
 

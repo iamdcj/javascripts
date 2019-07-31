@@ -1,8 +1,8 @@
 // Methods can be added to classes
-// in the following way:
+//* in the following way:
 
 class Car {
-  // Add method
+  //* Add method
   drive() {
     return 'VROOOM!';
   }
@@ -17,4 +17,4 @@ class Car {
 }
 
 const Porsche = new Car();
-Porsche.logStop(); // The car was VROOOM!, but then it STOPPED!
+Porsche.logStop(); //{} The car was VROOOM!, but then it STOPPED!
