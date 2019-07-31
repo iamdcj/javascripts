@@ -10,7 +10,7 @@ A list of the JavaScript language's core aspects;
 - Scope
   - Hoisting
   - Closure
-- Types
+- [Types](types)
   - Coercion
   - By Reference vs. By Value
 - Variables
@@ -25,14 +25,14 @@ A list of the JavaScript language's core aspects;
 - Asynchronicity
   - Promises
   - Async...Await
-- Objects
+- [Objects](objects)
   - Object-Oriented JavaScript
   - Prototypes and Inheritance
   - JSON
 - Arrays
 - _this_
   - Apply, Call, Bind.
-- Classes
+- [Classes](classes)
   - Decorators
 - Modules
 - Patterns
