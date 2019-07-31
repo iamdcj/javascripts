@@ -4,17 +4,16 @@ JavaScript, like all programming has a set a of (data)types that can be manipula
 
 Types are the building blocks of any program written in a language, without them we can't do jack. 
 
-JS provides methods and properties for each of its various datatypes - knowing these will make programming in JS a lot easier.
-
-JavaScript is a loose/dynamic typed language; *no type enforcement for bindings.*
 
 #### Type, a definition
 This definition, like most things I know about JS, is from Kyle Simpson's [YDKJS](https://github.com/getify/You-Dont-Know-JS) series;
 > a type is an intrinsic, built-in set of characteristics that uniquely identifies the behavior of a particular value and distinguishes it from other values, both to the engine and to the developer. - K. Simpson
 
-So, a type is a thing in a language which is recognisable by its make-up ~ engine/developer knows that type x is type x by the way it looks(sort of). 
+So, a type is a thing in a language which is recognisable by its make-up ~ engine/developer knows that type x is type x by the way it looks. It is this recognition/knowledge which allows programmers to utilise a particular types properties/methods.
 
-#### A note on 'Loose/Dynamic' Typing
+#### 'Loose/Dynamic' typing
+JavaScript is a loose/dynamic typed language; *no type enforcement for bindings.*
+
 Loose typing does not require a variable has a type assigned to it, i.e. a 'loose' variable is dynamic because its value can be any type, at any time - JS engines do not utilises type enforcement, and because of it is argued that JS doesn't have types, due to its dynamic/loose nature, however the ECMAScript specification uses the term "type", which works for me.
 
 It is best to think of values of having types, not the bindings; *a variable can hold different types at any point in the lifecycle of a program.*
@@ -23,11 +22,12 @@ The `typeof` operator makes this easier to understand; it evaluates the type of 
 
 ---
 ## The Types
-
-There are a total of seven built-in JS types, and they fall into two categories of types; Primitive and Composite.
+There are a total of seven built-in JS types, and they fall into two categories of types; Primitive and Composite(Objects).
 
 ### __Primitive Types__
-These types are the lowest-level types in the language, do not possess and properties;
+A primitive type is any type which is not an object - these types have no methods, and are at the lowest level of a language's implementation.
+
+Primitives are immutable; the original cannot be altered - _*Primitives are passed by value, not by reference*_.
 
 #### number (typeof number)
 JS implementes one type for `number`, there is not a distinction between integer and fractional numbers in JS; all numbers in JS are floating-point numbers.

@@ -12,6 +12,7 @@ A list of the JavaScript language's core aspects;
   - Closure
 - Types
   - Coercion
+  - By Reference vs. By Value
 - Variables
   - Let and Const
 - Statements
