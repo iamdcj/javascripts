@@ -29,18 +29,20 @@ A primitive type is any type which is not an object - these types have no method
 
 Primitives are immutable; the original cannot be altered - _*Primitives are passed by value, not by reference*_.
 
-#### number
-#### string
-#### boolean
-#### null
-#### undefined
-#### symbol
+* [number](number)
+* [string](string)
+<!-- * [boolean](boolean)] -->
+<!-- * [null](null)] -->
+<!-- * [undefined](undefined)] -->
+<!-- * [symbol](symbol)] -->
 
 
 ---
 ### __Composite Types__
 The `object` type covers objects, functions and arrays. It might make sense for functions and arrays to be distinct types, but nope, they are all types of objects in the JS language.
 
-##### Objects
-##### Arrays
-##### Functions
+Compositie types are mutable; you can edit the original - _*Composites are passed by reference, not by value*_.
+
+* [Objects](object)
+* [Arrays](arrays)
+* [Function](function)
