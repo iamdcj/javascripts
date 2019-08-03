@@ -2,7 +2,7 @@
 
 ### `typeof` object
 
-Arrays are ordered collections of data; they tend to contain numerous pieces of related data.
+Arrays are numerically ordered collections of data; they tend to contain numerous pieces of related data.
 
 ###### String array
 ```

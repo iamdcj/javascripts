@@ -2,7 +2,7 @@
 
 JavaScript, like all programming has a set a of (data)types that can be manipulated in order to build applications.
 
-Types are the building blocks of any program written in a language, without them we can't do jack. 
+Types are the building blocks of applications, without a number of types to manipulate programs would be very limited.
 
 
 #### Type, a definition
@@ -12,7 +12,7 @@ This definition, like most things I know about JS, is from Kyle Simpson's [YDKJS
 So, a type is a thing in a language which is recognisable by its make-up ~ engine/developer knows that type x is type x by the way it looks. It is this recognition/knowledge which allows programmers to utilise a particular types properties/methods.
 
 #### 'Loose/Dynamic' typing
-JavaScript is a loose/dynamic typed language; *no type enforcement for bindings.*
+JavaScript is a loosely/dynamically typed language; *no type enforcement for bindings.*
 
 Loose typing does not require a variable has a type assigned to it, i.e. a 'loose' variable is dynamic because its value can be any type, at any time - JS engines do not utilises type enforcement, and because of it is argued that JS doesn't have types, due to its dynamic/loose nature, however the ECMAScript specification uses the term "type", which works for me.
 
