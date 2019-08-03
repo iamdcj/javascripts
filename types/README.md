@@ -18,6 +18,7 @@ Loose typing does not require a variable to have a type assigned to it when decl
 
 It is best to think of values of having types, not the bindings; __a variable can hold different types at any point in the lifecycle of a program.__
 
+##### typeof
 The `typeof` operator makes this easier to understand; it evaluates the type of the value stored in a variable, *not the type of the variable*.
 
 ```
@@ -50,7 +51,7 @@ Primitives are immutable; the original cannot be altered - _*Primitives are pass
 * [string](string)
 * [boolean](boolean)
 * [undefined](undefined)
-<!-- * [null](null)] -->
+* [null](null)
 <!-- * [symbol](symbol)] -->
 
 
