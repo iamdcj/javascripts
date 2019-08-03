@@ -20,6 +20,23 @@ It is best to think of values of having types, not the bindings; __a variable ca
 
 The `typeof` operator makes this easier to understand; it evaluates the type of the value stored in a variable, *not the type of the variable*.
 
+```
+const name = "David";
+typeof name; // string
+
+const age = 32;
+typeof age; // number
+
+const skills = ['HTML', 'CSS', 'JavaScript'];
+typeof skills; // object
+
+const measurements = { height: 5.9, weight: 160 }
+typeof measurements; // object
+
+const logger = () => console.log(name, age, measurements);
+typeof logger; // function
+```
+
 ---
 ## The Types
 There are a total of seven built-in JS types, and they fall into two categories of types; Primitive and Composite(Objects).
@@ -31,8 +48,8 @@ Primitives are immutable; the original cannot be altered - _*Primitives are pass
 
 * [number](number)
 * [string](string)
-* [boolean](boolean)]
-* [undefined](undefined)]
+* [boolean](boolean)
+* [undefined](undefined)
 <!-- * [null](null)] -->
 <!-- * [symbol](symbol)] -->
 
