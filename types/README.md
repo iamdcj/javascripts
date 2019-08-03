@@ -31,9 +31,9 @@ Primitives are immutable; the original cannot be altered - _*Primitives are pass
 
 * [number](number)
 * [string](string)
-<!-- * [boolean](boolean)] -->
+* [boolean](boolean)]
+* [undefined](undefined)]
 <!-- * [null](null)] -->
-<!-- * [undefined](undefined)] -->
 <!-- * [symbol](symbol)] -->
 
 

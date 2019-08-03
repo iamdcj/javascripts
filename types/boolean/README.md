@@ -11,8 +11,7 @@ const earthFlat = false;
 const peopleSuck = true;
 ```
 
-Booleans are often used for application control flow; if X(is true) do Y, else do Z.
-
+Booleans are often used for  controlling the application flow, for example:
 ```
 const isLoading = false;
 
