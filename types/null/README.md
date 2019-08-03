@@ -2,7 +2,7 @@
 
 ### `typeof` object
 
-The `null` value represents an absence of a value - it is often used to symbolise a lack of an object, or the starting value for variables which will later hold a particular value.
+The `null` value represents an absence of a value - it is often used to symbolise a lack an object when returned from an API, or used as the starting value for variables which will later hold a proper value.
 
 ```
 let updater = null;
@@ -21,5 +21,4 @@ console.log(foo); // undefined
 var bar = null;
 
 console.log(bar); // null
- 
 ```
