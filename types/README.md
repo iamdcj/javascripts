@@ -14,11 +14,11 @@ So, a type is a thing in a language which is recognisable by its make-up ~ engin
 #### 'Loose/Dynamic' typing
 JavaScript is a loosely/dynamically typed language; *no type enforcement for bindings.*
 
-Loose typing does not require a variable has a type assigned to it, i.e. a 'loose' variable is dynamic because its value can be any type, at any time - JS engines do not utilises type enforcement, and because of it is argued that JS doesn't have types, due to its dynamic/loose nature, however the ECMAScript specification uses the term "type", which works for me.
+Loose typing does not require a variable to have a type assigned to it when declared, i.e. a 'loose' variable is dynamic because its value can be any type, at any time - JS engines do not utilises type enforcement, and because of this it is argued by some that JS doesn't really have types, however the ECMAScript specification uses the term "type", which should be good enough for JS programmers.
 
-It is best to think of values of having types, not the bindings; *a variable can hold different types at any point in the lifecycle of a program.*
+It is best to think of values of having types, not the bindings; __a variable can hold different types at any point in the lifecycle of a program.__
 
-The `typeof` operator makes this easier to understand; it evaluates the type of the value stored in a variable.
+The `typeof` operator makes this easier to understand; it evaluates the type of the value stored in a variable, *not the type of the variable*.
 
 ---
 ## The Types
