@@ -2,9 +2,10 @@
 
 ### `typeof` object
 
-Objects are an unordered(not indexed) collection of properties(members). 
+Objects are an unordered collection of members; `property:value` pairs - the properties, are labels which allow for easy reference to the values; which can be any valid type.
 
-These properties are usually related pieces of data, for example;
+The property values are usually pieces of related data, accomponied by functions(methods) which perform a specific task on the related data.
+
 ```
 const Person = {
   name: "David"
