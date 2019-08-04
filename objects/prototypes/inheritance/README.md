@@ -9,7 +9,7 @@ JS is a prototype-based language, and inheritance is achieved via prototypes;
 
 > Objects have an internal `prototype` property which points an object; a prototype object. These prototype objects act as templates which other objects can inherit properties and methods from. - [MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
 
-### How to utilisie it
+### How to utilise it
 In order to utilises inheritance in JS, we first need a starting point, something which can be used multiple times - a thing which other things will inherit from; __a blueprint object__.
 
 #### 'Constructor' functions
