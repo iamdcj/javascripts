@@ -11,7 +11,7 @@ These prototype objects can be thought of as templates, and objects can inherit 
 Prototype objects can also have prototype objects linked to them - this linkage forms what is know as the __Prototype chain__.
 
 #### Prototype Chain
-The prototype chain is a look-up resolution mechanism; objects can inherit from other objects via their prototypes, when this inheritance occurs it forms a chain of prototypes, thus when a property of an object is referenced, the prototypes of each object related by the prototyopes will queried for that propety; this chain defines what properties and methods are available to a particular object.
+The prototype chain is a look-up resolution mechanism; objects can inherit from other objects via their prototypes, when this inheritance occurs it forms a chain of prototypes, thus when a property of an object is referenced, the prototypes of each object related by their respective prototypes will queried for that propety; this chain defines what properties and methods are available to a particular object.
 
 The following is a rough example of how prototype chains are/can be formed"
 ```
@@ -30,7 +30,7 @@ If the property look-up cannot be resolved on the chain, `undefined` is returned
 
 
 ### Why use Prototypes?
-The above detail on Prototypes and the Prototype chain illustrate how Prototypes will allow programmers to leverage inheritance in JS applications, and the ability to inherit methods and properties from other objects is a powerful feature; you can define a class-like template objects, which possess common properties and methods, and these can be shared across any instances which require these members. 
+The above detail on Prototypes and the Prototype chain illustrate how Prototypes will allow programmers to leverage inheritance in JS applications, and the ability to inherit methods and properties from other objects is a powerful feature; you can define class-like template objects, which possess common properties and methods, and these can be shared across any instances which may require these properties or methods. 
 
 
 #### A note on ES6 classes
