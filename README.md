@@ -8,7 +8,7 @@ A list of the JavaScript language's core aspects;
 
 - Lexical Structure
 - [Scope](scope)
-  - Lexical Scope
+  - [Scope](scope/closure)
   - Hoisting
   - Closure
 - [Types](types)
