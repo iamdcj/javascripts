@@ -35,5 +35,117 @@ DavidJones.logName(); // David Jones
 
 Methods are automatically bound to the object itself, i.e. the `this` keyword will point to the wrapping object(context), allowing for direct access to the wrapping object's other members.
 
+### __Defining Members__
+Adding members to an object literal during the initial creation can be achieved by stating the `property`, followed by the value, separated by a colom`:`;
+
+```
+const objLit = {
+  prop: "value",
+  anotherProp: ["another", "value"]
+}
+```
+
+Further properties can be added to objects by using dot notation, or bracket notation on the objects namespace `objLit`;
+
+```
+objLit.proppyWoppy = 19;
+
+objLit["testProp"] = null;
+
+console.log(objLit);
+
+// {prop: "value", anotherProp: Array(2), test: "another", proppyWoppy: 19, testProp: null}
+```
+
+Using bracket notation allows for dynamic member addition, i.e. you can use a string value to define the member name, followed by whatever value;
+
+```
+const addMember = (obj, label, value) => {
+  obj[label] = value;
+}
+
+addMember(objLit, name, "David");
+
+console.log(objLit)
+
+// {prop: "value", anotherProp: Array(2), proppyWoppy: 19, testProp: null, "": "David"}
+```
 
 
+### __Accessing Members__
+Accessing object properties or methods can be done using dot or bracket notation;
+
+__Dot Notation accessing__
+Dot notation is the most common way of accessing object members;
+
+```
+const User = {
+  id: 1234,
+  age: 32,
+  name: "David Jones",
+  logUserInfo() {
+    console.log(
+      `
+      ID: ${this.id}
+      Age: ${this.age}
+      Name: ${this.name}
+      `
+    )
+  }
+}
+
+console.log(User.id); // 1234
+
+User.logUserInfo(); 
+//  ID: 1234
+//  Age: 32
+//  Name: David Jones
+```
+
+__Bracket Notation accessing__
+Dot notation offers another approach to member accessing; it is very similar to the array member accessing syntax `array[0]`, however the string label is using instead of the ordinal index; object are not sorted numerically.
+
+```
+const User = {
+  id: 1234,
+  age: 32,
+  name: "David Jones",
+  logUserInfo() {
+    console.log(
+      `
+      ID: ${this.id}
+      Age: ${this.age}
+      Name: ${this.name}
+      `
+    )
+  }
+}
+
+console.log(User['name']); // David Jones
+
+User['logUserInfo'](); 
+//  ID: 1234
+//  Age: 32
+//  Name: David Jones
+```
+
+Accessing methods using bracket notation is not a common thing, and dot notation is highly recommended.
+
+Dot notation is useful when accessing a property which contains hyphens;
+
+1. Add 'date-of-birth' member:
+  ```
+  User['date-of-birth'] = '05/13/87';
+  ```
+
+2. Attempt access using dot notation (throws error);
+  ```
+  User.date-of-birth;
+  // Uncaught ReferenceError: of is not defined
+  ```
+
+3. Use bracket notation to successfully retrieve value;
+  ```
+  User['date-of-birth']
+  // 05/13/87
+  ```
