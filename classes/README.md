@@ -1,7 +1,7 @@
 # Classes
 
 ## What is a Class?
-A class represents a particular type of thing, e.g. a car, a user, a job.
+A class represents a particular type of thing, e.g. a Car, a User, a Job.
 
 They are a key component of Object Oriented Programming.
 
@@ -26,3 +26,4 @@ The following all apply to JS classes;
 
 * They are not hoisted; you must declare a class before you can reference it.
 * The code within a class is strictly strict mode.
+* The naming convention for `Class` declarations is PascalCase, e.g. 'Car', 'UserProfile`, `FootballPlayer`. This is also applied to filenames which export a class.
