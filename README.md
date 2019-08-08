@@ -2,6 +2,8 @@
 
 Information and corresponding code related to the JavaScript language's core aspects.
 
+(If you can't read my writing, read someone else's, they are probably smarter anyways.)
+
 ## Core Aspects
 
 A list of the JavaScript language's core aspects;
