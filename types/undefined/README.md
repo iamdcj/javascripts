@@ -15,7 +15,7 @@ console.log(Empty) // undefined
 #### undefined != undeclared
 The error/warning messages in JavaScript can confuse developers into thinking an `undefined` variable is the same/similar to a binding which is not present in the accessible scope, i.e. not declared.
 
-An undeclared variable is different to an `undefined` one.
+An undeclared variable is different to an `undefined` one; `undefined` variables 'exist', undeclared variables do not.
 
 *Undeclared*
 A variable which is not present in the available scope;

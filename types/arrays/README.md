@@ -12,7 +12,7 @@ const David = names[0] // retrieve item by index
 
 ```
 
-JS arrays can contain an mixture of any valid datatype:
+JS arrays can contain an mixture of any valid datatype, including arrays;
 ```
 const mixedBag = [1, "two", { number: 3 }];
 

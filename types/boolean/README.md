@@ -4,8 +4,6 @@
 
 A Boolean is a primitive type, and it can hold the value of either `true` or `false`
 
-Examples:
-
 ```
 const earthFlat = false;
 const peopleSuck = true;
