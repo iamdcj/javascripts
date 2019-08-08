@@ -22,3 +22,15 @@ var bar = null;
 
 console.log(bar); // null
 ```
+
+### Checking for `null`
+The `typeof` return value `object` for null is considered a bug by most, and the consensus among programmers is that it really should return "null", thus making it easier to check for `null` in our programs.
+
+Alas, the `typeof` return value will likely never be changed due to the risk to legacy programs, so if you need to check for null, here is a good way to do it. 
+```
+const a = null;
+
+(!a && typeof a === "object");
+```
+
+> `null` is the only primitive value that is "falsy" (aka false-like; see Chapter 4) but that also returns "object" from the typeof check. - Kyle Simpson, Types & Grammar - Chapter 1
