@@ -21,6 +21,8 @@ It is best to think of values of having types, not the bindings; __a variable ca
 ##### typeof
 The `typeof` operator makes this easier to understand; it evaluates the type of the value stored in a variable, *not the type of the variable*.
 
+`typeof` will return one of seven values(str); string, number, boolean, undefined, object, function and symbol.
+
 ```
 const name = "David";
 typeof name; // string
@@ -28,15 +30,22 @@ typeof name; // string
 const age = 32;
 typeof age; // number
 
+const isTired = true;
+typeof age; // boolean
+
+let pointless;
+typeof age; // undefined
+
 const skills = ['HTML', 'CSS', 'JavaScript'];
 typeof skills; // object
 
-const measurements = { height: 5.9, weight: 160 }
-typeof measurements; // object
-
 const logger = () => console.log(name, age, measurements);
 typeof logger; // function
+
+const symbol = Symbol();
+typeof symbol; // symbol
 ```
+
 
 ---
 ## The Types
@@ -52,15 +61,18 @@ Primitives are immutable; the original cannot be altered - _*Primitives are pass
 * [boolean](boolean)
 * [undefined](undefined)
 * [null](null)
-<!-- * [symbol](symbol)] -->
+* [symbol](symbol)
 
 
 ---
 ### __Composite Types__
-The `object` type covers objects, functions and arrays. It might make sense for functions and arrays to be distinct types, but nope, they are all types of objects in the JS language.
+Object is the final type, and only non-primitive type in the language specification;
 
-Compositie types are mutable; you can edit the original - _*Composites are passed by reference, not by value*_.
+[Objects](object)
 
-* [Objects](object)
+The `object` type covers objects, functions and arrays. Many would prefer functions and arrays to be distinct types, but they are actually types of `object`, and are probably best considered sub-types of `object`;
+
 * [Arrays](arrays)
 * [Function](function)
+
+Composite types are mutable; you can edit the original - _*Composites are passed by reference, not by value*_.
