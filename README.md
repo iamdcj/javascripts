@@ -43,7 +43,7 @@ A list of the JavaScript language's core aspects;
 
 ---
 
-##### Resources
+##### Shoulders I stand on;
 
 - [YDKJS](https://github.com/getify/You-Dont-Know-JS)
 - [JS is Sexy](http://javascriptissexy.com/)
