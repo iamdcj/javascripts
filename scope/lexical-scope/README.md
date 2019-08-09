@@ -73,7 +73,9 @@ In the above example the engine will perform a RHS lookup for variable `b`.
 2. It then jumps-up to the initial ancestor lexical environment(`innerInnerScope`) to retrieve the binding; ~~not found~~
 3. It then jumps-up another level to the `lexMe` lexical environment to retrieve `b`; **found**
 
-
+--
+### __TL;DR__
+Lexical Scope is a result of how programmers structure their JS code; the nesting functions/blocks designs the lexical scope, which is cemented at 'compile' time. It is the lexical scope which determines which bindings can be accessed in a certain part of a program.
 
 ---
 ##### Resources
