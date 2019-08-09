@@ -7,25 +7,31 @@ During compilation there is a ‘lexing’ phase which analyses the source code 
 this lexing phase takes the following steps to determine lexical scope;
 
 1. __Analyses source__ - traverses the different parts of the program.
-2. __Generates scopes__ - for each function or block it encounters a new lexical environment(ccope)) is created.
+2. __Generates scopes__ - for each function or block it encounters a new lexical environment(scope)) is created.
 
-Once the engine knows where bindings live in the source code, it can them determine how to/if it can retrieve a binding based on where the program is currently executing.
+Once the engine knows where bindings live in the source code, it can then determine if it can retrieve a binding based on where the program is currently executing.
 
 ---
 
 #### Predictability
-The source code is the source of truth for lexical scope; the programmer generates the scopes, which are then 'fixed' at compile time.
+The source code is the source of truth for lexical scope; the programmer generates the scopes, which are then 'fixed' at compile time, thus providing the programmer(s) with a predictable set of rules for binding resolution;
+__if you wrote the code, you likely know where things live__
 
 > A lookup will always return the value stated in the source code because the relationship between the reference and the binding is fixed at compile time. - K. Simpson
 
 
+##### Building the Scopes
+The following snippet illustrates how the source code structure determines the scopes in a program;
 ```
+// GLOBAL SCOPE
 const a = “A”;
 
 function globalFunction() {
+    // LOCAL SCOPE
     const b = “B”;
 
     function localFunction(c) {
+        // LOCAL SCOPE
         console.log(a, b, c)
     }
 
@@ -38,8 +44,6 @@ globalFunction(); // A B C
 * Bindings `a` and `globalFunction` are part of the global scope.
 * `localFunction` is part of the globalFunction scope.
 * Parameter `c` is part of the localFunction scope. 
-
-We write the program this way, and the engine cemements the rules, thus forming the lexical scope.
 
 
 #### Binding Look-ups
