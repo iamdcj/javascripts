@@ -9,11 +9,11 @@ Information and corresponding code related to the JavaScript language's core asp
 A list of the JavaScript language's core aspects;
 
 - Lexical Structure
-- [Scope](scope)
-  - [Lexical Scope](scope/lexical-scope)
-  - [Closure](scope/closure)
+- [Scope](src/scope)
+  - [Lexical Scope](src/scope/lexical-scope)
+  - [Closure](src/scope/closure)
   - Hoisting
-- [Types](types)
+- [Types](src/types)
   - Coercion
   - By Reference vs. By Value
 - Variables
@@ -28,13 +28,13 @@ A list of the JavaScript language's core aspects;
 - Asynchronicity
   - Promises
   - Async...Await
-- [Objects](objects)
+- [Objects](src/objects)
   - Object-Oriented JavaScript
-  - [Prototypes](objects/prototypes) and [Inheritance](objects/prototypes/inheritance)
+  - [Prototypes](src/objects/prototypes) and [Inheritance](src/objects/prototypes/inheritance)
   - JSON
 - _this_
   - Apply, Call, Bind.
-- [Classes](classes)
+- [Classes](src/classes)
   - Decorators
 - Modules
 - Patterns
@@ -45,7 +45,7 @@ A list of the JavaScript language's core aspects;
 
 ##### Shoulders I stand on;
 
-- [YDKJS](https://github.com/getify/You-Dont-Know-JS)
-- [JS is Sexy](http://javascriptissexy.com/)
-- [Eloquent JS](http://eloquentjavascript.net)
-- [JS.com](https://www.javascript.com)
+- [YDKJS](src/https://github.com/getify/You-Dont-Know-JS)
+- [JS is Sexy](src/http://javascriptissexy.com/)
+- [Eloquent JS](src/http://eloquentjavascript.net)
+- [JS.com](src/https://www.javascript.com)
