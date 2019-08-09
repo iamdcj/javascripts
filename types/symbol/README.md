@@ -16,7 +16,7 @@ const descriptiveSymbol = Symbol('aLabel');
 Symbols are useful for generating unique object keys, and storing private data.
 
 ### Unique Keys
-Each time a property is added to an object using a `sybmol` it will always be unique; there is no danger of naming collisions;
+Each time a property is added to an object using a `symbol` it will always be unique; there is no danger of naming collisions;
 
 ### Private Data
 When used to generate unqiue object keys, the values stored in these keys cannot be easily accessed, adding a layer of privacy that isn't there with regular string keys;
