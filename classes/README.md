@@ -5,23 +5,26 @@ A class represents a particular type of thing, e.g. a Car, a User, a Job.
 
 They are a key component of Object Oriented Programming;
 
-* Classes utilises the prototypal inheritance mechanism - they work pretty much the same, the syntatical sugar makes things clearer.
-* Classes act as blueprints for one of these things.
+* Classes utilises the prototypal inheritance mechanism - they work pretty much the same,  but with some syntatic sugar to provide clarity when utilising Object-Oriented Programming in the language.
+* Classes act as blueprints for a particular type of thing, i.e. a classification of something in the codebase.
 * Classes contain fields and methods which can be referenced throughout a program's lifecycle.
 
-## What does/can a class do?
-Classes can do the following things:
-
-- __Inheritance__: Inherit properties from parent/super classes.
-- __Get/Set__: Retrieve and set properties using get and set methods
-- __Static__ methods can be added, and called on the class itself, not instances of.
-- __Decorators__: Classes and Class members can be decorated to extend functionality.
-
-## Why use Classes?
-They provide a friendlier, more-readable approach to inheritance/OOP.
+All of this can be acheived with regular objects and constructor functions, however `class`es provide a friendlier, more-readable approach to inheritance in JavaScript.
 
 ---
-## Notes
+
+#### Class Inheritance
+A key feature of classes is their friendlier syntax when utilising inheritance in programs;
+
+#### Features
+The clear syntax in regards to inheritance is often the main reason to use classes, however the following features are also very useful when using classes in JS programs;
+- [__Get/Set__](getters-setters): the `get` and `set` accessors can be used within classes.
+- [__Decorators__](decorators): Classes and their internal members can be decorated(`*`) to extend the functionality of a particular class method.
+- __Static__ methods can be added to, and called on the class itself.
+
+
+---
+#### Notes
 The following all apply to JS classes;
 
 * They are not hoisted; you must declare a class before you can reference it.
