@@ -6,9 +6,16 @@ Objects are an unordered collection of members; `property:value` pairs - the pro
 
 The property values are usually pieces of related data, accompanied by functions(methods) which perform a specific task on the related data.
 
+
+#### Anatomy 
+An `object` consistsn of a;
+
+* Namespace - Label for the object literal.
+* Braces - Braces which __encapsulate__ the data within.
+* Members - Collection of `property:value` pairs.
 ```
-const Person = {
-  name: "David"
+const Person // Label = { // Braces
+  name: "David" // Member; property - value pair
   surname: "Jones",
   logFullName(): {
     console.log(`${this.name} ${this.surname`)
@@ -16,7 +23,7 @@ const Person = {
 }
 ```
 
-The above object is made-up of three members; two of which contain related data, and a third member which contains a function which logs information from within the object.
+The above `object` is made-up of three members; two of which contain related data, and a third member which contains a function which logs information from within the object.
 
 *Objects can contain any valid JS datatype as a member value.*
 
