@@ -2,9 +2,9 @@
 
 ### `typeof` object
 
-Objects are an unordered collection of members; `property:value` pairs - the properties, are labels which allow for easy reference to the values; which can be any valid type.
+Objects are an unordered collection of members; `property:value` pairs - the properties are labels which allow for easy reference to the values; which can be any valid type.
 
-The property values are usually pieces of related data, accomponied by functions(methods) which perform a specific task on the related data.
+The property values are usually pieces of related data, accompanied by functions(methods) which perform a specific task on the related data.
 
 ```
 const Person = {
@@ -18,7 +18,7 @@ const Person = {
 
 The above object is made-up of three members; two of which contain related data, and a third member which contains a function which logs information from within the object.
 
-*Objects can contain any valid JS datatype as a member value*
+*Objects can contain any valid JS datatype as a member value.*
 
 #### Methods
 An object method is a function with is stored as the value for a property on the object;
@@ -151,3 +151,23 @@ Dot notation is useful when accessing a property which contains hyphens;
   User['date-of-birth']
   // 05/13/87
   ```
+
+
+
+### Keeping it clean
+Storing values in a common wrapper makes more sense than a bunch of separately initialised bindings, especially when related in some wa - by combining them into object 'buckets' bindings can have a clear relationship by their wrapper name, and can also be better shielded from namespace collisions.
+
+```
+const DavidsGivenName = "David";
+const DavidsFamilyName = "Jones";
+const DavidsAge = 32;
+```
+__vs.__
+
+```
+const David = {
+  givenName: "David",
+  familyName: "Jones",
+  age: 32  
+}
+```
