@@ -155,7 +155,7 @@ Dot notation is useful when accessing a property which contains hyphens;
 
 
 ### Keeping it clean
-Storing values in a common wrapper makes more sense than a bunch of separately initialised bindings, especially when related in some wa - by combining them into object 'buckets' bindings can have a clear relationship by their wrapper name, and can also be better shielded from namespace collisions.
+Storing values in a common wrapper makes more sense than a bunch of separately initialised bindings, especially when related in some wayl; by combining them into object 'buckets', bindings can have a clear relationship by their wrapper name, and can also be better shielded from potential namespace collisions.
 
 ```
 const DavidsGivenName = "David";
