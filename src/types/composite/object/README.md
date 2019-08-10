@@ -6,13 +6,14 @@ Objects are an unordered collection of members; `property:value` pairs - the pro
 
 The property values are usually pieces of related data, accompanied by functions(methods) which perform a specific task on the related data.
 
+*Objects can contain any valid JS datatype as a property value.*
 
 #### Anatomy 
 An `object` consists of the following parts;
 
-* Namespace - Label for the object literal.
-* Braces - Braces which __encapsulate__ the data within.
-* Members - Collection of `property:value` pairs.
+* __Namespace__ - Label for the object literal.
+* __Braces__ - Braces which __encapsulate__ the data within.
+* __Members__ - Collection of `property:value` pairs.
 ```
 const Person // Label = { // Braces
   name: "David" // Member; property - value pair
@@ -23,9 +24,7 @@ const Person // Label = { // Braces
 }
 ```
 
-The above `object` is made-up of three members; two of which contain related data, and a third member which contains a function which logs information from within the object.
-
-*Objects can contain any valid JS datatype as a member value.*
+The above `object` is encapsulates three members; two of which contain related data, and a third member which contains a function which logs information from within the object, functions stored as values of properties are known as **methods**.
 
 #### Methods
 An object method is a function with is stored as the value for a property on the object;
@@ -42,7 +41,7 @@ DavidJones.logName(); // David Jones
 
 Methods are automatically bound to the object itself, i.e. the `this` keyword will point to the wrapping object(context), allowing for direct access to the wrapping object's other members.
 
-### __Defining Members__
+#### __Defining Members__
 Adding members to an object literal during the initial creation can be achieved by stating the `property`, followed by the value, separated by a colom`:`;
 
 ```
@@ -81,7 +80,7 @@ console.log(objLit)
 ```
 
 
-### __Accessing Members__
+#### __Accessing Members__
 Accessing object properties or methods can be done using dot or bracket notation;
 
 __Dot Notation accessing__
@@ -161,7 +160,7 @@ Dot notation is useful when accessing a property which contains hyphens;
 
 
 
-### Keeping it clean
+#### Keeping it clean
 Storing values in a common wrapper makes more sense than a bunch of separately initialised bindings, especially when related in some wayl; by combining them into object 'buckets', bindings can have a clear relationship by their wrapper name, and can also be better shielded from potential namespace collisions.
 
 ```
