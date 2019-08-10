@@ -41,6 +41,24 @@ DavidJones.logName(); // David Jones
 
 Methods are automatically bound to the object itself, i.e. the `this` keyword will point to the wrapping object(context), allowing for direct access to the wrapping object's other members.
 
+#### Benefits of Encapsulation
+Storing values in a common wrapper makes more sense than a bunch of separately initialised bindings, especially when there is a relationship; by encapsulating values within object 'buckets', bindings have a clear relationship, cemented by the object namespace, as a result these bindings are shielded from potential namespace collisions.
+
+```
+const DavidsGivenName = "David";
+const DavidsFamilyName = "Jones";
+const DavidsAge = 32;
+```
+__vs.__
+
+```
+const David = {
+  givenName: "David",
+  familyName: "Jones",
+  age: 32  
+}
+```
+
 #### __Defining Members__
 Adding members to an object literal during the initial creation can be achieved by stating the `property`, followed by the value, separated by a colom`:`;
 
@@ -160,20 +178,3 @@ Dot notation is useful when accessing a property which contains hyphens;
 
 
 
-#### Keeping it clean
-Storing values in a common wrapper makes more sense than a bunch of separately initialised bindings, especially when related in some wayl; by combining them into object 'buckets', bindings can have a clear relationship by their wrapper name, and can also be better shielded from potential namespace collisions.
-
-```
-const DavidsGivenName = "David";
-const DavidsFamilyName = "Jones";
-const DavidsAge = 32;
-```
-__vs.__
-
-```
-const David = {
-  givenName: "David",
-  familyName: "Jones",
-  age: 32  
-}
-```
