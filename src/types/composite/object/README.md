@@ -8,7 +8,7 @@ The property values are usually pieces of related data, accompanied by functions
 
 
 #### Anatomy 
-An `object` consistsn of a;
+An `object` consists of the following parts;
 
 * Namespace - Label for the object literal.
 * Braces - Braces which __encapsulate__ the data within.
