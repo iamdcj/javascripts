@@ -56,23 +56,23 @@ A primitive type is any type which is not an object - these types have no method
 
 Primitives are immutable; the original cannot be altered - _*Primitives are passed by value, not by reference*_.
 
-* [number](number)
-* [string](string)
-* [boolean](boolean)
-* [undefined](undefined)
-* [null](null)
-* [symbol](symbol)
+* [number](primitives/number)
+* [string](primitives/string)
+* [boolean](primitives/boolean)
+* [undefined](primitives/undefined)
+* [null](primitives/null)
+* [symbol](primitives/symbol)
 
 
 ---
 ### __Composite Types__
 Object is the final type, and only non-primitive type in the language specification;
 
-[Objects](object)
+[Objects](composite/object)
 
 The `object` type covers objects, functions and arrays. Many would prefer functions and arrays to be distinct types, but they are actually types of `object`, and are probably best considered sub-types of `object`;
 
-* [Arrays](arrays)
-* [Function](function)
+* [Arrays](composite/arrays)
+* [Function](composite/function)
 
 Composite types are mutable; you can edit the original - _*Composites are passed by reference, not by value*_.
