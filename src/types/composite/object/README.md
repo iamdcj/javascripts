@@ -52,9 +52,11 @@ objLit.proppyWoppy = 19;
 
 objLit["testProp"] = null;
 
+objLit["logger"] = function() { console.log(this.prop) };
+
 console.log(objLit);
 
-// {prop: "value", anotherProp: Array(2), test: "another", proppyWoppy: 19, testProp: null}
+// { prop: "value", anotherProp: Array(2), test: "another", proppyWoppy: 19, testProp: null, logger: ƒ} }
 ```
 
 Using bracket notation allows for dynamic member addition, i.e. you can use a string value to define the member name, followed by whatever value;
