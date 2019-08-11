@@ -14,3 +14,9 @@ const user = {
 
 Objects usually encapsulate related pieces of data and methods, which is a big convenience for programmers as it this organisatiion allows us to easily access related data and functionality via the object namespace. 
 
+
+### Classes
+
+#### Instantiation
+
+#### Inheritance
