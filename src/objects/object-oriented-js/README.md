@@ -28,7 +28,7 @@ Essentially just a fancy word for 'storing things' in a thing; `object`s encapsu
 ## Classes
 A `class` represents a particular type of thing in an application, e.g. a car, an animal or say a **person** - **a classification of something**. 
 
-Classes act as templates/blueprints for any instance of that particular thing we create in our program.
+Classes act as templates for any instance of that particular thing we create in our program; classes are the blueprints, __objects are created from the blueprint__.
 
 People(users) are often something you see in a program, and they play nice with object-oriented programming; you will often need to store a select set of information about a person, or multiple persons; name, age, gender, and you will want some way to print this all in a nice string, a biography.
 
@@ -53,7 +53,7 @@ This is the process of modelling a larger, more complicated thing into a more ba
 
 
 ### Instantiation
-Once we have our base class, our template so to speak, we can then begin create multiple examples of that particular thing/class - this is known as instantiation; creating instances of a thing from a base class.
+Once we have our base class, our template so to speak, we can then begin create multiple examples of that particular thing/class - this is known as instantiation; creating instances(objects) of a thing from a base class.
 
 Object instances are created via the base class' constructor; a function which generates an instance of a thing whenever it is ran;
 
@@ -118,7 +118,7 @@ const PlayersClass = {
 }
 ```
 
-The ability to reuse common code across multiple classes prevents code duplication, and provides classes and their subclasses  with the ability to extend whenever necessary.
+The ability to reuse common code across multiple classes prevents code duplication, and provides classes and their subclasses  with the ability to extend whenever necessary; __*we can generate instances which have unique features from a class, but common features from a parent class.*__
 
 ### Polymorphism
 The process of creating multiple object instances with the same set of underlying functionality, which is derived from a base class, is known as `Polymorphism`.
