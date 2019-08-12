@@ -5,7 +5,7 @@ Inheritance in programming a mechanism which allows one thing to successfully ut
 
 
 ### How it works in JS?
-JS is a prototype-based language, and inheritance is achieved via prototypes;
+JS is a prototype-based language, and inheritance is achieved via [prototypes](prototypes);
 
 > Objects have an internal `prototype` property which points an object; a prototype object. These prototype objects act as templates which other objects can inherit properties and methods from. - [MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
 
