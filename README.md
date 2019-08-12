@@ -30,7 +30,8 @@ A list of the JavaScript language's core aspects;
   - Async...Await
 - [Objects](src/objects)
   - Object-Oriented JavaScript
-  - [Prototypes](src/objects/object-oriented-js/inheritance) and [Inheritance](src/objects/object-oriented-js/inheritance/prototypes)
+  - [Inheritance](src/objects/object-oriented-js/inheritance/prototypes) 
+    - [Prototypes](src/objects/object-oriented-js/inheritance)
   - JSON
 - _this_
   - Apply, Call, Bind.
