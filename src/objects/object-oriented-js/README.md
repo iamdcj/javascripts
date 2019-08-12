@@ -55,21 +55,69 @@ This is the process of modelling a larger, more complicated thing into a more ba
 ### Instantiation
 Once we have our base class, our template so to speak, we can then begin create multiple examples of that particular thing/class - this is known as instantiation; creating instances of a thing from a base class.
 
+Object instances are created via the base class' constructor; a function which generates an instance of a thing whenever it is ran;
+
 ```
 const PersonA = new Person("David", "Jones", 32, "Male");
+```
 
+```
+// Person A
 {
   givenName: "David",
   familyName: "Jones",
   age: 32,
   gender: "Male",
 }
+```
+We can create numerous instances from the base class using its constructor; the instance is instantiated from the base class.
+```
+const PersonB = new Person("John", "Yossarian", 32, "Male"); // Person B is instantiated from Person
+{
+  givenName: "John",
+  familyName: "Yossarian",
+  age: 28,
+  gender: "Male",
+}
 
 ```
 
-The instances we create in our program utilise the functionality declared in the base class, but become their own identifiable 'thing' in the program.
-
+The instances we create in our program inherit the functionality declared in the base class, but become their own identifiable 'thing' in the program, this is useful when we want to extend a new class, from an already existing 'base' class - this extension is achieved via `inheritance`. 
 
 ### Inheritance
+Inheritance is the process of one thing gaining features from another thing, in this particular context we are talking about a class inheriting features from another class. In OOP, inheritance is very common, and it is a powerful feature; if we know that class X will use some/all of the code from class Y then it makes sense for X to inherit the features/data from Y. 
 
-##### Polymorphism
+We have our base `Person` class;
+```
+const PersonClass = {
+  givenName: string,
+  familyName: string,
+  age: number,
+  gender: string,
+  printBio(): {
+    `this.name, this.age, this.gender`
+  }
+}
+```
+But we want a more specialised class, a class for Players - this class will use all the features from the `Parent` class, but will also have some additional functionality pertaining to Players only.
+```
+const PlayersClass = {
+  ...PersonsClassFeatures, // inherit everything from Person
+  position: string, // additional/new
+  club: string, // additional/new
+  value: number // additional/new
+}
+```
+
+We can also do the same thing for a `Coach` class; inherit from the Person base class;
+```
+const PlayersClass = {
+  ...PersonsClassFeatures, // inherit everything from Person
+  club: string, // additional/new
+  specialism: string // additional/new
+}
+```
+
+The ability to reuse common code across multiple classes prevents code duplication, and provides classes and their subclasses  with the ability to extend whenever necessary.
+
+The process of extending a new type of class from base class via inheritance is known as `Polymorphism`, i.e. multiple objects/classes are extended with the same set of features from a common object/class.
