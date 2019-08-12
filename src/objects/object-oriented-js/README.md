@@ -127,6 +127,6 @@ In the above snippets we have `Players` and `Coaches`; any instances of these cl
 
 
 ---
-#### Resources
-[MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
-[charanrajgolla - dev.to](https://dev.to/charanrajgolla/beginners-guide---object-oriented-programming)
+#### References
+* [MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
+* [charanrajgolla - dev.to](https://dev.to/charanrajgolla/beginners-guide---object-oriented-programming)
