@@ -48,7 +48,7 @@ The above is a crude example of a `Person` class; we store a subset of informati
 
 The process of taking a select set of data for a particular thing, opposed ot __all__ the possible information for a thing is called `abstraction`.
 
-#### Abstraction
+### Abstraction
 This is the process of modelling a larger, more complicated thing into a more basic representation by cherry-picking only the things we need to know about that thing - for example, we know that there is a multitude of information we could derive from a `Person`, however we may only need to store/work with a subset of that information in our program; **abstract away the things that are relevant to the application, and dismiss everything else.**
 
 
@@ -120,4 +120,13 @@ const PlayersClass = {
 
 The ability to reuse common code across multiple classes prevents code duplication, and provides classes and their subclasses  with the ability to extend whenever necessary.
 
-The process of extending a new type of class from base class via inheritance is known as `Polymorphism`, i.e. multiple objects/classes are extended with the same set of features from a common object/class.
+### Polymorphism
+The process of creating multiple object instances with the same set of underlying functionality, which is derived from a base class, is known as `Polymorphism`.
+
+In the above snippets we have `Players` and `Coaches`; any instances of these classes will have the  features/data from the 'Person' class, thus every `Player` and 'Coach` instance inherits from the 'Person` class. 
+
+
+---
+#### Resources
+[MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object-oriented_JS)
+[charanrajgolla - dev.to](https://dev.to/charanrajgolla/beginners-guide---object-oriented-programming)
