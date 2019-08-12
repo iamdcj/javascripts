@@ -104,9 +104,7 @@ plusOne(2); "The result is: 3"
 In the above example the user does not need to access the `adder` function, the only need to know about the result, thus only the result function is returned from the lexicel environment. The `a` parameter is passed and stored within `AnAPI`, and is used as an initial state binding which can be used whenever the user invokes the `plusOne` method.
 
 ##### Currying introduction
-The above approach is an example of `currying`; you essentially set an initial argument value when you store the parent function, then when you invoked the return function you pass an argument which references the initial argument, providing an initial state which can be further updated.
-
-
+The above approach is an example of `currying`; you essentially set an initial argument value when you store the parent function, then when you invoked the return function you pass an argument which references the initial argument, usually to perform some sort of computation.
 
 
 ---
