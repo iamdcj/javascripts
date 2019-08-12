@@ -1,4 +1,4 @@
-# Object-Oriented Programming in JavaScript
+# Object-Oriented Programming: Basics (in JavaScript)
 
 Object-Oriented Programming is an approach to engineering which utilises objects in a programming language to 'model' things in our applications that exist in the real world - we can represent actual things in our programs using objects, and create eassy-access to functionality and data.
 
