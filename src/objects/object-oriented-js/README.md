@@ -121,9 +121,9 @@ const PlayersClass = {
 The ability to reuse common code across multiple classes prevents code duplication, and provides classes and their subclasses  with the ability to extend whenever necessary; __*we can generate instances which have unique features from a class, but common features from a parent class.*__
 
 ### Polymorphism
-The process of creating multiple object instances with the same set of underlying functionality, which is derived from a base class, is known as `Polymorphism`.
+The process of creating multiple object instances with the same set of underlying functionality, which is derived from a base class, but with additional features for a specific class, is known as `Polymorphism`.
 
-In the above snippets we have `Players` and `Coaches`; any instances of these classes will have the  features/data from the 'Person' class, thus every `Player` and 'Coach` instance inherits from the 'Person` class. 
+In the above snippets we have the `Players` and `Coaches` classes; any instance of these classes will have the features/data from their respective classes, but also the features from the parent/base 'Person' class.
 
 
 ---
