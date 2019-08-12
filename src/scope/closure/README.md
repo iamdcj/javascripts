@@ -108,4 +108,6 @@ The above approach is an example of `currying`; you essentially set an initial a
 
 
 ---
-[JavaScript Closures: Explanations and Open Source Examples - oneminutejs](https://medium.com/@oneminutejs/javascript-closures-explanations-and-open-source-examples-a3731848f658)
+##### References and resources
+* [@dis_is_patrick - Medium](https://medium.com/@dis_is_patrick/practical-uses-for-closures-c65640ae7304)
+* [JavaScript Closures: Explanations and Open Source Examples - oneminutejs](https://medium.com/@oneminutejs/javascript-closures-explanations-and-open-source-examples-a3731848f658)
