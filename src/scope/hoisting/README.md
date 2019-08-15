@@ -1,56 +1,60 @@
-# Hoisting?
-Hoisting is a result of declarations being assessed at compile time; declarations are essentially moved to the top of the code/scope.
+# Hoisting
+Hoisting is something which occurs during the compiling process of an application - bindings; variables and functions, are the first things to be processed, completely separate to the execution phase.
 
-At a high-level the compiler will do the following things to perform hoisting;
+The JS engine will assess any declarations first, i.e. it will analyze the left-hand side statements before touching the right-hand side initializers. The result of this processing is known as _hoisting_; binding declarations are essentially moved to the top of their lexical environment.
 
-1. assess an environment, 
-2. determine which declarations  live in the environment
-3. create a binding at the top of the block for declaration
-  3.1 Variables are initialised to undefined
+
+__At a high-level the compiler will do the following things to perform hoisting__;
+
+1. Assess the lexical environment.
+2. Determine which declarations live in the lexical environment;
+3. Create a binding at the top of the lexical environment for the declarations;
+  3.1 Variables are initialised to `undefined`
   3.2 Functions are initialised with their actual value 
 
-—
 
-
+## Hoisting Examples
 The following examples demonstrate how hoisting occurs with function declarations and variables, but not function expressions;
 
-1. Basic Example
-This example gives a breakdown of the sort of thing which occurs to result in hoisting.
 
-SOURCE CODE
-console.log( a );
+### __Example 1__ - Basic variable hoisting 
+__Source__
+The `name` declaration lives before the initialization in this snippet, leading some to think the log would return `undefined`;
+```
+name = "David"
 
-var a = “foo”;
+var name;
 
-COMPILATION
-The declaration is handled first; moved to the top of the block.
-var a;
+console.log(name); // David
+```
+however, the `name` declaration is handled during the compile phase, and as a result is 'moved-up' to the top of the scope, above the value assignment(initialization)
 
-EXECUTION
-Then the log and assignment is handled at runtime.
-console.log( a ); // undefined
+__Compilation__
+```
+var name;
+```
+when it comes to execution the `name` binding has an initializer because assignments and execution code is left in the same spot is as authored;
+__Execution__
+```
+name = "David"
 
-a = “foo”;
+console.log(name); // David
+```
+thus the log will print tehe initialized value because the declaration was 'hoisted' above the assignment before runtime.
 
-The fact that the log doesn’t throw and error demonstrates the hoisting does occur; 
-The RHS look-up in the console.log occurs before the declaration in the assignment, but when it comes to run-time a is essentially above the log, hence  ‘undefined’ being returned.
-
-HOISTING ONLY RE-ARRANGES DECLARATIONS
-
-2. Lexical Example 
+### __Example 2__ - Function Declarations
 This example demonstrates hoisting using function declarations, AND how hoisting occurs per-scope;
 
-SOURCE CODE
+__Source__
 The function call for foo() lives above the actual function declaration.
+```
 foo();
 
 function foo() {
         console.log( a );
-
-
         var a = 2;
 }
-
+```
 COMPILATION
 However at compilation time the function declaration is hoisted to the top of the scope.
 function foo
@@ -67,7 +71,8 @@ function foo() {
 }
 
 
-3. Function Expressions
+
+#### __Example 3__ - Function Expressions
 The following example demonstrates that hoisting is a declaration only construct; 
 function expressions do not get hoisted, that is the variable declaration will be handled, but handled like a regular variable.
 

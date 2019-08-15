@@ -1,6 +1,6 @@
 # Javascripts
 
-Information and corresponding code related to the JavaScript language's core aspects.
+Information and code(ES5 & 6) related to the JavaScript language's core aspects.
 
 (If you can't read my writing, read someone else's, they are probably smarter anyways.)
 
@@ -29,9 +29,8 @@ A list of the JavaScript language's core aspects;
   - Promises
   - Async...Await
 - [Objects](src/objects)
-  - [Object-Oriented JavaScript](src/objects/object-oriented-js) 
-    - [Inheritance](src/objects/object-oriented-js/inheritance/prototypes) 
-      - [Prototypes](src/objects/object-oriented-js/inheritance)
+  - [Object-Oriented JavaScript](src/objects/object-oriented-programming) 
+    - [Inheritance](src/objects/object-oriented-programming/inheritance/prototypes) and [Prototypes](src/objects/object-oriented-programming/inheritance)
   - JSON
 - _this_
   - Apply, Call, Bind.
