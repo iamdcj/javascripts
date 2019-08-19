@@ -1,4 +1,6 @@
-import { moduleLogger } from './module-logger';
+import {
+  moduleLogger
+} from './module-logger';
 
 // GLOBAL LEXICAL ENVIRONMENT
 // (NO CLOSING ENVIRONMENT)

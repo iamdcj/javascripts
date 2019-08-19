@@ -1,23 +1,24 @@
 # Javascripts
 
-Information and code(ES5 & 6) related to the JavaScript language's core aspects.
+Information and code(ES5 & 6) related to the JavaScript language.
 
 (If you can't read my writing, read someone else's, they are probably smarter anyways.)
 
-## Core Aspects
+## Contents
 
-A list of the JavaScript language's core aspects;
+[Overview](src/overview)
+
+### Core aspects
 
 - Lexical Structure
 - [Scope](src/scope)
   - [Lexical Scope](src/scope/lexical-scope)
   - [Closure](src/scope/closure)
-  - Hoisting
+  - [Hoisting](src/scope/hoisting)
 - [Types](src/types)
   - Coercion
   - By Reference vs. By Value
 - Variables
-  - Let and Const
 - Statements
 - Expressions
 - Operators
@@ -29,7 +30,7 @@ A list of the JavaScript language's core aspects;
   - Promises
   - Async...Await
 - [Objects](src/objects)
-  - [Object-Oriented JavaScript](src/objects/object-oriented-programming) 
+  - [Object-Oriented JavaScript](src/objects/object-oriented-programming)
     - [Inheritance](src/objects/object-oriented-programming/inheritance/prototypes) and [Prototypes](src/objects/object-oriented-programming/inheritance)
   - JSON
 - _this_
@@ -40,6 +41,7 @@ A list of the JavaScript language's core aspects;
 - Patterns
 - Dates
 - Execution
+- Events
 
 ---
 
