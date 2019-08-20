@@ -20,13 +20,19 @@ JavaScript has classically been used as a client-side language, exclusively in w
 
 ### **Multi-paradigm**
 
-You can code functionality, imperatively and object-oriented when developing JavaScript programs.
+You can use functional, imperativel, event-driven and object-oriented paradigms when developing JavaScript programs.
 
-#### Object-oriented Programming via Prototypes
+#### Object-oriented Programming
 
 JavaScript is a prototype-based language, and inheritance is achieved via prototype objects.
 
 [OOP in JS >](core/objects/object-oriented-programming)
+
+#### Functional
+
+#### Imperative
+
+#### Event Driven
 
 ### **Dynamic**
 
