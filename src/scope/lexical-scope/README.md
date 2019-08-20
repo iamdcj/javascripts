@@ -5,12 +5,12 @@ Lexical Scope is the scoping model used by JavaScript; it determines the scope o
 ### Lexing
 
 During compilation there is a ‘lexing’ phase which analyses the source code the author has written -
-the engine's lexer takes the following steps to determine lexical scope during the lexing phase;
+the engine's lexer takes the following steps to determine lexical scope of the program;
 
 1. **Analyses source** - traverses the different parts of the program.
 2. **Generates scopes** -
    1. generates global lexical environment.
-   2. for each function or block it encounters a new lexical environment(scope)) is created.
+   2. for each function or block it encounters a new local lexical environment(scope) is created.
 
 ---
 
