@@ -4,9 +4,9 @@ Information and code(ES5 & 6) related to the JavaScript language.
 
 (If you can't read my writing, read someone else's, they are probably smarter anyways.)
 
-## Contents
-
 [Overview](overview)
+
+---
 
 ### Core aspects
 
