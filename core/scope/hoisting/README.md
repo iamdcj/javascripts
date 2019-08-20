@@ -2,7 +2,7 @@
 
 The source bindings; variables and functions, are the first things to be evaluated by the engine, this evaluations occurs completely separate to the execution phase - the engine will analyze the left-hand side declarations, e.g. `var foo` before touching the right-hand side initializers, e.g. `"bar"`, and as a result of the valuation process the bindings in a particular lexical environment are essentially moved to the top of that lexical environments, this is known as **_hoisting_**.
 
-**High-Level Breakdown of how Hoisting occers**;
+**How hoisting occurs**;
 
 1. Assess the lexical environment.
 2. Determine which declarations live in the lexical environment;

@@ -6,16 +6,17 @@ Information and code(ES5 & 6) related to the JavaScript language.
 
 ## Contents
 
-[Overview](src/overview)
+[Overview](overview)
 
 ### Core aspects
 
 - Lexical Structure
-- [Scope](src/scope)
-  - [Lexical Scope](src/scope/lexical-scope)
-  - [Closure](src/scope/closure)
-  - [Hoisting](src/scope/hoisting)
-- [Types](src/types)
+- Execution
+- [Scope](core/scope)
+  - [Lexical Scope](core/scope/lexical-scope)
+  - [Closure](core/scope/closure)
+  - [Hoisting](core/scope/hoisting)
+- [Types](core/types)
   - Coercion
   - By Reference vs. By Value
 - Variables
@@ -25,29 +26,28 @@ Information and code(ES5 & 6) related to the JavaScript language.
 - Functions
   - IIFE
   - Callbacks
-  - Currying
+  - HOF & Currying
+- Events
 - Asynchronicity
   - Promises
   - Async...Await
-- [Objects](src/objects)
-  - [Object-Oriented JavaScript](src/objects/object-oriented-programming)
-    - [Inheritance](src/objects/object-oriented-programming/inheritance/prototypes) and [Prototypes](src/objects/object-oriented-programming/inheritance)
+- [Objects](core/objects)
+  - [Object-Oriented JavaScript](core/objects/object-oriented-programming)
+    - [Inheritance](core/objects/object-oriented-programming/inheritance/prototypes) and [Prototypes](core/objects/object-oriented-programming/inheritance)
   - JSON
 - _this_
   - Apply, Call, Bind.
-- [Classes](src/classes)
+- [Classes](core/classes)
   - Decorators
 - Modules
 - Patterns
 - Dates
-- Execution
-- Events
 
 ---
 
 ##### Shoulders I stand on;
 
-- [YDKJS](src/https://github.com/getify/You-Dont-Know-JS)
-- [JS is Sexy](src/http://javascriptissexy.com/)
-- [Eloquent JS](src/http://eloquentjavascript.net)
-- [JS.com](src/https://www.javascript.com)
+- [YDKJS](core/https://github.com/getify/You-Dont-Know-JS)
+- [JS is Sexy](core/http://javascriptissexy.com/)
+- [Eloquent JS](core/http://eloquentjavascript.net)
+- [JS.com](core/https://www.javascript.com)

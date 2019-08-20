@@ -19,6 +19,6 @@ JavaScript possesses two levels of scope, and depending on where and how we decl
 
 - [**Global Scope**](scope-levels/global) - code which can be accessed at all points of a program, i.e. lives in the global .
 
-- [**Local Scope**](scope-levels/global) - code which is stored inside of one of the following creates its own local [lexical environment](./lexical-environment), and is not part of the global [lexical environment](./lexical-environment);
-  - Function
-  - Block
+- [**Local Scope**](scope-levels/local) - code which is stored inside of one of the following creates its own local [lexical environment](./lexical-environment), and is not part of the global [lexical environment](./lexical-environment);
+  - [Function](scope-levels/local/function)
+  - [Block](scope-levels/local/block)
