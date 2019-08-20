@@ -4,15 +4,15 @@ The JavaScript is a fully-fledged programming language(ignore the haters), and p
 
 ### **Lightweight**
 
-JavaScript is a fairly simple programming language, without proper types, making it lightweight and portable.
+JavaScript is a fairly simple programming language without proper types, making it lightweight and portable.
 
 ### **High-Level**
 
-Something about abstraction from the machine.
+JavaScript is highly abstracted from the machine code/instructions, making it a very programmer/human-friendly language to engineer.
 
 ### **Interpreted/JIT-compiled**
 
-Sigh.
+JavaScript is classicaly perceived to be an interpreted language, however newer engines such as Chrome's V8, perform just-in-time compilation.
 
 ### **Cross-platform**
 
