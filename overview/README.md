@@ -8,15 +8,15 @@ JavaScript is a fairly simple programming language without proper types, making 
 
 ### **High-Level**
 
-JavaScript is highly abstracted from the machine code/instructions, making it a very programmer/human-friendly language to engineer.
+JavaScript is highly abstracted from the machine code/instructions, making it a very programmer-friendly language to work with when developing applications.
 
 ### **Interpreted/JIT-compiled**
 
-JavaScript is classicaly perceived to be an interpreted language, however newer engines such as Chrome's V8, perform just-in-time compilation.
+JavaScript is classicaly perceived to be an interpreted language, however newer engines such as Chrome's V8 perform Just-In-Time compilation; the code is not compiled ahead of time into a bytecode, instead it is compiled on-the-fly as the code is being executed.
 
-### **Cross-platform**
+### **Cross-Platform**
 
-JavaScript has classically been used as a client-side language, exclusively in web browsers, however over the years JavaScript has crossed platforms and started to be used for back-end development.
+JavaScript has classically been used as a client-side language, exclusively in web browsers, however over the years JavaScript has crossed platforms and started to be used for back-end development, see[Node](https://nodejs.org/en/)
 
 ### **Multi-paradigm**
 
@@ -24,7 +24,7 @@ You can use functional, imperativel, event-driven and object-oriented paradigms 
 
 #### Object-oriented Programming
 
-JavaScript is a prototype-based language, and inheritance is achieved via prototype objects.
+JavaScript is a prototype-based language, and inheritance is achieved via `prototype` objects.
 
 [OOP in JS >](core/objects/object-oriented-programming)
 
@@ -36,7 +36,7 @@ JavaScript is a prototype-based language, and inheritance is achieved via protot
 
 ### **Dynamic**
 
-JavaScript doesn't have static/stric typing, i.e. variables do not need to be assigned at type when being declared; _**the values have types, not the variable itself.**_
+JavaScript doesn't have static/strict typing, i.e. variables do not need to be assigned a type when being declared; **_in JavaScript the values have types, not the variable itself._**
 
 ---
 
