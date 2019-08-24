@@ -16,7 +16,7 @@ JavaScript is classicaly perceived to be an interpreted language, however newer 
 
 ### **Cross-Platform**
 
-JavaScript has classically been used as a client-side language, exclusively in web browsers, however over the years JavaScript has crossed platforms and started to be used for back-end development, see[Node](https://nodejs.org/en/)
+JavaScript has classically been used as a client-side language, exclusively in web browsers, however over the years JavaScript has crossed platforms and started to be used for back-end development, mainly using via the [NodeJS](https://nodejs.org/en/) runtime.
 
 ### **Multi-paradigm**
 
