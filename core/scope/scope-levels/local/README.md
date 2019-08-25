@@ -1,13 +1,9 @@
 # Local Scope
 
-### What is it?
+Any bindings which do not live in the global lexical environment are part of a local lexical environment.
 
-Any bindings which do not live in the global environment are in a local scope; they are part of a local lexical environment.
+There are two distinct types of local scope; **function scope**, and **block scope**.
 
-### How to use it?
+- **[Function Scope](function)** - any code that is wrapped in a function is part of that function’s scope.
 
-Block scoping can be achieved using let and const statements.
-
-### Why use it?
-
-Block scoping allows for code to be scoped to a certain part of the program, much like function scope.
+- **[Block Scope](block)** - `const` and `let` declarations create block scopes when declared inside a `{}` block.
