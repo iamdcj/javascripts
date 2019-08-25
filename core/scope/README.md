@@ -1,13 +1,12 @@
 # Scope
 
-## What is scope?
+Usually when talking about scope, we are referring to how we lookup and retrieve code in our applications.
 
-Scope is how we look for code in our applications; it defines what code is available at a given point in a program, e.g.
-what bindings can be accessed inside function X when it is executing.
+It defines what bindings are accessible within the current execution context, i.e. what bindings can be successfully retrieved inside function X when it is running.
 
 **_Scope is the set of rules which govern where bindings are stored and retrieved._**
 
-#### How it happens
+#### Defining the Scope(s)
 
 The scopes of a program are determined by the author, that is the code they create informs the engine of the program's intended scopes, then the scopes are cemented during the compilation/interpretation phase of the program’s lifecycle; [scope generation](01-generation).
 
