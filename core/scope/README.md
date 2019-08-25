@@ -7,12 +7,13 @@ what bindings can be accessed inside function X when it is executing.
 
 **_Scope is the set of rules which govern where bindings are stored and retrieved._**
 
-#### How is scope created?
+#### How it happens
 
-The scopes of a program are determined by the author, that is the code they create informs the engine of the program's intended scopes, then the scopes are cemented during the compilation/interpretation phase of the program’s lifecycle; [scope generation](01-generation) 
+The scopes of a program are determined by the author, that is the code they create informs the engine of the program's intended scopes, then the scopes are cemented during the compilation/interpretation phase of the program’s lifecycle; [scope generation](01-generation).
 
 Scope defined by the authored source code structure is known as [lexical scope](./lexical-scope).
 
+Once the scopes have been generated using the scoping rules, we can then executed our scoped code; [execution of scoped code](01-execution).
 
 #### Scope Levels
 
