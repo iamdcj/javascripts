@@ -9,14 +9,14 @@ what bindings can be accessed inside function X when it is executing.
 
 #### How is scope created?
 
-The scopes of a program are determined by the author, that is the code they create informs the engine of the program's intended scopes, then the scopes are cemented during the compilation/interpretation phase of program’s lifecycle: [scope generation](01-generation) 
+The scopes of a program are determined by the author, that is the code they create informs the engine of the program's intended scopes, then the scopes are cemented during the compilation/interpretation phase of the program’s lifecycle; [scope generation](01-generation) 
 
 Scope defined by the authored source code structure is known as [lexical scope](./lexical-scope).
 
 
 #### Scope Levels
 
-JavaScript possesses two levels of scope, and depending on where and how we declare them, our behinds will belong to either one of these scopes;
+JavaScript possesses two levels of scope, and depending on where and how we declare them, our behinds will belong to either one of these scopes:
 
 - [**Global Scope**](scope-levels/global) - code which can be accessed at all points of a program, i.e. lives in the global .
 
