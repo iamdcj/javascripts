@@ -6,27 +6,54 @@ The engine does not bother with formal, LHS declarations, they have been taken c
 
 ## Nested Scopes
 
-The compilation phase creates the buckets of declarations(lexical environments), and each time a function is encountered, a new scope is created, thus creating what is known as scope chain; a look-up chain which contains the variables for each scope present in the chain.
+The compilation phase creates the buckets of declarations(lexical environments), and each time a function is encountered, a new scope is created, thus creating what is known as the scope chain; a look-up chain which contains the variables for each scope present in the chain.
 
 If we nest functions inside other functions the scope chain grows larger, adding each scope to the chain.
 
-When we attempt a look-up for LHS or RHS, we start looking in the current scope, if what we need cannot be found,
-we traverse up the chain until we either find what we require, or we get a reference error\*, see lexical scope
+When we attempt a look-up for **LHS** or **RHS**, we start looking in the current scope, if what we need cannot be found, we traverse up the chain until we either find what we require, or we get a reference error.
 
 ### Binding look-up Process
 
 The following details the process when the engine executes the scoped code;
 
 1. Assess each line in the source code
-2. Check executing scope for the presence of an encountered LHS or RHS
+2. Check executing scope for the presence of **LHS** and **RHS**.
 
-   - LHS (assignment) > Lookup LHS in scope in order to resolve a target for the value > IF exists; assign value to LHS target > ELSE; look in parent scopes for LHS - STRICT: throw referenceError if never found - SLOPPY: create global variable using LHS and assign value if LHS does not exist in parent scopes.
+#### **LHS (assignment)**
 
-   - RHS (retrieval) > Lookup RHS in scope in order to retrieve value > IF exists; perform action > ELSE; look in parent scopes for LHS - Failure: throw referenceError if never found - Success: perform action
+Lookup for a **LHS** in the current lexical environment in order to resolve a target for the value;
+
+##### IF found in current scope
+
+assign value to **LHS** target
+
+##### ELSE if not found in current scope;
+
+**Look in parent scopes for LHS**
+
+If the lookup is unsuccessful after traversing all available scopes, there will be one of two outcomes;
+
+1. **STRICT**: throw referenceError if never found
+2. **SLOPPY**: create global variable using LHS and assign value if LHS does not exist in parent scopes.
+
+#### **RHS (retrieval)**
+
+Lookup **RHS** in scope in order to retrieve value;
+
+##### IF found in current scope
+
+- **Success**: do someting with value.
+
+##### ELSE if not found in current scope;
+
+**Look in parent scopes for LHS**
+
+- **Failure**: throw referenceError
+- **Success**: do someting with value
 
 #### LHS Lookups
 
-When the engine performs LHS look-ups, the intention is to assign values to the declaration; initialise the binding
+When the engine performs **LHS** look-ups, the intention is to assign values to the declaration; initialise the binding
 
 ```
 const foo = “bar” // check if LHS foo exists in global scope, it does, initialise with value
@@ -41,11 +68,11 @@ The above snippet handles the the initialisation of bindings during the executio
 
 1. LINE 1 - assign value to target foo present in global scope
 2. LINE 4 - assign value to target foo present in global scope
-3. LINE 5 - cannot find target in current scope, nor parent scope
+3. LINE 5 - cannot find target in current scope, nor parent scope.
 
 #### RHS Lookups
 
-When the engine performs a RHS look-up, the intention is to retrieve the value of the binding.
+When the engine performs a **RHS** look-up, the intention is to retrieve the value of the binding.
 
 ```
 function foo(a) {
@@ -53,22 +80,16 @@ function foo(a) {
         b = a;
 }
 
-foo( 2 );
+foo(a);
 ```
 
-The above snippet contains a number of RHS look-ups;
+The above snippet contains a number of **RHS** look-ups;
 
-1. LINE 1 - var c = foo( 2 ); - retrieves the function foo
-2. var b = b; - retrieves the value of b
-3. return a + b - retrieves both a and b
+1. **LINE 2** - retrieves the value of `a` and `b`
+2. **LINE 6** - retrieves the value of `foo`
 
 ### Strict Mode
 
-If not in strict mode, and we are performing a LHS, any time we cannot resolve the look-up a global variable is declared.
+If we perform a LHS look-up when we aren't in `strict` mode, any unsuccessful look-up will result in a global variable declaration.
 
----
-
-#### Notes
-
-LHS ~ Source target :: assignment
-RHS ~ Source value :: retrieval
+This does not apply to variables declared with a `let` or `const` statement.
