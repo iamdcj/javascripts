@@ -1,20 +1,53 @@
 # Global Scope
 
-### What is it?
+Any bindings which live directly inside the global lexical environment, these bindings become a member of the global object.
 
-Any bindings which live directly inside the global environment; any variable or function declarations will become a member of the global object.
-
-All bindings present in the global environment are scoped globally to the program, hence 'global scope'; these bindings can be referenced anywhere in the program.
+All bindings present in the global environment are scoped globally to the program, hence 'global scope', and these bindings can be referenced anywhere in the program.
 
 It is the outermost lexical environemt ~= root lexical environment.
 
-### The problems with global scope
+## Dangers of working in Global Scope
 
-It could be considered useful to have code available to all parts of the program, and in some cases it is, however the global object is something which can be mutated by all the various scripts loaded into a page, thus third-party scripts could overwrite any global bindings we've created, and vice-versa.
+It could be considered useful to have code available to all parts of the program, and in some cases it is, however the global object is something which can be mutated by all the various scripts loaded into a page
 
-Avoiding global declarations is considered good practice, this way there can be no conflicts which would result in program errors.
+**_Third-party scripts could overwrite any global bindings we've created, and vice-versa._**
 
-### How to avoid, but have some global program state?
+Avoiding global declarations where possible is considered good practice, this way there can be no conflicts which would result in program errors.
 
-If you need some top-level variables to control state, you can harness lexical scoping by simply wrapping all program code in an overarching `IIFE`;
-this provide scope protection from external scripts, and will allow nested code to access the bindings declared at the root level.
+### Collision
+
+### Collision avoidance
+
+If you need some top-level variables to control state, you can harness lexical scoping by simply wrapping all program code in an overarching `IIFE`, or if consistent use of `let` and `const` is present in the application a wrapping block `{}` will work.
+
+#### IIFE
+
+If top-level application code is wrapped within an Immediately Invoked Function then it is shielded from potential global scope collisions;
+
+```
+(function() {
+  var hidden = "can't see me";
+
+  console.log("global", hidden);
+
+})()
+
+// global can't see me
+
+console.log(hidden); // ReferenceError: hidden is not defined
+```
+
+#### Block
+
+If top-level application code declared using `let` or `const` is wrapped within a block then it is shielded from potential global scope collisions;
+
+```
+{
+  const hidden = "can't see me";
+  console.log("global", hidden);
+}
+
+// global can't see me
+
+console.log(hidden); // ReferenceError: hidden is not defined
+```
