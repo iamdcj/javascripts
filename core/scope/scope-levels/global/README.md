@@ -16,13 +16,27 @@ Avoiding global declarations where possible is considered good practice, this wa
 
 ### Collision
 
+Any time an enginner declares a `var` or `function` in the global lexical environment they run the risk of namespace collisions, which will overwrite the existing binding.
+
+The following demonstrates how the latter declaration will overwrite the value of the existing declaration
+
+```
+var something = "something";
+var something = "something else";
+
+console.log(something) // something else
+
+```
+
+This is a trivial example, but when an application runs alongside other third-party scripts, there is a real danger of the application falling over at some point in its lifecycle if global bindings conflict.
+
 ### Collision avoidance
 
 If you need some top-level variables to control state, you can harness lexical scoping by simply wrapping all program code in an overarching `IIFE`, or if consistent use of `let` and `const` is present in the application a wrapping block `{}` will work.
 
 #### IIFE
 
-If top-level application code is wrapped within an Immediately Invoked Function then it is shielded from potential global scope collisions;
+If top-level application code is wrapped within an Immediately Invoked Function,s then it is shielded from potential global scope collisions;
 
 ```
 (function() {
@@ -39,7 +53,7 @@ console.log(hidden); // ReferenceError: hidden is not defined
 
 #### Block
 
-If top-level application code declared using `let` or `const` is wrapped within a block then it is shielded from potential global scope collisions;
+If top-level application code declared using `let` or `const` is wrapped within a block, then it is shielded from potential global scope collisions;
 
 ```
 {
