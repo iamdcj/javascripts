@@ -13,7 +13,7 @@ The scopes of a program are determined by the author, that is the code they crea
 
 Scope defined by the authored source code structure is known as [lexical scope](./lexical-scope).
 
-Once the scopes have been generated using the scoping rules, we can then executed our scoped code; [execution of scoped code](01-execution).
+Once the scopes have been generated using the scoping rules, we can then executed our scoped code; [execution of scoped code](02-execution).
 
 #### Scope Levels
 
