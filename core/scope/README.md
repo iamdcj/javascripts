@@ -9,9 +9,10 @@ what bindings can be accessed inside function X when it is executing.
 
 #### How is scope created?
 
-Scope is defined during the compilation/interpretation phase of program’s lifecycle: [scope generation](01-generation).
+The scopes of a program are determined by the author, that is the code they create informs the engine of the program's intended scopes, then the scopes are cemented during the compilation/interpretation phase of program’s lifecycle: [scope generation](01-generation) 
 
-When the code is being compiled/interpreted the program's scope is defined [lexically](./lexical-scope), i.e. the scope is determined by how the author structures their source code.
+Scope defined by the authored source code structure is known as [lexical scope](./lexical-scope).
+
 
 #### Scope Levels
 
