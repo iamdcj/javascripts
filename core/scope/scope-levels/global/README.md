@@ -18,17 +18,29 @@ Avoiding global declarations where possible is considered good practice, this wa
 
 Any time an enginner declares a `var` or `function` in the global lexical environment they run the risk of namespace collisions, which will overwrite the existing binding.
 
-The following demonstrates how the latter declaration will overwrite the value of the existing declaration
+The following example demonstrates how the latter declaration will overwrite the value of the existing declaration;
+
+##### Script A - Source Code
 
 ```
-var something = "something";
+var something = function(a, b) {
+  return a + b;
+};
+```
+
+##### Script B - External Library
+
+```
 var something = "something else";
-
-console.log(something) // something else
-
 ```
 
-This is a trivial example, but when an application runs alongside other third-party scripts, there is a real danger of the application falling over at some point in its lifecycle if global bindings conflict.
+```
+something(1, 2); // Uncaught TypeError: something is not a function
+```
+
+This is a trivial example, but it examplifies what can happen in an application when two or more scripts run alongside each other - there is a real danger of something breaking one of the programs _if_ global bindings conflict.
+
+**_If your program requires adding a member to the global object, ensure you work hard to apply a unique namespace for the member property._**
 
 ### Collision avoidance
 
