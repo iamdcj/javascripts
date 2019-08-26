@@ -2,7 +2,15 @@
 
 Scopes in JS are generated during the compilation/parsing phase of the program’s lifecycle.
 
-The generation of scopes occur when the compiler looks through the source code and encounters formal declarations; bindings which have one following statements before the variable identifier: `var`, `const`, `let`, and `function`.
+The generation of scopes occurs when the compiler looks through the source code and encounters formal declarations; bindings which have one following statements before the variable identifier: `var`, `const`, `let`, and `function`.
+
+_Informal declarations, bindings without a statement, are left for the execution phase_.
+
+{
+name = "David";
+}
+
+The above will be overlooked by the compiler, and left for execution.
 
 ## Process
 
@@ -32,7 +40,7 @@ The following is an high-level overview of the process undertaken by the compile
    2. Place declarations into relevant scope
 
 ```
-const foo = “bar” ++ add foo declaration to global bucket
+const foo = “bar” // add foo declaration to global bucket
 
 function bar(foo) { // add bar declaration global bucket,
   // add foo to local bar bucket
@@ -57,8 +65,8 @@ The compiling phase only considers a variable's identifier, the value initialisa
 
 The following statement is split into two 'chunks';
 
-- one chunk for compilation
-- one chunk for execution.
+- one chunk for **compilation**.
+- one chunk for **execution**.
 
 ```
 const foo = “bar"
@@ -69,7 +77,7 @@ The engine handles the above declaration as follows;
 ##### Chunk 1 - Compilation
 
 ```
-  const foo;
+const foo;
 ```
 
 ##### Chunk 2 - Execution
@@ -78,4 +86,4 @@ The engine handles the above declaration as follows;
 foo = “bar"
 ```
 
-This process is what results in [hoisting](../hoisiting); the compiler assesses formal declarations, moving them to the top of their lexical environmemnt, but leaves the initialization for the execution phase.
+This process is what results in [hoisting](../hoisting); the compiler assesses formal declarations, moving them to the top of their lexical environmemnt, but leaves the initialization for the execution phase.
