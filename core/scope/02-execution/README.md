@@ -25,7 +25,7 @@ Lookup for a **LHS** in the current lexical environment in order to resolve a ta
 
 ##### IF found in current scope
 
-assign value to **LHS** target
+Assign value to **LHS** target; **_initialize binding_**
 
 ##### ELSE if not found in current scope;
 
@@ -34,7 +34,21 @@ assign value to **LHS** target
 If the lookup is unsuccessful after traversing all available scopes, there will be one of two outcomes;
 
 1. **STRICT**: throw referenceError if never found
-2. **SLOPPY**: create global variable using LHS and assign value if LHS does not exist in parent scopes.
+
+```
+'use strict'
+b = 5;
+
+// Uncaught ReferenceError: b is not defined
+```
+
+1. **SLOPPY**: create global variable using LHS and assign value if LHS does not exist in parent scopes.
+
+```
+b = 5;
+
+console.log(window.b) // 5
+```
 
 #### **RHS (retrieval)**
 
@@ -44,23 +58,53 @@ Lookup **RHS** in scope in order to retrieve value;
 
 - **Success**: do someting with value.
 
+```
+function testRun() {
+  const test = 5;
+
+  console.log(test); //
+}
+testRun();
+```
+
 ##### ELSE if not found in current scope;
 
 **Look in parent scopes for LHS**
 
 - **Failure**: throw referenceError
+
+```
+function testRun() {
+  console.log(test);
+}
+testRun();
+
+// Uncaught ReferenceError: test is not defined
+```
+
 - **Success**: do someting with value
+
+```
+const test = 5;
+
+function testRun() {
+  console.log(test);
+}
+testRun();
+
+// 5
+```
 
 #### LHS Lookups
 
-When the engine performs **LHS** look-ups, the intention is to assign values to the declaration; initialise the binding
+When the engine performs **LHS** look-ups, the intention is to assign values to the declaration; initialise the binding.
 
 ```
 const foo = “bar” // check if LHS foo exists in global scope, it does, initialise with value
 
 function bar(foo) {
-        foo = “baz”; // check if LHS baz exists in function scope, it does, initialise with value
-        bam = “bam”; // check if foo exists in function scope, it doesn't
+  foo = “baz”; // check if LHS baz exists in function scope, it does, initialise with value
+  bam = “bam”; // check if foo exists in function scope, it doesn't
 }
 ```
 
@@ -76,17 +120,16 @@ When the engine performs a **RHS** look-up, the intention is to retrieve the val
 
 ```
 function foo(a) {
-        console.log( a + b );
-        b = a;
+        console.log( a + b ); // RHS for a and b
+        b = a; // RHS for a
 }
 
-foo(a);
+foo(19); // RHS for foo
 ```
 
-The above snippet contains a number of **RHS** look-ups;
-
-1. **LINE 2** - retrieves the value of `a` and `b`
-2. **LINE 6** - retrieves the value of `foo`
+`foo`
+`a + b`
+`a`
 
 ### Strict Mode
 
