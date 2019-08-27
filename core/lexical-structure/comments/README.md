@@ -24,7 +24,7 @@ I should not be here
 Log: Uncaught SyntaxError: Unexpected identifier
 ```
 
-**_Single line comments cannot break over two lines._**
+**Single line comments cannot break over two lines.**
 
 --
 
