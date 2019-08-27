@@ -10,7 +10,7 @@ Information and code(ES5 & 6) related to the JavaScript language.
 
 ### Core aspects
 
-- Lexical Structure
+- [Lexical Structure](core/lexical-structure)
 - Execution
 - [Scope](core/scope)
   - [Lexical Scope](core/scope/lexical-scope)
