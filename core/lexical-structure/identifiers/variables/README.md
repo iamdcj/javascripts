@@ -1,8 +1,8 @@
 # Identifier Rules: Functions and Variables
 
-When creating an identifier for a function/variable it is important to respect the following rules:
+When creating an identifier for a function/variable it is the engine enforces the following rules;
 
-### Initial Character
+## Initial Character
 
 The initial character in the identifier must be one of the following;
 
@@ -11,6 +11,8 @@ The initial character in the identifier must be one of the following;
 - Dollar sign (`$`)
 
 A digit(`0-0`) is not valid as the first character of an identifier in JavaScript; the engine needs to distinguish between `number`s and labels.
+
+## Reserved Words
 
 ### Valid vs. Invalid
 
@@ -50,7 +52,9 @@ function 8az() {
 the above identifiers would all result the following syntax error;
 `Uncaught SyntaxError: Invalid or unexpected token`
 
+---
+
 #### Resources
 
 [Identifiers](https://mathiasbynens.be/notes/javascript-identifiers-es6)
-There is a tool dedicated to testing for identifier validitiy by Mathias Bynens: [Identifiers](https://mothereff.in/js-variables)
+[Identifier Validator](https://mothereff.in/js-variables)
