@@ -1,6 +1,6 @@
 # Identifier Rules: Functions and Variables
 
-When creating an identifier for a function/variable it is the engine enforces the following rules;
+When creating an identifier for a function/variable the engine enforces the following rules;
 
 ## Initial Character
 
@@ -13,6 +13,20 @@ The initial character in the identifier must be one of the following;
 A digit(`0-0`) is not valid as the first character of an identifier in JavaScript; the engine needs to distinguish between `number`s and labels.
 
 ## Reserved Words
+
+The engine will throw an error if the engineer attempts to use a reserved, or to-be reserved word in the language.
+
+```
+const var = "foo"
+// Unexpected token var
+
+const let = "foo";
+// let is disallowed as a lexically bound name;s
+```
+
+The reserved words differ from implementation and mode - this [Identifier Validator](https://mothereff.in/js-variables) tool will validate any identifier.
+
+See [reserved word](./reserved-words) for more detail.
 
 ### Valid vs. Invalid
 

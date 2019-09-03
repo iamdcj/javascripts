@@ -13,9 +13,7 @@ Using identifiers in our code allows for easy code reuse; pieces of code can be 
 
 ## Rules of Validation
 
-The JavaScript engine enforces rules to prevent engineers using invalid character series when declaring identifiers.
+The JavaScript engine enforces rules to prevent engineers using invalid character series when declaring identifiers - these rules differ for variables/function and properties;
 
-These rules differ for variables and properties;
-
-- [Variables](variables)
+- [Variables/Functions](variables)
 - [Properties](properties)
