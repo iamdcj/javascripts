@@ -19,56 +19,32 @@ The engine will throw an error if the engineer attempts to use a reserved, or to
 ```
 const var = "foo"
 // Unexpected token var
-
-const let = "foo";
-// let is disallowed as a lexically bound name;s
 ```
 
-The reserved words differ from implementation and mode - this [Identifier Validator](https://mothereff.in/js-variables) tool will validate any identifier.
+The reserved words differ from implementation, mode and context, e.g. `let` is fine to be used as an identifier prior to the ES2015 specification;
 
-See [reserved word](./reserved-words) for more detail.
-
-### Valid vs. Invalid
-
-The following are all valid identifiers.
-
-#### Valid
+#### [ES5](https://www.ecma-international.org/ecma-262/5.1/#sec-7.6.1) ✅
 
 ```
-const foo = "bar";
-let _bar = "foo";
-
-function f00(_baz) {
-  console.log(_baz);
-}
-
-const $bodyEl = document.querySelector('body');
-
-const _0bj = {
-  _nam3: "David",
-  $age: 32
-
-
+var let = "foo";
+console.log(let) // foo
 ```
 
-#### Invalid
+but any engine adhering to ES6 will throw an error if `let` is used as an identifier;
 
-The following are all invalid identifiers;
+#### [ES6](https://www.ecma-international.org/ecma-262/6.0/#sec-reserved-words) ❌
 
 ```
-const 4oo = "Egg";
-
-function 8az() {
-  return true;
-}
+var let = "foo";
+// let is disallowed as a lexically bound name
 ```
 
-the above identifiers would all result the following syntax error;
-`Uncaught SyntaxError: Invalid or unexpected token`
+See [Reserved Words](./reserved-words) for more detail.
+
+[Identifier Validator](https://mothereff.in/js-variables) will validate any identifier.
 
 ---
 
 #### Resources
 
 [Identifiers](https://mathiasbynens.be/notes/javascript-identifiers-es6)
-[Identifier Validator](https://mothereff.in/js-variables)
