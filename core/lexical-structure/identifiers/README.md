@@ -6,7 +6,7 @@ Identifiers are used to reference bindings, for example:
 
 - **Variables**: a chunk of code stored in a variable.
 - **Function**: reusable chunks of code which perform a specific task
-  - parameters/arguments.
+  - **parameters/arguments**: chunks of code passed to the function for computation.
 - **Properties**: object keys.
 
 Using identifiers in our code allows for easy code reuse; pieces of code can be accessed multiple times in various places.

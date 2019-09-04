@@ -10,7 +10,7 @@ The initial character in the identifier must be one of the following;
 - Underscore (`_`)
 - Dollar sign (`$`)
 
-A digit(`0-0`) is not valid as the first character of an identifier in JavaScript; the engine needs to distinguish between `number`s and labels.
+A digit(`0-9`) is not valid as the first character of an identifier in JavaScript; the engine needs to distinguish between `number`s and labels.
 
 ## Reserved Words
 
@@ -38,6 +38,16 @@ but any engine adhering to ES6 will throw an error if `let` is used as an identi
 var let = "foo";
 // let is disallowed as a lexically bound name
 ```
+
+## Escape Sequenc
+
+Unicode escape sequences can be used as identifiers;
+
+```
+const \u0061;
+```
+
+I've never seen this sort of identifier used in an application's source code, but they are valid.
 
 See [Reserved Words](./reserved-words) for more detail.
 
