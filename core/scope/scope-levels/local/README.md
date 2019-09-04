@@ -1,12 +1,12 @@
 # Local Scope
 
-Any bindings which do not live in the global lexical environment belong to a local lexical environment and its descendant lexical environments.
+Any bindings which do not live in the global lexical environment belong to a local lexical environment, and can only be accessed within that local lexical environment and it's descendant scopes.
 
-There are two distinct types of local scope; **function scope**, and **block scope**.
+There are two distinct types of local scope in JavaScript; **function scope** and **block scope**.
 
 ### **[Function Scope](function)**
 
-Any code that is wrapped in a function is part of that function’s scope.
+Any bindings that are wrapped in a function are part of that particular function's lexical environment, and can only be accessed within local lexical environment and any descendant lexical environments.
 
 ```
 (function() {
@@ -19,7 +19,7 @@ console.log(name); // Uncaught ReferenceError: name is not defined
 
 ### **[Block Scope](block)**
 
-`const` and `let` declarations create block scopes when declared inside a `{}` block.
+Any `const` and `let` declarations wrapped in a block are part of that particular block's lexical environment, and can only be accessed within local lexical environment and any descendant lexical environments.
 
 ```
 {
