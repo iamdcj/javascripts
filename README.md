@@ -1,6 +1,6 @@
 # Javascripts
 
-Information and code(ES5 & 6) related to the JavaScript language.
+Information and code related to the JavaScript language.
 
 (If you can't read my writing, read someone else's, they are probably smarter anyways.)
 
@@ -45,7 +45,7 @@ Information and code(ES5 & 6) related to the JavaScript language.
 
 ---
 
-##### Shoulders I stand on;
+##### Shoulders I stand on
 
 - [YDKJS](core/https://github.com/getify/You-Dont-Know-JS)
 - [JS is Sexy](core/http://javascriptissexy.com/)
