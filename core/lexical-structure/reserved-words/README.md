@@ -87,7 +87,7 @@ If `strict` mode is available in the executing implementation, additional reserv
 
 ## Sketchy Words
 
-There are a number of words which are not officially reserved words, and attempt to use these as identifiers is not a good idea.
+There are a number of words which are not officially reserved words, and you should not attempt to use these as identifiers.
 
 #### Global Properties
 
@@ -112,9 +112,5 @@ var undefined = "foo";
 console.log(Infinity); // Infinity
 console.log(NaN); // NaN
 console.log(undefined); // undefined
-
-```
-
-```
 
 ```
