@@ -39,7 +39,7 @@ var let = "foo";
 // let is disallowed as a lexically bound name
 ```
 
-## Escape Sequenc
+## Escape Sequences
 
 Unicode escape sequences can be used as identifiers;
 
