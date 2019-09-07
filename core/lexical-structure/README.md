@@ -1,8 +1,8 @@
 # Lexical Structure
 
-The lexical structure of a language defines the base rules and configuration required to correctly author code in a particular language.
+The lexical structure of a language defines the base rules and grammar required to correctly author code in a particular language.
 
-It defines the following aspect of how a language is written:
+The lexical structure consists of the following:
 
 - [Character Set](character-set) - what character set the language uses
 - [Reserved Words](reserved-words) - keywords which are part of the language's core, and cannot be used as identifiers.
