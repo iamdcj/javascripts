@@ -4,12 +4,12 @@ The lexical structure of a language defines the base rules and configuration req
 
 It defines the following aspect of how a language is written:
 
-- [Character Set](character-set) - what character set is the language uses
-- [Reserved Words](reserved-words) - keywords which are used in the core language, and cannot be used as identifiers.
-- [identifiers](Identifiers) - how we declare our variables/function labels.
-- [Case Sensitivity](case-sensitivity) - how different cases are handled.
+- [Character Set](character-set) - what character set the language uses
+- [Reserved Words](reserved-words) - keywords which are part of the language's core, and cannot be used as identifiers.
+- [Identifiers](Identifiers) - the rules which define how we create our variables/function labels.
+- [Case Sensitivity](case-sensitivity) - how different cases are handled in the language.
 - [Semicolons](semicolons) - where and when semicolons are required.
-- [Comments](comments) - the various supported comment syntax
-- [White Space](white-space) - how a language deals with whitespace and line-breaks.
+- [Comments](comments) - the various supported commenting syntax.
+- [White Space](white-space) - how the language deals with whitespace and line-breaks.
 
-It is imperative to have a full understanding of the above to ensure the programs are written in accordance with the lexical grammar of the JavaScript language.
+It is imperative to have a full understanding of the above to ensure programs are written in accordance with the lexical grammar of the ECMAScript specification.
