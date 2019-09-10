@@ -1,8 +1,8 @@
 # Reserved Words
 
-JavaScript, like other programming languages, reserves a number of words which prevents them from being used as variable and function [identifiers](../identifiers).
+JavaScript, like other programming languages, reserves a number of words, thus preventing them being used as variable and function [identifiers](../identifiers).
 
-Any attempt by an engineer to use one of these words as an identifier will result in the engine throwing an application error.
+Any attempt by a JavaScript engineer to use one of these words as an identifier will result in the engine throwing an application error.
 
 ## Versions
 

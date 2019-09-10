@@ -1,8 +1,6 @@
-# Javascripts
+# Javascript
 
-Information and code related to the JavaScript language.
-
-(If you can't read my writing, read someone else's, they are probably smarter anyways.)
+Notes and code snippets related to the JavaScript language.
 
 [Overview](overview)
 
