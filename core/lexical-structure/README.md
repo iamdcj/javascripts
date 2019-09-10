@@ -4,9 +4,9 @@ The lexical structure of a language defines the base rules and grammar required 
 
 The lexical structure consists of the following:
 
-- [Character Set](character-set) - what character set the language uses
+- [Character Set](character-set) - the character set used by the language.
 - [Reserved Words](reserved-words) - keywords which are part of the language's core, and cannot be used as identifiers.
-- [Identifiers](Identifiers) - the rules which define how we create our variables/function labels.
+- [Identifiers](Identifiers) - the rules which define how we create our variables, function labels and object keys.
 - [Case Sensitivity](case-sensitivity) - how different cases are handled in the language.
 - [Semicolons](semicolons) - where and when semicolons are required.
 - [Comments](comments) - the various supported commenting syntax.
