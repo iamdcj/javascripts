@@ -107,13 +107,6 @@ over two lines"
 // Uncaught SyntaxError: Invalid or unexpected token
 ```
 
-the parser will see the above as two separate statements, and semicolons will be inserted automatically via ASI;
-
-```
-const breaky = "I  can't break;
-over two lines";
-```
-
 If line-breaks are required in a string, there are a number of valid ways to achieve line-broken strings.
 
 #### Template Literals
@@ -121,12 +114,9 @@ If line-breaks are required in a string, there are a number of valid ways to ach
 If the supported platforms adhere to the ES2015 standard then template literals provide the best way to generate strings with line breaks;
 
 ```
-const mlStr = `I
-  am
-  a
-  multiline
-  string
-`
+
+const mlStr = `I am a multiline string`
+
 ```
 
 #### Backslash
@@ -134,12 +124,14 @@ const mlStr = `I
 If the executing platforms do not support template literals, and transpiling isn't an option, then the following approach is the friendliest way to generate strings containing line-breaks;
 
 ```
+
 var mlStr = " I \
-  am \
-  a \
-  multiline \
-  string \
+ am \
+ a \
+ multiline \
+ string \
 "
+
 ```
 
 #### Concatenation
@@ -147,11 +139,17 @@ var mlStr = " I \
 If the executing platforms do not support template literals, and transpiling isn't an option, then string concatenation is another option for strings containing line breaks;
 
 ```
+
 var mlStr = "I" +
-  "am" +
-  "a" +
-  "multiline" +
-  "string"
+"am" +
+"a" +
+"multiline" +
+"string"
+
 ```
 
 **This approach isn't performant, and unnecessary.**
+
+```
+
+```
