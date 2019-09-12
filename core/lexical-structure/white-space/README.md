@@ -62,7 +62,6 @@ The following control statements are both perfectly valid javascript code:
 
 ```
 if(1 === 1) { console.log(true) } else { console.log(false) }
-
 // true
 ```
 
@@ -74,7 +73,6 @@ if(1 === 1) {
 } else {
   console.log(false)
 }
-
 //true
 ```
 
@@ -102,26 +100,29 @@ Strings cannot be easily broken across lines when regular single or double quote
 ```
 const breaky = "I  can't break
 over two lines"
-
-
 // Uncaught SyntaxError: Invalid or unexpected token
 ```
 
-If line-breaks are required in a string, there are a number of valid ways to achieve line-broken strings.
+If line-breaks are required within a string, there are a number of valid ways to achieve them;
 
 #### Template Literals
 
-If the supported platforms adhere to the ES2015 standard then template literals provide the best way to generate strings with line breaks;
+If the supported platforms adhere to the `ES2015` standard then template literals provide the best way to handle strings containing line breaks;
 
 ```
 
-const mlStr = `I am a multiline string`
+const mlStr = `
+I
+am
+a
+multiline
+string`
 
 ```
 
 #### Backslash
 
-If the executing platforms do not support template literals, and transpiling isn't an option, then the following approach is the friendliest way to generate strings containing line-breaks;
+If the executing platforms do not support template literals, and transpiling isn't an option, then the following approach is the friendliest way to handle strings containing line-breaks;
 
 ```
 
@@ -148,8 +149,4 @@ var mlStr = "I" +
 
 ```
 
-**This approach isn't performant, and unnecessary.**
-
-```
-
-```
+**This approach is doing more work than necessary.**
