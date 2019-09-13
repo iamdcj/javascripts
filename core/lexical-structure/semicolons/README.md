@@ -21,10 +21,17 @@ If there are two or more statements on the same line, then semicolons need to us
 const foo = "bar"; const bar = "baz"; const ham = "eggs"
 ```
 
+There reason semicolons can be omitted in certain situations is due to the ASI mechanism built into the parsing engine.
+
+### Automatic Semicolon Insertion
+
+ASI is essentially a set of rules which determine when a semicolon will be automatically placed into a part of the application during the parsing phase.
+
 ---
 
 #### **Resources**
 
+https://flaviocopes.com/javascript-automatic-semicolon-insertion/
 https://dev.to/adriennemiller/semicolons-in-javascript-to-use-or-not-to-use-2nli
 https://news.codecademy.com/your-guide-to-semicolons-in-javascript/
 http://www.bradoncode.com/blog/2015/08/26/javascript-semi-colon-insertion/
