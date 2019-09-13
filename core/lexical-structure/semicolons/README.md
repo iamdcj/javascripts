@@ -6,16 +6,18 @@ Semicolons signify the end of a statement in JavaScript, that is they are used s
 
 Semicolons are not required when authoring JavaScript applications, dependant on how the authored code is formatted.
 
-**If each statement lives on its own line, then there isn't a requirement for it to be completed with a semicolon.**
+Broadly speaking; **If each statement lives on its own line, then there isn't a requirement for it to be completed with a semicolon.**
+
+Some developers always omit semicolons in their source, others, like myself, strive to code with semicolons present.
 
 ```
 const test = "David"
 import ( x ) from './y'
 ```
 
-None of the above statements require finishing-off with a semicolon.
+**None of the above statements require finishing-off with a semicolon.**
 
-If there are two or more statements on the same line, then semicolons need to used to signify the end of each statement, aside from the last statement on the line.
+If there are two or more statements on the same line, then semicolons are required to signify the end of each statement, _aside from the last statement on the line_.
 
 ```
 const foo = "bar"; const bar = "baz"; const ham = "eggs"
