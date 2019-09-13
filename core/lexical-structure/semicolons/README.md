@@ -4,9 +4,9 @@ Semicolons signify the end of a statement in JavaScript, that is they are used s
 
 ### Optional
 
-Semicolons are not required when authoring JavaScript applications, dependant on how the authored code is formatted.
+Semicolons are not required when authoring JavaScript applications in certain situations, but are required in other situations, broadly speaking;
 
-Broadly speaking; **If each statement lives on its own line, then there isn't a requirement for it to be completed with a semicolon.**
+**If each statement lives on its own line, then there isn't a requirement for it to be completed with a semicolon.**
 
 Some developers always omit semicolons in their source, others, like myself, strive to code with semicolons present.
 
@@ -28,6 +28,10 @@ There reason semicolons can be omitted in certain situations is due to the ASI m
 ### Automatic Semicolon Insertion
 
 ASI is essentially a set of rules which determine when a semicolon will be automatically placed into a part of the application during the parsing phase.
+
+If you use semicolons, or you don't, understanding how ASI works is still pretty useful.
+
+The rules of ASI:
 
 ---
 
