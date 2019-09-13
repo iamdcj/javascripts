@@ -2,9 +2,15 @@
 
 Semicolons signify the end of a statement in JavaScript, that is they are used so provide separation between the end of one statement, and the start of another.
 
-### Optional
+```
+const statement1 = "foo";
+const statement2 = "bar";
+const statement3 = function() { console.log(statement1, statement2) };
+```
 
-Semicolons are not required when authoring JavaScript applications in certain situations, but are required in other situations, broadly speaking;
+### Optional Semicolons
+
+Adding Semicolons isn't a requirement when authoring JavaScript applications, broadly speaking;
 
 **If each statement lives on its own line, then there isn't a requirement for it to be completed with a semicolon.**
 
@@ -25,11 +31,11 @@ const foo = "bar"; const bar = "baz"; const ham = "eggs"
 
 There reason semicolons can be omitted in certain situations is due to the ASI mechanism built into the parsing engine.
 
+If you use semicolons, or you don't, understanding how ASI works is still a requirement when engineering JavaScript programs.
+
 ### Automatic Semicolon Insertion
 
-ASI is essentially a set of rules which determine when a semicolon will be automatically placed into a part of the application during the parsing phase.
-
-If you use semicolons, or you don't, understanding how ASI works is still pretty useful.
+ASI is essentially a set of rules which determine when a semicolon will/will not be automatically placed into a part of the application during the parsing phase.
 
 The rules of ASI:
 
