@@ -39,6 +39,11 @@ ASI is essentially a set of rules which determine when a semicolon will/will not
 
 The rules of ASI:
 
+- After line-break, unless followed by () or []
+- End of program/file
+- NOT after closing }
+- Before closing }
+
 ---
 
 #### **Resources**
