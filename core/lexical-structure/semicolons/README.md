@@ -39,10 +39,42 @@ ASI is essentially a set of rules which determine when a semicolon will/will not
 
 The rules of ASI:
 
-- After line-break, unless followed by () or []
-- End of program/file
-- NOT after closing }
-- Before closing }
+#### After line-break
+
+The ASI mechanism will be triggered whenever statements are broken onto new lines;
+
+```
+const foo = "bar"
+const baz = "foo"
+```
+
+The above code is perfectly valid, and is equivalent to;
+
+```
+const foo = "bar";
+const baz = "foo";
+```
+
+However there are exceptions the the new-line rule - if a statement is not stamped with a semicolon, and the newline begins with `()` or `[]`, the result will likely be undesired;
+
+```
+const test = "David"
+[1,2,3].map(n => n * n);
+```
+
+the above is parsed thus;
+
+```
+const test = "David"[1,2,3].map(n => n * n);
+
+// Uncaught TypeError: "David"[(1 , 2 , 3)].map is not a function
+```
+
+#### End of program/file
+
+#### NOT after closing `}`
+
+#### Before closing `}`
 
 ---
 
