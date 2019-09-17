@@ -8,7 +8,7 @@ const statement2 = "bar";
 const statement3 = function() { console.log(statement1, statement2) };
 ```
 
-### Optional Semicolons
+## Optional Semicolons
 
 Adding Semicolons isn't a requirement when authoring JavaScript applications, broadly speaking;
 
@@ -33,11 +33,15 @@ There reason semicolons can be omitted in certain situations is due to the ASI m
 
 If you use semicolons, or you don't, understanding how ASI works is still a requirement when engineering JavaScript programs.
 
-### Automatic Semicolon Insertion
+## Automatic Semicolon Insertion
 
 ASI is essentially a set of rules which determine when a semicolon will/will not be automatically placed into a part of the application during the parsing phase.
 
-The rules of ASI:
+It is more of a concept, opposed to actual code modification, however it is easiest to envisage the semicolons being inserted to your code.
+
+The purpose of ASI is to provide source code leniency when developing applications in JavaScript, i.e. semicolons can be omitted in certain places without worry.
+
+### Rules of ASI
 
 #### After line-break
 
@@ -55,14 +59,16 @@ const foo = "bar";
 const baz = "foo";
 ```
 
-However there are exceptions the the new-line rule - if a statement is not stamped with a semicolon, and the newline begins with `()` or `[]`, the result will likely be undesired;
+However there are exceptions the the new-line rule - if a statement is not stamped with a semicolon, and the newline begins with `()` or `[]`, the result will likely be undesired.
+
+##### Newline with `[]`
 
 ```
 const test = "David"
 [1,2,3].map(n => n * n);
 ```
 
-the above is parsed thus;
+the above can be considered as per the following when parsed;
 
 ```
 const test = "David"[1,2,3].map(n => n * n);
@@ -70,11 +76,29 @@ const test = "David"[1,2,3].map(n => n * n);
 // Uncaught TypeError: "David"[(1 , 2 , 3)].map is not a function
 ```
 
-#### End of program/file
+##### Newline with `()`
+
+```
+const first = "David"
+const last = "Jones"
+(first + last).toUpperCase()
+```
+
+the above can be considered as per the following when parsed;
+
+```
+
+const first = "David";
+const last = "Jones"(first + last).toUpperCase();
+
+// Uncaught ReferenceError: Cannot access 'last' before initialization
+```
+
+<!-- #### End of program/file
 
 #### NOT after closing `}`
 
-#### Before closing `}`
+#### Before closing `}` -->
 
 ---
 
@@ -85,3 +109,7 @@ https://dev.to/adriennemiller/semicolons-in-javascript-to-use-or-not-to-use-2nli
 https://news.codecademy.com/your-guide-to-semicolons-in-javascript/
 http://www.bradoncode.com/blog/2015/08/26/javascript-semi-colon-insertion/
 https://www.youtube.com/watch?v=B4Skfqr7Dbs
+
+```
+
+```
