@@ -17,7 +17,7 @@ Notes and code snippets related to the JavaScript language.
 - [Types](core/types)
   - Coercion
   - By Reference vs. By Value
-- Variables
+- [Variables](core/variables)
 - Statements
 - Expressions
 - Operators
