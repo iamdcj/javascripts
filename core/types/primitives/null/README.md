@@ -11,6 +11,7 @@ updater = 1 + 1;
 ```
 
 #### null vs undefined
+
 It differs from `undefined` as `null` is used to initialize variables with a value that doesn't yet represent something, opposed to `undefined` which represents a variable without an initialized value.
 
 ```
@@ -24,9 +25,11 @@ console.log(bar); // null
 ```
 
 ### Checking for `null`
+
 The `typeof` return value `object` for null is considered a bug by most, and the consensus among programmers is that it really should return "null", thus making it easier to check for `null` in our programs.
 
-Alas, the `typeof` return value will likely never be changed due to the risk to legacy programs, so if you need to check for null, here is a good way to do it. 
+Alas, the `typeof` return value will likely never be changed due to the risk to legacy programs, so if you need to check for null, here is a good way to do it.
+
 ```
 const a = null;
 
