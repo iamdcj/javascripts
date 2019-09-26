@@ -17,10 +17,10 @@ Notes and code snippets related to the JavaScript language.
 - [Types](core/types)
   - Coercion
   - By Reference vs. By Value
-- [Variables](core/variables)
-- Statements
+- [Statements](core/statements)
 - Expressions
 - Operators
+- [Variables](core/variables)
 - Functions
   - IIFE
   - Callbacks
