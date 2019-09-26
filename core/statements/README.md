@@ -7,3 +7,9 @@ A program written in JavaScript, as per any other language, consists of numerous
 ```
 const variableStatement = "hold a string, this string, any string";
 ```
+
+JavaScript supports a variety of statements, all for a particular purpose:
+
+# Variable Statements
+
+These statements are the most common type of statement used in a JavaScript program.
