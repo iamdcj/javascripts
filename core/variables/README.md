@@ -20,7 +20,9 @@ There a three ways to declare variables in Javascript:
 
 ## Semantics
 
-Prior to ES2015 there was only one type of variable declaration; variables created using the `var` keyword. This was, and still is fine, however the introductin of `const` and `let` variable declarations provides intrinsic semantic value when authoring applications; the `const` and `let` keywords provide clarity on what is likely to happen/not happen with the variable declarations, and the values inside of them;
+Prior to ES2015 there was only one type of variable declaration; `var`, and all variables were created using the `var` keyword. This was, and still is fine, however the introductin of `const` and `let` variable declarations provides intrinsic semantic value when authoring applications
+
+The `const` and `let` keywords provide clarity on what is likely to happen with the variable declarations, and the values inside of them;
 
 ```
 const foo = "bar"
