@@ -1,38 +1,48 @@
-What is shadowing?
-It is when you declare a binding with an identifier, and then later declare another binding with the same identifier in a descendant scope.
+# Shadowing
 
-What does it do?
-Shadowing bindings prevents you from accessing bindings in parent scopes which have the same identifier;
+Shadowing occurs when you declare a binding with an identifier, and then later declare another binding with the same identifier in a descendant scope.
 
-This example demonstrates how to perform shadowing:
+You can shadow variables using `let`, `const` and `var` statements, however shadowing becomes more interesting when shadowing is implemented using `var` statements.
+
+## Results of Shadowing
+
+Shadowing variables prevents you from accessing bindings in parent scopes which have the same identifier, that is once a binding is declared with the same identifier as another variable in a parent lexical scope, you are unable to access its value.
+
+```
 function foo() {
-const baz = "baz”;  
- console.log(baz); // baz
+var baz = "baz”;
+    console.log(baz); // baz
 
     function bar() {
-        const baz = “bazzer”;
+        var baz = “bazzer”;
         console.log(baz); // bazzer
-        // at this level there is no way to access the baz in the parent foo scope.
     }
 
 }
+```
+
 https://codepen.io/iamDCJ/pen/KLWpBP
 
-There is no way for the ‘baz’ binding in the foo scope to be accessed in the bar scope; the binding has been shadowed.
+There is no way for the `baz` binding in the foo scope to be accessed within the `bar`'s lexical environment; the binding has been shadowed.
 
-This is a product of lexical scoping.
+Shadowing is thus a product of lexical scoping.
 
 —
 
 If you want to access a global variable in a part of a program where that binding has been shadowed,
 you can access the global binding as a property of the global object;
 
-const foo = “bar”;
+```
+var foo = "bar";
 
 function test() {
-const foo = “baz” // no longer a way to access the global foo variable using lexical scope
+    var foo = "baz" // no longer a way to access the global foo variable using lexical scope
 
     console.log(foo); // baz
     console.log(window.foo); // bar
 
 }
+test();
+```
+
+The above technique can only be achieved using `var`; you cannot access `let` or `const` declarations via the `window` object
