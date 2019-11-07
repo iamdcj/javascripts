@@ -6,15 +6,15 @@ Variables are containers for values, i.e. they hold pieces of code which can be 
 
 There a three ways to declare variables in Javascript:
 
-### [`const`](/const)
+### [`const`](./const)
 
 `const` statement declarations are variables which cannot be reassigned a new value later in the application's lifecycle, thus must be initialized upon creation.
 
-### [`let`](/let)
+### [`let`](./let)
 
 `let` statement declarations are variables which can be reassigned a new value later in the application.
 
-### `var`
+### [`var`](./var)
 
 `var` statement declarations are variables which can be reassigned a new value later in the application.
 
