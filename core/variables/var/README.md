@@ -44,4 +44,4 @@ Shadowing occurs when you declare a binding with an identifier, and then later d
 
 You can shadow variables using `let`, `const` and `var` statements, however shadowing becomes more interesting when shadowing is implemented using `var` statements.
 
-[Variable Shadowing](core/scope/variable-shadowing)
+[Variable Shadowing](../../scope/variable-shadowing)
