@@ -1,7 +1,6 @@
 # Closure
 
-A closure is a function which can access its lexical scope when invoked outside of its lexical environment;
-a function can retrieve bindings from its parent scope(s) despite being called away from its wrapping scope.
+A closure is a function which can access its lexical scope when invoked outside of its lexical environment.
 
 Closure is a result of two language features; **first-class functions** and **lexical scoping** - any language which supports these features will use closure in the application.
 
