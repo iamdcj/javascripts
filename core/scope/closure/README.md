@@ -2,7 +2,11 @@
 
 A closure is a function which can access its lexical scope when invoked outside of its lexical environment.
 
-Closure is a result of two language features; **first-class functions** and **lexical scoping** - any language which supports these features will use closure in the application.
+Closure is a result of two language features; **first-class functions** and **lexical scoping** 
+
+Any applications written using a language which supports **first-class functions** and **lexical scoping** will most likely utilise closures.
+
+---
 
 #### **1. First-class Functions**
 
