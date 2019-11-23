@@ -121,3 +121,5 @@ The above approach is an example of `currying`; you essentially set an initial a
 
 - [@dis_is_patrick - Medium](https://medium.com/@dis_is_patrick/practical-uses-for-closures-c65640ae7304)
 - [JavaScript Closures: Explanations and Open Source Examples - oneminutejs](https://medium.com/@oneminutejs/javascript-closures-explanations-and-open-source-examples-a3731848f658)
+- [FACTORY FUNCTIONS AND THE MODULE PATTERN](https://www.theodinproject.com/courses/javascript/lessons/factory-functions-and-the-module-pattern#:~:targetText=The%20concept%20of%20closure%20is,called%20outside%20of%20that%20function.)
+
