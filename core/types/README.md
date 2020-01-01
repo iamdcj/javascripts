@@ -2,19 +2,21 @@
 
 JavaScript, like all programming has a set a of (data)types that can be manipulated in order to build applications.
 
-Types are the building blocks of applications, without a number of types to manipulate programs would be very limited.
+Types are the building blocks of applications, without a number of types to manipulate, programs would be very limited in their functionality.
 
 
 #### Type, a definition
 This definition, like most things I know about JS, is from Kyle Simpson's [YDKJS](https://github.com/getify/You-Dont-Know-JS) series;
 > a type is an intrinsic, built-in set of characteristics that uniquely identifies the behavior of a particular value and distinguishes it from other values, both to the engine and to the developer. - K. Simpson
 
-So, a type is a thing in a language which is recognisable by its make-up ~ engine/developer knows that type x is type x by the way it looks. It is this recognition/knowledge which allows programmers to utilise a particular types properties/methods.
+So, a type is a thing in a language which is recognisable by its make-up; engine/engineer knows that type _X_ is type _X_ by the way it looks. It is this recognition/knowledge which allows engineers to utilise a particular types properties/methods to engineer functionality in an application.
+
+*You need to know what it is you're working with, before you work with it.*
 
 #### 'Loose/Dynamic' typing
 JavaScript is a loosely/dynamically typed language; *no type enforcement for bindings.*
 
-Loose typing does not require a variable to have a type assigned to it when declared, i.e. a 'loose' variable is dynamic because its value can be any type, at any time - JS engines do not utilises type enforcement, and because of this it is argued by some that JS doesn't really have types, however the ECMAScript specification uses the term "type", which should be good enough for JS programmers.
+Loose typing does not require a variable to have a type assigned to it when declared, i.e. a 'loose' variable is dynamic because its value can be any type, at any time. JavaScript engines do not utilises type enforcement, and because of this it is argued by some that JS doesn't really have true types, however the ECMAScript specification uses the term "type", which should be good enough for any programmers wanting to engineer using the language.
 
 It is best to think of values of having types, not the bindings; __a variable can hold different types at any point in the lifecycle of a program.__
 
