@@ -23,7 +23,7 @@ It is best to think of values of having types, not the bindings; __a variable ca
 ##### typeof
 The `typeof` operator makes this easier to understand; it evaluates the type of the value stored in a variable, *not the type of the variable*.
 
-`typeof` will return one of seven values(str); [string](primitives/string), [number](primitives/number), [boolean](primitives/boolean), [undefined](primitives/undefined), [object*](composite/object), function** or [symbol](primitives/symbol).
+`typeof` will return one of seven values(str); [string](primitives/string), [number](primitives/number), [boolean](primitives/boolean), [undefined](primitives/undefined), [object**](composite/object), function*** or [symbol](primitives/symbol).
 
 ```
 // typeof String
@@ -47,7 +47,7 @@ const symbol = Symbol();
 typeof symbol; // symbol
 ```
 
-* The `object` type will be returned when typeof is used on a binding which contains a regular `object`, or an `array`.
+** The `object` type will be returned when typeof is used on a binding which contains a regular `object`, or an `array`.
 ```
 // typeof Object (Object)
 const user = { name: 'David' }
@@ -58,7 +58,7 @@ const skills = ['HTML', 'CSS', 'JavaScript'];
 typeof skills; // object
 ```
 
-** A [Function](composite/function) is technically not a true type in the language - consider a sub-type of an [object](composite/object)
+*** A [Function](composite/function) is technically not a true type in the language - consider a sub-type of an [object](composite/object)
 ```
 // typeof Function
 const logger = () => console.log(name, age, measurements);
