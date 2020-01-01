@@ -1,6 +1,6 @@
-# JavaScript; an overview
+# Overview
 
-The JavaScript is a fully-fledged programming language(ignore the haters), and possesses the following properties and features;
+The JavaScript language is a fully-fledged programming language, despite what some might say, and it possesses the following properties and features;
 
 ### **Lightweight**
 
@@ -8,7 +8,7 @@ JavaScript is a fairly simple programming language without proper types, making 
 
 ### **High-Level**
 
-JavaScript is highly abstracted from the machine code/instructions, making it a very programmer-friendly language to work with when developing applications.
+JavaScript is highly abstracted from the machine code/instructions, making it a very programmer-friendly language to work with when engineering applications.
 
 ### **Interpreted/JIT-compiled**
 
@@ -16,11 +16,18 @@ JavaScript is classicaly perceived to be an interpreted language, however newer 
 
 ### **Cross-Platform**
 
-JavaScript has classically been used as a client-side language, exclusively in web browsers, however over the years JavaScript has crossed platforms and started to be used for back-end development, mainly using via the [NodeJS](https://nodejs.org/en/) runtime.
+JavaScript has classically been used as a client-side language, a pretty much exclusively in web browsers, however over the years JavaScript has crossed platforms and started to be used for back-end development, thanks mainly to the advent of the [NodeJS](https://nodejs.org/en/) runtime.
+
+### **Dynamic / Loose **
+
+JavaScript doesn't have static/strict typing, i.e. variables do not need to be assigned a type when being declared; **_in JavaScript the values have types, not the variable itself._**
+
+[Types in JavaScript](../core/types)
+
 
 ### **Multi-paradigm**
 
-You can use functional, imperativel, event-driven and object-oriented paradigms when developing JavaScript programs.
+You can use functional, imperative, event-driven and object-oriented paradigms when engineering JavaScript applications;
 
 #### Object-oriented Programming
 
@@ -28,15 +35,13 @@ JavaScript is a prototype-based language, and inheritance is achieved via `proto
 
 [OOP in JS >](core/objects/object-oriented-programming)
 
-#### Functional
-
-#### Imperative
-
 #### Event Driven
+todo
+#### Functional
+todo
+#### Imperative
+todo
 
-### **Dynamic**
-
-JavaScript doesn't have static/strict typing, i.e. variables do not need to be assigned a type when being declared; **_in JavaScript the values have types, not the variable itself._**
 
 ---
 
