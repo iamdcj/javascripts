@@ -20,7 +20,7 @@ Notes and code snippets related to the JavaScript language.
 - [Statements](core/statements)
 - Expressions
 - Operators
-- [Variables](core/variables)
+- [Variables](core/statements/declarations/variables)
 - Functions
   - IIFE
   - Callbacks
