@@ -2,7 +2,7 @@
 
 The `var` statement is used to declare bindings in a program.
 
-`const` declarations are not affected by the [`temporal dead zone`](../temporal-dead-zone) - instead they are hoisted to the top of their respective lexical environment, and set with a value of `undefined` until execution occurs.
+`var` declarations are not affected by the [`temporal dead zone`](../temporal-dead-zone) - instead they are hoisted to the top of their respective lexical environment, and set with a value of `undefined` until execution occurs.
 
 See [Hoisting](../../scope/hoisting).
 
@@ -22,7 +22,7 @@ foo = false;
 
 ### Redeclaration
 
-Variables declared with `var` can be declared multiple times within the same lexical environment.
+Variables declared with `var` can be declared in a lexical environment, then redeclared using the same identifier over and over with that same scope;
 
 ```
 var foo = "bar";
@@ -36,7 +36,7 @@ console.log(foo); // qux
 
 This differs to both `const` and `let` statements; _any variable declared using either of these statements can only be declared once in a lexical environment_
 
-There is good reason why `const` and `let` don't allow for the above; it isn't a good idea.
+There is good reason why `const` and `let` don't allow for the above; _it isn't a good idea_.
 
 #### Shadowing
 
