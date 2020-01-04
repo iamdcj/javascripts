@@ -17,12 +17,11 @@ Notes and code snippets related to the JavaScript language.
 - [Types](core/types)
   - Coercion
   - By Reference vs. By Value
+- [Objects](core/objects)
+  - [Object-Oriented JavaScript](core/objects/object-oriented-programming)
+    - [Inheritance](core/objects/object-oriented-programming/inheritance/prototypes) and [Prototypes](core/objects/object-oriented-programming/inheritance)
+  - JSON
 - [Statements](core/statements)
-  - Control Flow
-  - Declarations
-  - Functions and Classes
-  - Iterators
-  - Other
 - Expressions
 - Operators
 - [Variables](core/variables)
@@ -34,10 +33,6 @@ Notes and code snippets related to the JavaScript language.
 - Asynchronicity
   - Promises
   - Async...Await
-- [Objects](core/objects)
-  - [Object-Oriented JavaScript](core/objects/object-oriented-programming)
-    - [Inheritance](core/objects/object-oriented-programming/inheritance/prototypes) and [Prototypes](core/objects/object-oriented-programming/inheritance)
-  - JSON
 - _this_
   - Apply, Call, Bind.
 - [Classes](core/classes)
