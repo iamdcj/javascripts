@@ -18,9 +18,14 @@ Notes and code snippets related to the JavaScript language.
   - Coercion
   - By Reference vs. By Value
 - [Statements](core/statements)
+  - Control Flow
+  - Declarations
+  - Functions and Classes
+  - Iterators
+  - Other
 - Expressions
 - Operators
-- [Variables](core/statements/declarations/variables)
+- [Variables](core/variables)
 - Functions
   - IIFE
   - Callbacks
