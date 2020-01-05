@@ -18,7 +18,7 @@ JavaScript is classicaly perceived to be an interpreted language, however newer 
 
 JavaScript has classically been used as a client-side language, a pretty much exclusively in web browsers, however over the years JavaScript has crossed platforms and started to be used for back-end development, thanks mainly to the advent of the [NodeJS](https://nodejs.org/en/) runtime.
 
-### **Dynamic / Loose **
+### **Dynamic / Loose**
 
 JavaScript doesn't have static/strict typing, i.e. variables do not need to be assigned a type when being declared; **_in JavaScript the values have types, not the variable itself._**
 
