@@ -23,7 +23,7 @@ The given condition will resolve as `false`, and the execution will fall in to t
 
 ### `if` without `else`
 
-The `if` statement can, and often is, used without an `else` clause, most commonly to stop execution of a particular method.
+The `if` statement can, and often is, used without an `else` clause, most commonly to stop execution of/return from a particular method.
 
 ```
 
@@ -40,7 +40,7 @@ grantAccess('John'); // 'John, you are welcome`
 
 ```
 
-The engine will not execute any code followig the `if` control structure, _IF_ the condition is truthy.
+The engine will not execute any code followig the `if` control structure, _IF_ the condition is truthy. It will fall into the `if` clause and execute the `return` statement and exit from the function.
 
 ### `if`...`else if`...`else`
 
