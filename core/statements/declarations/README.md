@@ -14,7 +14,7 @@ Variable declarations are covered in more detail [here](../../../core/variables)
 
 ### Functions
 
-A function declaration consists of the `function` keyword, followed by an identitifer and a the function body block(`{}`);
+A function declaration consists of the `function` keyword, followed by an identitifer, the function body block(`{}`) which contains the statements which make-up the function body.
 
 ```
 function aFunction() {
