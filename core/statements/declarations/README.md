@@ -10,7 +10,7 @@ The following are the supported variable declarations within the JavaScript lang
 `let`
 `var`
 
-Variable declarations are covered in more detail [here](../../../core/variables)
+Variable declarations are covered in more detail [here](../../../core/variables).
 
 ### Functions
 
@@ -20,5 +20,6 @@ A function declaration consists of the `function` keyword, followed by an identi
 function aFunction() {
   console.log('test');
 }
-
 ```
+
+Function declarations are in more detail [here](../functions-classes/function).
