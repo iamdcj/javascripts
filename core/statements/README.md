@@ -11,7 +11,7 @@ const variableStatement = "hold a string, this string, any string";
 JavaScript statements fall into the following categories;
 
 - [Control flow](./control-flow)
-- Declarations
+- [Declarations](./declarations)
 - Functions and Classes
 - Iterators
 - Other
