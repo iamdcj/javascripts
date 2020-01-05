@@ -16,7 +16,14 @@ JavaScript is classicaly perceived to be an interpreted language, however newer 
 
 ### **Cross-Platform**
 
-JavaScript has classically been used as a client-side language, a pretty much exclusively in web browsers, however over the years JavaScript has crossed platforms and started to be used for back-end development, thanks mainly to the advent of the [NodeJS](https://nodejs.org/en/) runtime.
+JavaScript has classically been used as a client-side language, and pretty much exclusively in web browsers, however over the years JavaScript has crossed platforms and started to be used for back-end development, thanks mainly to the advent of the [NodeJS](https://nodejs.org/en/) runtime.
+
+#### Client-Side JS (Front-end)
+The most popular variant of JavaScript extends the core language via objects which allow programs to interact with the browser and the website's DOM - this is how we add functionality to an otherwise static website.
+
+#### Server-Side JS (Back-end)
+Server-side JavaScript extends the core language by providing server-side specific objects, thus allowing applications to talk to databases and update files located on a server.
+
 
 ### **Dynamic / Loose**
 
