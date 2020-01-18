@@ -142,4 +142,12 @@ Person {firstName: "David", lastName: "Jones"}
 
 The new context(object) gets linked to the `Person`'s prototype property (see [Prototypes]('../objects/../../../../objects/object-oriented-programming/inheritance/prototypes))
 
+Despite the lack of an explicit `return` statement in the `Person` function, the new context is returned implicitly;
+
+```
+console.log(person)
+
+// Person {firstName: "David", lastName: "Jones"}
+```
+
 #### Invocation method
