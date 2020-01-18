@@ -2,6 +2,8 @@
 
 The `this` keyword is a pointer to an object, and its return value is a reference to current calling object; **the context**.
 
+So, the 'context' translates to the executing object of the function; the object which calls the function.
+
 ### Global `this`
 
 If this is referenced at the top-level of a JS application - global context, its value will always be equal to the global object;
