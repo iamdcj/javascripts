@@ -2,7 +2,7 @@
 
 The `this` keyword is a pointer to an object, and its return value is a reference to current calling object; **the context**.
 
-So, the 'context' translates to the executing object of the function; the object which calls the function.
+So, the 'context' translates to the executing object of the function; the object which calls the function - the context is generated when a function is called, and the program enters a new execution context. It is the execution context which generates the value for `this`.
 
 ### Global `this`
 
