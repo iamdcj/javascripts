@@ -8,11 +8,19 @@ If a program doesn't contain any control flow structures, then it would simply r
 
 The following are all the control flow statements in JS:
 
-- block ({})
-- [if...else](./if-else/)
-- switch
-- break
-- throw
-- try...catch
-- continue
+**Generic**
+- block 
 - empty
+
+**Conditionals**
+- [if...else](./if-else/) 
+- switch 
+
+**Error**
+- throw 
+- try...catch
+
+**Terminators**
+- break 
+- continue 
+
