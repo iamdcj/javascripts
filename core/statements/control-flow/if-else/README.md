@@ -1,6 +1,6 @@
 # if...else
 
-The `if` statement provides a control structure which will execute a particular statement/set of statements based on the given conditions.
+The `if` statement provides a control structure which will execute a particular statement/set of statements based on the given conditions; anything that does something based on a condition is referred to as a conditional.
 
 `if this -> do that`
 
