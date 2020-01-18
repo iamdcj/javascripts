@@ -38,11 +38,11 @@ function grantAccess(name) {
     return;
   }
 
-  return `${name}, you are welcome`
+  return `Thank you, ${name}`
 }
 
 grantAccess('David'); // undefined
-grantAccess('John'); // 'John, you are welcome`
+grantAccess('Joe'); // 'Thank you, Joe`
 
 ```
 
