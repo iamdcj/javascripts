@@ -33,7 +33,7 @@ Notes and code snippets related to the JavaScript language.
 - Asynchronicity
   - Promises
   - Async...Await
-- _this_
+- [_this_](core/this)
   - Apply, Call, Bind.
 - [Classes](core/classes)
   - Decorators
