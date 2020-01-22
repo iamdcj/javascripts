@@ -167,4 +167,6 @@ const David = {
 David.returnName();
 // David Jones
 
+The object `David` is the receiver of the `returnName()` method.
+
 ```
