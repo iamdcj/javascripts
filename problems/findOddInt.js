@@ -4,16 +4,11 @@ function findOdd(ints) {
   const counts = {};
 
   // iterate over each int.
-  ints.forEach(int => {
+  ints.forEach(int =>
     // if count exits in table
     // increase its cunt
-    if (counts[int]) {
-      counts[int]++;
-    } else {
-      // add it to table
-      counts[int] = 1;
-    }
-  });
+    counts[int] ? counts[int]++ : (counts[int] = 1)
+  );
 
   for (let int in counts) {
     if (counts[int] % 2 === 1) {
@@ -21,3 +16,5 @@ function findOdd(ints) {
     }
   }
 }
+
+findOdd([1, 1, 2, 3, 4, 4, 4, 3, 2, 2, 2]);
