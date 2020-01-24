@@ -8,15 +8,15 @@ It defines what bindings are accessible within the current execution context, i.
 
 #### Defining the Scope(s)
 
-The scopes of a program are determined by the author, that is the code they create informs the engine of the program's intended scopes, then the scopes are cemented during the compilation/interpretation phase of the program’s lifecycle; [scope generation](01-generation).
+The scopes of a program are determined by the author; the code they create informs the engine of the program's intended scopes - these scopes are then cemented during the compilation/interpretation phase of the program’s lifecycle; [scope generation](01-generation).
 
 Scope defined by the authored source code structure is known as [lexical scope](./lexical-scope).
 
 Once the scopes have been generated using the scoping rules, we can then executed our scoped code; [execution of scoped code](02-execution).
 
-#### Scope Levels
+#### Scope levels
 
-JavaScript possesses two levels of scope, and depending on where and how we declare them, our behinds will belong to either one of these scopes:
+JavaScript possesses two levels of scope, and depending on where and how we declare them, our bindings will belong to either one of these scopes:
 
 - [**Global Scope**](scope-levels/global) - code which can be accessed at all points of a program, i.e. lives in the global .
 
