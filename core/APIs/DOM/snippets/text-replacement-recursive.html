@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div>
+    <img src="https://via.placeholder.com/350x150" alt="">
+    <a href="">Click <span>me</span></a>
+    <div>Click it!</div>
+  </div>
+
+</body>
+
+<script>
+
+  {
+    // get elements
+    const _el = document.querySelector('div');
+
+    const _replaceText = (node, targetString, replaceString) => {
+      const replacement = node.textContent.replace(
+        new RegExp(targetString, "gi"),
+        replaceString
+      );
+
+      node.textContent = replacement;
+    }
+
+    // get child nodes (this will include text and others)
+    const children = Array.from(_el.childNodes)
+
+    const findChildren = (nodes, targetString = '', replaceString = '') => {
+
+
+      // iterate over nodes 
+      nodes.forEach(n => {
+
+        // if node has children,
+        // do the same with them
+        if (n.childNodes.length) {
+          const nodes = Array.from(n.childNodes);
+
+          findChildren(nodes, targetString, replaceString);
+        } else {
+
+          if (n.textContent.length) {
+            _replaceText(n, targetString, replaceString);
+          }
+        }
+
+      })
+
+    }
+
+    findChildren(children, 'click', 'touch');
+  }
+
+</script>
+
+</html>
