@@ -2,7 +2,7 @@
 
 Scoped code is the code which has been sorted into lexical environments during the lexing phase; [scope generation](../01-generation).
 
-The execution phase does not bother with formal, LHS declarations, they have been taken care of during the [generation phase](../01-generation).
+The execution phase does not bother with formal(with a preceeding statement), LHS declarations, they have been taken care of during the [generation phase](../01-generation).
 
 ## Nested Scopes
 
