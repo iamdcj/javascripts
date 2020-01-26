@@ -36,7 +36,7 @@
 ---
 
 ##### Shoulders I stand on
-
+- [MDN JS Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 - [YDKJS](core/https://github.com/getify/You-Dont-Know-JS)
 - [JS is Sexy](core/http://javascriptissexy.com/)
 - [Eloquent JS](core/http://eloquentjavascript.net)
