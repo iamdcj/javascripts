@@ -6,20 +6,18 @@
   - [Lexical Scope](scope/lexical-scope)
   - [Closure](scope/closure)
   - [Hoisting](scope/hoisting)
-- [_this_](this)
-  - Apply, Call, Bind.
 - [Types](types)
   - Coercion
   - By Reference vs. By Value
 - [Objects](objects)
   - [Object-Oriented JavaScript](objects/object-oriented-programming)
     - [Inheritance](objects/object-oriented-programming/inheritance/prototypes) and [Prototypes](objects/object-oriented-programming/inheritance)
-  - JSON
+- [Classes](classes)
 - [Functions](types/composite/function)
+  - [_this_](this)
   - IIFE
   - Callbacks
   - HOF & Currying
-  - [Classes](classes)
   - Decorators
 - Collections
   - [Arrays](types/composite/arrays)
@@ -27,10 +25,10 @@
 - [Variables](variables)
 - Expressions
 - Operators
-- Events
 - Asynchronicity
   - Promises
   - async...await
+- Events
 - Modules
 - Patterns
 - Dates
@@ -40,6 +38,7 @@
 
 ##### Shoulders I stand on
 
+- [MDN JS Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
 - [YDKJS](https://github.com/getify/You-Dont-Know-JS)
 - [JS is Sexy](http://javascriptissexy.com/)
 - [Eloquent JS](http://eloquentjavascript.net)
