@@ -12,6 +12,8 @@ The initial character in the identifier must be one of the following;
 
 A digit(`0-9`) is not valid as the first character of an identifier in JavaScript; the engine needs to distinguish between `number`s and labels.
 
+The hypen/dash character `-` is not permitted anywhere in an identifier.
+
 ## Reserved Words
 
 The engine will throw an error if the engineer attempts to use a reserved, or to-be reserved word in the language.
