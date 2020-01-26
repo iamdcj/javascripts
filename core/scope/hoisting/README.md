@@ -235,4 +235,8 @@ The function can be ran because it is a function, but the last declaration will 
 foo() // 3
 ```
 
-The above are present to highlight the following; **_do not make duplicat declarations in the same lexical environment_**
+The above are present to highlight the following; **_do not make duplicate declarations in the same lexical environment_**
+
+#### `let` and `const`
+
+The above demonstrates how variables declared using the `var` statement are hoisted to the top of their respective scope, allowing reference prior to initialisation, however `let` and `const` don't behave the same way...[read more](../../variables/temporal-dead-zone)

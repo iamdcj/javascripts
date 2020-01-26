@@ -35,7 +35,7 @@ var bc = "🦕 Dinosaurs 🦖";
 
 ### Let, Const and Hoisting
 
-The above snippet, and many resources out there, suggest that `let` and `const` variables are not 'hoisted' to the top of their respective lexical environments, however this isn't entirely accurate.
+The above snippet, and many resources out there, suggest that `let` and `const` variables are not 'hoisted' to the top of their respective lexical environments, however this isn't entirely accurate - the following is from the ECMAScript specification;
 
 > The variables are created when their containing Lexical Environment is instantiated but may not be accessed in any way until the variable’s LexicalBinding is evaluated. - ECMAScript Specification.
 
