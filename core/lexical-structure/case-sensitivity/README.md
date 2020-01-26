@@ -1,6 +1,6 @@
 # Case Sensitivity
 
-JavaScript is a case-sensitive language; keywords, variables and function labels must have a consistent capilization, else the application will throw `reference` errors.
+JavaScript is a case-sensitive language; built-in keywords and identifiers; variable and function labels, must have a consistent capilization when they are referenced, else the application will throw `reference` errors.
 
 ### **Variables**
 
@@ -11,14 +11,14 @@ const davidJones = "David Jones";
 const davidjones = "David Christian Jones";
 ```
 
-Any RHS reference to either binding must use the correct casing;
+Any RHS reference to either binding must use the correct casing for the identifier;
 
 ```
 console.log(davidJones) // "David Jones"
 console.log(davidjones) // "David Christian Jones"
 ```
 
-otherwise reference errors will be thrown;
+If any attempt to use a different casing to the original identifer will result in a reference error will being thrown;
 
 ```
 console.log(Davidjones) //  Uncaught ReferenceError: Davidjones is not defined
@@ -26,7 +26,7 @@ console.log(Davidjones) //  Uncaught ReferenceError: Davidjones is not defined
 
 ### **Functions**
 
-The same applies to functions; the function label must be reference with the correct casing
+The same applies to functions; the function identifier label must be reference with the original casing, e.g.
 
 ```
 function LogName(name) {
@@ -34,7 +34,7 @@ function LogName(name) {
 }
 ```
 
-otherwise you will be referencing a function which does not exists in the scope or program
+If you use the wrong casing, you are referencing a function which does not exist in the current scope, or potentially the entire program, either way you get a reference error
 
 ```
 logname("David")
@@ -43,7 +43,7 @@ logname("David")
 
 ### **Keywords**
 
-When using a particular statemenet, e.g. `for`, `let`, `if`, in your programs they need to be lowercase.
+When using a particular statement, e.g; `for`, `let`, `if` in your programs they need to be lowercase.
 
 The following attempts at `for` loops would both throw errors;
 
@@ -61,7 +61,7 @@ whereas the following would do exactly what it is intended to do;
 
 ```
 for(let i = 0; i < 10; i++) {
-console.log(i);
+  console.log(i);
 }
 ```
 
