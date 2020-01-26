@@ -12,8 +12,12 @@ console.log(bc);
 * ===========
 =========== */
 let bc = "🦕 Dinosaurs 🦖";
+```
 
-Cannot access 'bc' before initialization
+###### Console
+
+```
+Uncaught ReferenceError: Cannot access 'bc' before initialization
 ```
 
 The `bc` variable is referenced before it is declared, which is not valid when using `const` or `let` statements; **the variable is in a `TDZ`**.
@@ -28,7 +32,12 @@ console.log(bc);
 * ===========
 =========== */
 var bc = "🦕 Dinosaurs 🦖";
-// undefined
+```
+
+###### Console
+
+```
+undefined
 ```
 
 **No error above.**
