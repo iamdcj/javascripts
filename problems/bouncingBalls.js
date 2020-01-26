@@ -11,3 +11,5 @@ function bouncingBall(h, bounce, window) {
 
   return seenCount;
 }
+
+bouncingBall(3, 0.66, 1.5);

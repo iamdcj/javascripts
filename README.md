@@ -6,6 +6,10 @@ Notes and code snippets related to the JavaScript language.
 
 ---
 
+- [Core](core)
+- [APIs](apis)
+- [Problems](problems)
+
 ### Core aspects
 
 - [Lexical Structure](core/lexical-structure)
