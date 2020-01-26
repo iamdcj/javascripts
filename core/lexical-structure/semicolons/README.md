@@ -109,7 +109,3 @@ https://dev.to/adriennemiller/semicolons-in-javascript-to-use-or-not-to-use-2nli
 https://news.codecademy.com/your-guide-to-semicolons-in-javascript/
 http://www.bradoncode.com/blog/2015/08/26/javascript-semi-colon-insertion/
 https://www.youtube.com/watch?v=B4Skfqr7Dbs
-
-```
-
-```

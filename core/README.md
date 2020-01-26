@@ -9,9 +9,9 @@
 - [Types](types)
   - Coercion
   - By Reference vs. By Value
-- [Objects](objects)
-  - [Object-Oriented JavaScript](objects/object-oriented-programming)
-    - [Inheritance](objects/object-oriented-programming/inheritance/prototypes) and [Prototypes](objects/object-oriented-programming/inheritance)
+- [Objects](types/composite/objects)
+  - [Object-Oriented JavaScript](types/composite/objects/object-oriented-programming)
+    - [Inheritance](types/composite/objects/object-oriented-programming/inheritance/prototypes) and [Prototypes](types/composite/objects/object-oriented-programming/inheritance)
 - [Classes](classes)
 - [Functions](types/composite/function)
   - [_this_](this)
