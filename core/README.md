@@ -1,43 +1,46 @@
 # Core JavaScript
 
-- [Lexical Structure](core/lexical-structure)
+- [Lexical Structure](lexical-structure)
 - Execution
-- [Scope](core/scope)
-  - [Lexical Scope](core/scope/lexical-scope)
-  - [Closure](core/scope/closure)
-  - [Hoisting](core/scope/hoisting)
-- [Types](core/types)
+- [Scope](scope)
+  - [Lexical Scope](scope/lexical-scope)
+  - [Closure](scope/closure)
+  - [Hoisting](scope/hoisting)
+- [_this_](this)
+  - Apply, Call, Bind.
+- [Types](types)
   - Coercion
   - By Reference vs. By Value
-- [Objects](core/objects)
-  - [Object-Oriented JavaScript](core/objects/object-oriented-programming)
-    - [Inheritance](core/objects/object-oriented-programming/inheritance/prototypes) and [Prototypes](core/objects/object-oriented-programming/inheritance)
+- [Objects](objects)
+  - [Object-Oriented JavaScript](objects/object-oriented-programming)
+    - [Inheritance](objects/object-oriented-programming/inheritance/prototypes) and [Prototypes](objects/object-oriented-programming/inheritance)
   - JSON
-- [Statements](core/statements)
-- Expressions
-- Operators
-- [Variables](core/variables)
-- Functions
+- [Functions](types/composite/function)
   - IIFE
   - Callbacks
   - HOF & Currying
+  - [Classes](classes)
+  - Decorators
+- Collections
+  - [Arrays](types/composite/arrays)
+- [Statements](statements)
+- [Variables](variables)
+- Expressions
+- Operators
 - Events
 - Asynchronicity
   - Promises
-  - Async...Await
-- [_this_](core/this)
-  - Apply, Call, Bind.
-- [Classes](core/classes)
-  - Decorators
+  - async...await
 - Modules
 - Patterns
 - Dates
+- Errors
 
 ---
 
 ##### Shoulders I stand on
 
-- [YDKJS](core/https://github.com/getify/You-Dont-Know-JS)
-- [JS is Sexy](core/http://javascriptissexy.com/)
-- [Eloquent JS](core/http://eloquentjavascript.net)
-- [JS.com](core/https://www.javascript.com)
+- [YDKJS](https://github.com/getify/You-Dont-Know-JS)
+- [JS is Sexy](http://javascriptissexy.com/)
+- [Eloquent JS](http://eloquentjavascript.net)
+- [JS.com](https://www.javascript.com)
