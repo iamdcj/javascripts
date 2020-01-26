@@ -1,25 +1,34 @@
-const solution = maze => {
-  traverse = function(column, row) {
-    if (maze[column][row] == 2) {
-      console.log("We solved the maze at (" + column + ", " + row + ")");
-    } else if (maze[column][row] == 1) {
-      console.log("At valid position (" + column + ", " + row + ")");
-      maze[column][row] = 9;
-      if (column < maze.length - 1) {
-        traverse(column + 1, row);
-      }
-      if (row < maze[column].length - 1) {
-        traverse(column, row + 1);
-      }
-      if (column > 0) {
-        traverse(column - 1, row);
-      }
-      if (row > 0) {
-        traverse(column, row - 1);
-      }
+const solution = pot => {
+  const check = pot.map((row, i) => {
+    nextRow = pot[i + 1];
+
+    if (!nextRow) {
+      return;
     }
-  };
+
+    return checkForPath(row, nextRow);
+  });
+
+  return !check.includes(false);
 };
+
+const returnIndexes = arr =>
+  arr
+    .map((c, i) => {
+      return c === 0 ? i : null;
+    })
+    .filter(c => c !== null);
+
+function checkForPath(row, nextRow) {
+  const currentIndexes = returnIndexes(row);
+  const nextIndexes = returnIndexes(nextRow);
+
+  const intersection = currentIndexes.some(value => {
+    return nextIndexes.includes(value);
+  });
+
+  return intersection;
+}
 
 console.log(
   solution([
