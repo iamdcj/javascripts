@@ -1,6 +1,6 @@
 # Javascripting
 
-Notes and code snippets related to the JavaScript language.
+Notes and code snippets.
 
 [Overview](overview)
 
