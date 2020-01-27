@@ -1,4 +1,4 @@
-# Javascript
+# Javascripting
 
 Notes and code snippets related to the JavaScript language.
 
