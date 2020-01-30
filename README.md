@@ -27,9 +27,6 @@ The JavaScript language is a fully-fledged programming language, despite what so
 
 - **Dynamic / Loose** - JavaScript doesn't have static/strict typing, i.e. variables do not need to be assigned a type when being declared; **_in JavaScript the values have types, not the variable itself._**
 
-  - [Types in JavaScript](../core/types)
+  - [Types in JavaScript](core/types)
 
-- **Multi-paradigm** - You can use functional, imperative, event-driven and object-oriented paradigms when engineering JavaScript applications;
-  - Object-oriented Programming
-  - Functional
-  - Event-Driven
+- **Multi-paradigm** - javaScript allows you to build applications with different coding paradigms, such as: [OOP](paradigms/object-oriented-programming), [Functional](paradigms/function), Event-Driven.
