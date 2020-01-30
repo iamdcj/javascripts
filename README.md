@@ -1,4 +1,4 @@
-# Javascripting
+# The Javascripts
 
 ### Contents
 
