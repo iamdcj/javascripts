@@ -14,10 +14,10 @@ const player = {
 
 Classes are the cornerstone of OOP, and the following are the four main aspects of OOP;
 
-__Encapsulation__
-__Abstraction__
-__Inheritance__
-__Polymorphism__
+- __Encapsulation__
+- __Abstraction__
+- __Inheritance__
+- __Polymorphism__
 
 ---
 
