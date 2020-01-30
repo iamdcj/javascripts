@@ -22,7 +22,7 @@ Classes are the cornerstone of OOP, and the following are the four main aspects 
 ---
 
 ### Classes
-A `class` represents a particular type of thing in an application, e.g. a car, an animal or say a **person** - **a classification of something**. 
+A `class` represents a particular type of thing in an application, e.g. a car, an animal, or say a person - **classes are a classification of a thing**. 
 
 Classes act as templates for any instance of that particular thing we create in our program; classes are the blueprints, __objects are created from the blueprint__.
 
