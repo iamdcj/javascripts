@@ -27,11 +27,8 @@
   - Promises
   - async...await
 - Events
-- Paradigms
-  - [Functional](paradigms/functional)
-  - [Object-Oriented JavaScript](paradigms/object-oriented-programming)
+
 - Modules
-- Patterns
 - Dates
 - Errors
 
