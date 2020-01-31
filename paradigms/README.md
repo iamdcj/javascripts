@@ -1,5 +1,22 @@
 # Paradigms in JavaScript
 
+### What is a Paradigm?
+
+Paradigms in programming are a particular style/way of programming.
+
+A programming language can lend itself to a particular paradigm, i.e. a language might be best written using a a particular paradigm, e.g.
+
+> Haskell is a functional programming language.
+
+The above line simply means that the language is intended to be written in a functional manner, because the language's feature set is catered towards that particular paradigm.
+It doesn't mean that a program in that language can't be written using a different paradigm, _but_ using a different paradigm might not be the best way to write code in that language.
+
+### Multi-Paradigm Languages
+
+In essense all languages can be written using different paradigms, but as above some languages are best written using a specific paradigm, other languages are flexible; they are well-suited to more than one particular paradigm.
+
+**JavaScript is a multi-paradigm language** - you can 'easily' engineer applications using the OOP paradigm, or the Functional paradigm, or even the Event-Driven paradigm.
+
 ---
 
 #### References
