@@ -15,7 +15,7 @@ It doesn't mean that a program in that language can't be written using a differe
 
 In essense all languages can be written using different paradigms, but as above some languages are best written using a specific paradigm, other languages are flexible; they are well-suited to more than one particular paradigm.
 
-**JavaScript is a multi-paradigm language** - you can 'easily' engineer applications using the one of the following paradigms:
+**JavaScript is a multi-paradigm language**, and JS programs can be written one of the following paradigms:
 
 - [Onject-Oriented](object-oriented-programming)
 - [Functional](functional)
