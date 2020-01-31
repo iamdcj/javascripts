@@ -8,7 +8,6 @@
   - [Hoisting](scope/hoisting)
 - [Types](types)
   - Coercion
-  - By Reference vs. By Value
 - [Objects](types/composite/objects)
 - [Classes](classes)
 - [Functions](types/composite/function)
