@@ -1,6 +1,6 @@
 # Objects
 
-### `typeof` object
+#### `typeof` object
 
 Objects are an unordered collection of members; `property:value` pairs - the properties are labels which allow for easy reference to the values; which can be any valid type.
 
@@ -8,7 +8,7 @@ The property values are usually pieces of related data, accompanied by functions
 
 _Objects can contain any valid JS datatype as a property value._
 
-#### Anatomy
+### Anatomy
 
 An `object` consists of the following parts;
 
@@ -28,7 +28,7 @@ const Person // Label = { // Braces
 
 The above `object` is encapsulates three members; two of which contain related data, and a third member which contains a function which logs information from within the object, functions stored as values of properties are known as **methods**.
 
-#### Methods
+### Methods
 
 An object method is a function with is stored as the value for a property on the object;
 
@@ -44,7 +44,7 @@ DavidJones.logName(); // David Jones
 
 Methods are automatically bound to the object itself, i.e. the `this` keyword will point to the wrapping object(context), allowing for direct access to the wrapping object's other members.
 
-#### Benefits of Encapsulation
+### Encapsulation
 
 Storing values in a common wrapper makes more sense than a bunch of separately initialised bindings, especially when there is a relationship; by encapsulating values within object 'buckets', bindings have a clear relationship, cemented by the object namespace, as a result these bindings are shielded from potential namespace collisions.
 
@@ -64,7 +64,7 @@ const David = {
 }
 ```
 
-#### **Defining Members**
+### Defining Members
 
 Adding members to an object literal during the initial creation can be achieved by stating the `property`, followed by the value, separated by a colom`:`;
 
@@ -75,7 +75,9 @@ const objLit = {
 }
 ```
 
-Further properties can be added to objects by using dot notation, or bracket notation on the objects namespace `objLit`;
+Further properties can be added to objects by using dot notation, or bracket notation on an objects namespace.
+
+#### Dot Notation
 
 ```
 objLit.proppyWoppy = 19;
@@ -88,6 +90,8 @@ console.log(objLit);
 
 // { prop: "value", anotherProp: Array(2), test: "another", proppyWoppy: 19, testProp: null, logger: ƒ} }
 ```
+
+#### Bracket Notation
 
 Using bracket notation allows for dynamic member addition, i.e. you can use a string value to define the member name, followed by whatever value;
 
@@ -103,11 +107,12 @@ console.log(objLit)
 // {prop: "value", anotherProp: Array(2), proppyWoppy: 19, testProp: null, "": "David"}
 ```
 
-#### **Accessing Members**
+### Accessing Members
 
 Accessing object properties or methods can be done using dot or bracket notation;
 
-**Dot Notation accessing**
+#### Dot Notation accessing
+
 Dot notation is the most common way of accessing object members;
 
 ```
@@ -134,8 +139,9 @@ User.logUserInfo();
 //  Name: David Jones
 ```
 
-**Bracket Notation accessing**
-Dot notation offers another approach to member accessing; it is very similar to the array member accessing syntax `array[0]`, however the string label is using instead of the ordinal index; object are not sorted numerically.
+### Bracket Notation accessing
+
+Dot notation offers another approach to member accessing; it is very similar to the array member accessing syntax `array[0]`, however the string label is using instead of the ordinal index; objects are not sorted numerically.
 
 ```
 const User = {
@@ -154,14 +160,18 @@ const User = {
 }
 
 console.log(User['name']); // David Jones
+```
 
+**Accessing Methods**
+
+Accessing methods using bracket notation is not a common thing, and dot notation is highly recommended.
+
+```
 User['logUserInfo']();
 //  ID: 1234
 //  Age: 32
 //  Name: David Jones
 ```
-
-Accessing methods using bracket notation is not a common thing, and dot notation is highly recommended.
 
 Dot notation is useful when accessing a property which contains hyphens;
 
