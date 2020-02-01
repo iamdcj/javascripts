@@ -38,52 +38,50 @@ updateUser("DCJ", 32, "FED");
 updateName("David Jones");
 ```
 
-Flow:
+#### Flow
 
-1. updateUser is called to update user properties.
-2. updateName is called to modify the current user’s name.
-3. User’s name gets updated from updateName()
-4. updateUser returns after updateName(), wiping-out the name provided in updateName
+**1.** updateUser is called to update user properties.
+**2.** updateName is called to modify the current user’s name.
+**3.** User’s name gets updated from updateName()
+**4.** updateUser returns after updateName(), wiping-out the name provided in updateName
 
-This is a primitive example, but highlights what can happen when updating shared state at different points;
-You can’t guarantee the current state if if is mutated, and mutated in different places.
+This is a primitive example, but highlights what can happen when updating shared state at different points.
 
-—
+**You can’t guarantee the current state if it is mutated, and mutated in different places.**
 
-CALL ORDER
-We know from the above example what happens to shared state if functions don’t return in a rigid order;
-Functions which affect shared state need to always be called in the same order, otherwise the results will not be the same.
+### Call Order
+
+We know from the above example what happens to shared state if functions don’t return in a rigid order, thus functions which affect shared state need to always be called in the same order, otherwise the results will not be the same.
 
 This example demonstrates what happens if shared state affecting functions are not called in the same order every time;
 
-STATE
-const user = { points: 1 }
+#### State
 
-FUNCTIONS
+```
+const user = { points: 1 }
+```
+
+#### Functions
+
+```
 const doublePoints = () => user.points \*= 2;
 const addPoint = name => user.points += 1;
+```
 
-INVOCATION 1
+#### Invocations
+
+```
 doublePoints()
 addPoint()
 
-console.log(user.points)
+console.log(user.points) // 4
 
-// 4
-
-INVOCATION 2
 addPoint()
 doublePoints()
 
-console.log(user.points)
-
-// 3
+console.log(user.points) // 3
+```
 
 The above behaviour might be intended, but it demonstrates that if you call a function which affects shared state in different orders, you will not get consistent results, which is against the core concepts of functional programming.
 
-The order of functions do not matter, not does the timing of return, if shared state is avoided,
-however if you have are working with shared state, and need to use the state in your functions, do not mutate the original data.
-
-```
-
-```
+If you avoid using shared state, then the order of functions does not matter, nor does the timing of return. **If you have are working with shared state, and need to use the state in your functions, do not mutate the original data.**

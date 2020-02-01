@@ -8,6 +8,8 @@ By avoiding state mutations, we will get consistent and predictable results in o
 
 Ideally the objects and arrays we create would be immutable upon generation, however without a library to help us, the best we can do is ensure we do not modify the original objects/arrays in our functions.
 
+---
+
 ### Examples
 
 This example uses the state to generate values in an immutable fashion; the originals are never modified.

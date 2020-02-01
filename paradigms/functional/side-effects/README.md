@@ -16,4 +16,4 @@ All of the above have the potential to return different results; they are not pr
 
 As stated above, side-effects are not predictable; there is always a a chance that the function may return a different value, based on a side-effect being present in the function.
 
-Our functions need to be pure, side-effects ensure that our functions are impure; **non-deterministic**.
+Our functions need to be [pure](../pure-functions), side-effects ensure that our functions are impure; **non-deterministic**.

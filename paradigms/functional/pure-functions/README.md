@@ -25,6 +25,8 @@ Due to their simplicity, pure functions can easily be;
 - Reused across different programs.
 - Maintained and refactored.
 
+---
+
 ### Examples
 
 The following examples demonstrate how pure functions work;
