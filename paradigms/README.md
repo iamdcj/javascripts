@@ -1,7 +1,5 @@
 # Paradigms in JavaScript
 
-## What is a Paradigm?
-
 Paradigms in programming are a particular style/way of programming.
 
 A programming language can lend itself to a particular paradigm, i.e. a language might be best written using a a particular paradigm, e.g.
