@@ -8,6 +8,7 @@
   - [Hoisting](scope/hoisting)
 - [Types](types)
   - Coercion
+  - By value vs. By reference
 - [Objects](types/composite/objects)
 - [Classes](classes)
 - [Functions](types/composite/function)
@@ -16,8 +17,10 @@
   - Callbacks
   - HOF & Currying
   - Decorators
-- Collections
-  - [Arrays](types/composite/arrays)
+- Collections;
+  - [arrays](types/composite/arrays),
+  - sets,
+  - maps
 - [Statements](statements)
 - [Variables](variables)
 - Expressions
