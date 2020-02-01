@@ -31,7 +31,7 @@ In essense all languages can be written using different paradigms, but as above 
 
 **JavaScript is a multi-paradigm language**, and JS programs are often written using one of the following paradigms:
 
-- [Onject-Oriented](object-oriented-programming) (Imperative)
+- [Object-Oriented](object-oriented-programming) (Imperative)
 - [Functional](functional) (Declarative)
 
 ---
