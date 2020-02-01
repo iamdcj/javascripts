@@ -29,4 +29,4 @@ The JavaScript language is a fully-fledged programming language, despite what so
 
   - [Types in JavaScript](core/types)
 
-- **Multi-paradigm** - javaScript allows you to build applications with different coding paradigms, such as: [OOP](paradigms/object-oriented-programming), [Functional](paradigms/function), Event-Driven.
+- **Multi-paradigm** - javaScript allows you to build applications with different coding [paradigms](paradigms), such as: [OOP](paradigms/object-oriented-programming), [Functional](paradigms/function), Event-Driven.
