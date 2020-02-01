@@ -29,7 +29,7 @@ Declarative programming concerns itself with the end result, essentially _what_ 
 
 In essense all languages can be written using different paradigms, but as above some languages are best written using a specific paradigm, other languages are flexible; they are well-suited to more than one particular paradigm.
 
-**JavaScript is a multi-paradigm language**, and JS programs are often written using one of the following paradigms:
+**JavaScript is a multi-paradigm language**, and JS programs are often written using one/a mix of of the following paradigms:
 
 - [Object-Oriented](object-oriented-programming) (Imperative)
 - [Functional](functional) (Declarative)
