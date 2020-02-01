@@ -19,7 +19,7 @@ The JavaScript language is a fully-fledged programming language, despite what so
 
 - **Cross-Platform** - it has mainly been used as a client-side language, and pretty much exclusively in web browsers, however over the years JS has crossed platforms and started to be used for back-end development, thanks mainly to the advent of the [NodeJS](https://nodejs.org/en/) runtime.
 
-  - **Client-Side** - The most popular variant of JS extends the core language via objects which allow programs to interact with the browser and the website's DOM - this is how we add functionality to an otherwise static website.
+  - **Client-Side** - The most popular variant of JS extends the core language via objects which allow programs to interact with the browser and the website's [DOM](APIs/DOM) - this is how we add functionality to an otherwise static website.
 
   - **Server-Side** - Server-side JS extends the core language by providing server-side specific objects, thus allowing applications to talk to databases and update files located on a server.
 
