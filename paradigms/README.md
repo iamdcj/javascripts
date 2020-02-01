@@ -6,12 +6,11 @@ A programming language can lend itself to a particular paradigm, i.e. a language
 
 > Haskell is a functional programming language.
 
-The above line simply means that the language is intended to be written in a functional manner, because the language's feature set is catered towards that particular paradigm.
-It doesn't mean that a program in that language can't be written using a different paradigm, _but_ using a different paradigm might not be the best way to write code in that language.
+The above line simply means that the language is intended to be written in a functional manner, because the language's feature set is catered towards that particular paradigm. It doesn't mean that a program can't be written using a different paradigm, _but_ using a different paradigm might not be the best way to write code in _that_ language.
 
 ### Paradigm Categories
 
-The following are two main approaches to writing programs;
+The following are two of the main approaches to writing programs;
 
 #### Imperative Programming
 
