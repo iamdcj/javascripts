@@ -14,19 +14,16 @@ The following are two of the main approaches to writing programs;
 
 #### Imperative Programming
 
-Imperative programing is concerned with control flow, and _how_ a thing is achieved in the code.
+Imperative programing is concerned with control flow, and _how_ a thing is achieved in the code. There is no abstraction, the program contains all the statements and control flow required to get to the final result.
 
-Imperative programming documents the entire control flow of a function,
-the how is clear due to the usage of statements in the function; if, else, for, while;
-The control flow is explicitly documented in the code; each step of the function is visible.
+Imperative programming documents the entire control flow of a function, the how is clear due to the usage of statements in the function; if, else, for, while. The control flow is explicitly documented in the function body,
 
-There is no abstraction, the program contains all the statements and control flow required to get to the final result.
 
 #### Declarative Programming
 
 Declarative programming concerns itself with the end result, essentially _what_ is to be achieved in the code. There is some imperative abstraction layer in operation, the end goal is achieved, but the statements and control flow is dealt with in said abstraction.
 
-**The code describes what it's intention, without documenting each instruction.**
+**The code describes the intention, without documenting each instruction.**
 
 ## Multi-Paradigm Languages
 
