@@ -28,3 +28,9 @@ All of the above have the potential to return different results; they are not pr
 As stated above, side-effects are not predictable; there is always a chance that the function may return a different value, based on a side-effect being present in the function.
 
 **Side-effects result in, non-deterministic, impure functions.**
+
+---
+
+#### References
+
+- [What is a Pure Function?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976)

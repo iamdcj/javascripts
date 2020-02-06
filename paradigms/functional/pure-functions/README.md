@@ -57,3 +57,9 @@ adder(1, 1);
 ```
 
 The above examples are concise, deterministic(no side-effects) and can be utilised in a number of places.
+
+---
+
+#### References
+
+- [What is a Pure Function?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976)
