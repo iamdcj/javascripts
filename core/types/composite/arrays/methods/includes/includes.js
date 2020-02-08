@@ -8,7 +8,7 @@ const arr2 = ["David", "Steffie", "Nole"];
 
 arr2.includes("Bob"); // false
 
-// With objects
+// Objects
 const arr3 = [{ user: "David" }, { user: "Steffie" }, { user: "Nole" }];
 
 arr3.includes({ user: "Steffie" }); // false
