@@ -1,10 +1,11 @@
-# Arrays 
+# Arrays
 
 ### `typeof` object
 
 Arrays are numerically ordered collections of data; they tend to contain numerous pieces of related data, but can be used as ordered containers for any type.
 
 ###### String array
+
 ```
 const names = ["David", "Stephanie", "Nole"];
 
@@ -12,7 +13,8 @@ const David = names[0] // retrieve item by index
 
 ```
 
-JS arrays can contain an mixture of any valid datatype, including arrays;
+JS arrays can contain an mixture of any valid datatype, including arrays, thus creating multi-dimensional arrays;
+
 ```
 const mixedBag = [1, "two", { number: 3 }];
 
