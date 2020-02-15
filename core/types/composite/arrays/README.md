@@ -31,5 +31,5 @@ console.log(names.length) // 3
 ```
 ---
 ### Working with Arrays
-There a number of built-in [methods](./methods) which assist engineers when working with ordinal ordered collections of data
+There are a number of built-in [methods](./methods) which assist engineers when working with ordinal ordered collections of data
 
