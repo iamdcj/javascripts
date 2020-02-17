@@ -1,6 +1,6 @@
 # Control Flow Statements
 
-The following statements deal with control flow in JS applications; _control flow handles the order in which statements are executed in program_
+The following statements deal with control flow in JS applications; _control flow handles the order in which statements are executed in a program_
 
 **Control flow determines the execution path of a program.**
 

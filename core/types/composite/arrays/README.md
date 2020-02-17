@@ -29,3 +29,7 @@ Arrays are typeof object, but can be better considered a subtype of object; they
 ```
 console.log(names.length) // 3
 ```
+---
+### Working with Arrays
+There are a number of built-in [methods](./methods) which assist engineers when working with ordinal ordered collections of data
+

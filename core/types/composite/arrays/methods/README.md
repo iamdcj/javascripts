@@ -1,4 +1,4 @@
-# Array Method
+# Array Methods
 
 The following list of methods are extremely useful when working with arrays in JavaScript applications;
 
