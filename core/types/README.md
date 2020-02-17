@@ -80,7 +80,7 @@ There are a total of seven built-in JS types, and they fall into two categories 
 
 A primitive type is any type which is not an object - these types have no methods, and are at the lowest level of a language's implementation.
 
-Primitives are immutable; the original cannot be altered - _*Primitives are passed by value, not by reference*_.
+**Primitives are immutable**; the original cannot be altered - _*Primitives are passed by value, not by reference*_.
 
 - [number](primitives/number)
 - [string](primitives/string)
@@ -102,4 +102,4 @@ The `object` type covers objects, functions and arrays. Many would prefer functi
 - [Arrays](composite/arrays)
 - [Function](composite/function)
 
-Composite types are mutable; you can edit the original - _*Composites are passed by reference, not by value*_.
+**Composite types are mutable**; you can edit the original - _*Composites are passed by reference, not by value*_.
