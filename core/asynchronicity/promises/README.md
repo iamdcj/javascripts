@@ -1,6 +1,6 @@
 # Promise
 
-A `Promise` is an object represents the result of an asynchronous operation. **The result of a promise can either be successful or failed.**
+A `Promise` is an object represents the result of an asynchronous operation. **The result of a promise can either be successful or failed.** I
 
 _Promises allow engineers to fire some asynchronous code, and handle the result of that code when it completes at some point in the future._
 
@@ -18,7 +18,9 @@ promise.then(handleSuccessCallback, handleFailureCallback);
 
 ```
 
-The `Promise` label accurately describes what happens when a promise is created; you ask for something, instead of an immediate answer you're presented with a promise; the answer could eventually be 'yes' or 'no', but you have to wait on something happening before you get _that_ answer.
+`Promise`s don't immediately return a value, a la a regular event callback, but instead act as a bridge between a value, or the reason a value can't be returned.
+
+So, in plain ol' English; you ask for something, instead of receiving an immediate response, you're instead presented with a maybe(the `Promise`) - the answer could eventually be 'yes' or 'no', but you have to wait on something before you get the answer.
 
 ## **The States of a `Promise`**
 
@@ -40,9 +42,9 @@ If the promise has finished-up with the asynchronous operation, but this time th
 
 If a promise hasn't been `fulfilled` or `rejected` then it is still in its `pending` state.
 
-We know from above👆that `Promises` don't immediately return a value, a la a regular event callback, but instead we 'wait' on some asynchronous operation before returning an object.
+## **The Fates of a `Promise`**
 
----
+## A promise has three states👆
 
 Resources
 
