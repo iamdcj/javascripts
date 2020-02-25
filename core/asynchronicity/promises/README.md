@@ -44,9 +44,11 @@ If a promise hasn't been `fulfilled` or `rejected` then it is still in its `pend
 
 ## **The Fates of a `Promise`**
 
-## A promise has three states👆
+A promise has three states👆, but only the two fates;
 
-Resources
+---
+
+##### Resources
 
 - [Using Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
 - [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
