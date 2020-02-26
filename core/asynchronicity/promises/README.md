@@ -1,6 +1,6 @@
 # Promise
 
-A `Promise` is an object which represents the resolution of an asynchronous operation. **The result of a promise can either be successful or failed.**
+A `Promise` is an object which represents the resolution of an asynchronous operation. **The result of a promise can either be successful or failed.** So, a promise will capture whether the async. operation was good, and return the result value, or if it was bad it will return why it failed.
 
 The returned `Promise` object is attached with callback functions to run based on the result of the operation - take the following asynchronous functional call example;
 
