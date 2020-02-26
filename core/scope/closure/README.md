@@ -31,7 +31,7 @@ We can see from above that functions can be successfully passed around to other 
 
 #### **2. Lexical Scoping**
 
-The second part of closure is `Lexical Scope`; JavaScript has lexical scope, scopes are defined by how programmers structure the source code, and nesting of lexical environments(scopes) is common practice in JS applications;
+The second part of closure is [`Lexical Scope`](./../lexical-scope); JavaScript utitlises lexical scope; scopes are defined by how programmers structure the source code, and nesting of lexical environments(scopes) is common practice in JS applications;
 
 ```
 // Global Scope (Global Lexical Environemnt)
@@ -122,4 +122,3 @@ The above approach is an example of `currying`; you essentially set an initial a
 - [@dis_is_patrick - Medium](https://medium.com/@dis_is_patrick/practical-uses-for-closures-c65640ae7304)
 - [JavaScript Closures: Explanations and Open Source Examples - oneminutejs](https://medium.com/@oneminutejs/javascript-closures-explanations-and-open-source-examples-a3731848f658)
 - [FACTORY FUNCTIONS AND THE MODULE PATTERN](https://www.theodinproject.com/courses/javascript/lessons/factory-functions-and-the-module-pattern#:~:targetText=The%20concept%20of%20closure%20is,called%20outside%20of%20that%20function.)
-
