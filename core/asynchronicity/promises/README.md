@@ -1,34 +1,36 @@
 # Promise
 
-A `Promise` is an object represents the result of an asynchronous operation. **The result of a promise can either be successful or failed.** I
+A `Promise` is an object which represents the result of an asynchronous operation. **The result of a promise can either be successful or failed.**
 
-_Promises allow engineers to fire some asynchronous code, and handle the result of that code when it completes at some point in the future._
-
-The `Promise` object is attached with callback functions to run based on the result of the operation, for example;
+The `Promise` object is attached with callback functions to run based on the result of the operation, take the following asynchronous functional call;
 
 ##### Pseudo Promise
 
 ```
-// Async function
+// Async function call
 const promise = someAsyncFunction(doThis);
 
-// Promise object callbacks
+// Promise object w/ callbacks
 // 1 for success, 1 for failure
 promise.then(handleSuccessCallback, handleFailureCallback);
 
 ```
 
-`Promise`s don't immediately return a value, a la a regular event callback, but instead act as a bridge between a value, or the reason a value can't be returned.
+## Why use `Promises`?
 
-So, in plain ol' English; you ask for something, instead of receiving an immediate response, you're instead presented with a maybe(the `Promise`) - the answer could eventually be 'yes' or 'no', but you have to wait on something before you get the answer.
+`Promise`s allow engineers to fire some asynchronous code, and handle the result of that code when it completes at some point in the future; `Promise`s don't immediately return a value, as per a regular event callback, but instead act as a bridge between a value, or the reason a value can't be returned.
 
 ## **The States of a `Promise`**
 
 Every `Promise` has three states throughout its lifecycle;
 
+- Pending
 - Fulfilled
 - Rejected
-- Pending
+
+### **Pending**
+
+The `pending` state is the default state of a promise, and only when a promise has been `fulfilled` or `rejected` will it come out of its `pending` state.
 
 ### **Fulfilled**
 
@@ -38,13 +40,12 @@ If the promise has finished-up with the asynchronous operation, and the result o
 
 If the promise has finished-up with the asynchronous operation, but this time the result of the operation was unsuccessful, then the promise will be `rejected`.
 
-### **Pending**
-
-If a promise hasn't been `fulfilled` or `rejected` then it is still in its `pending` state.
-
 ## **The Fates of a `Promise`**
 
 A promise has three states👆, but only the two fates;
+
+- Resolved
+- Unresolved
 
 ---
 
