@@ -53,9 +53,13 @@ A promise has three states👆, but only the two fates;
 - Resolved
 - Unresolved
 
-### Resolves
+### Resolved
+
+A resolved promise is any promise that isn't in the `pending` state, i.e. it has been `fulfilled` or `rejected`.
 
 ### Unresolved
+
+A resolved promise is any promise that is still in the `pending` state.
 
 ---
 
