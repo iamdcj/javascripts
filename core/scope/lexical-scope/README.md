@@ -81,7 +81,7 @@ In the above example the engine will perform a RHS lookup for variable `b`.
 
 --
 
-### **TL;DR**
+### **TL;DR 👆**
 
 Lexical Scope is a result of how programmers structure their JS code; the nesting functions/blocks designs the lexical scope, which is cemented at 'compile' time.
 
