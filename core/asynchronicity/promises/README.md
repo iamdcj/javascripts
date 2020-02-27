@@ -93,7 +93,7 @@ A resolved promise is any promise that is still in the `pending` state.
 
 ### Creating Promises
 
-We saw in the `fetch` example that some libraries/APIs utilise promises, especially ones dealing with data fetching, however there are times when you may want to create a new promise in your application.
+We saw in the `fetch` example that some libraries/APIs utilise promises 'under-the-hood', especially ones dealing with data fetching, however there are times when you may want to create a new promise in your application.
 
 If you need to create a promise for some asynchronous operation, this is how it's done;
 
