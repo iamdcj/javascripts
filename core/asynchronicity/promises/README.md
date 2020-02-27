@@ -97,9 +97,9 @@ We saw in the `fetch` example that some libraries/APIs utilise promises 'under-t
 
 If you need to create a promise for some asynchronous operation, this is how it's done;
 
-##### Define a `new` Promise
+#### Define a `new` Promise
 
-A promise can be created using the Promise constructor; the promise provides the `resolve` and `reject` functions from the 'executor' function.
+A promise can be created using the `Promise` constructor; the promise provides the `resolve` and `reject` functions from the 'executor' function.
 
 ```
 const asyncThing = new Promise((resolve, reject) => {
@@ -107,7 +107,15 @@ const asyncThing = new Promise((resolve, reject) => {
 })
 ```
 
-Define the asynchronous operation inside the executor function body, calling the `resolve` and `reject` functions when the operation is successful or a failure.
+Define the asynchronous operation inside the executor function body, calling the `resolve` and `reject` methods when the operation succeeds or fails.
+
+#### `resolve` method
+
+The `resolve` method is called when the operation within the promise body is successful, with some value usually passed in the as an argument to the method.
+
+#### `reject` method
+
+The `reject` method is called when the operation within the promise body is unsuccessful, i.e. it fails - with detail as to why it failed passed as an argument to the method.
 
 ---
 
@@ -116,7 +124,3 @@ Define the asynchronous operation inside the executor function body, calling the
 - [Using Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
 - [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 - [States and Fates](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md)
-
-```
-
-```
