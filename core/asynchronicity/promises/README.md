@@ -97,15 +97,17 @@ We saw in the `fetch` example that some libraries/APIs utilise promises, especia
 
 If you need to create a promise for some asynchronous operation, this is how it's done;
 
-##### Define `new` Promise
+##### Define a `new` Promise
 
-A promise can be created using the Promise generator; the promise provides the `resolve` and `reject` functions from the executor function.
+A promise can be created using the Promise constructor; the promise provides the `resolve` and `reject` functions from the 'executor' function.
 
 ```
-const asyncThing = new Promise((resolve, reject) => {})
+const asyncThing = new Promise((resolve, reject) => {
+  ...
+})
 ```
 
-Define the asynchronous operation inside the executor function body, calling the `resolve` and `reject` functions when the operation is successful or a failure;
+Define the asynchronous operation inside the executor function body, calling the `resolve` and `reject` functions when the operation is successful or a failure.
 
 ---
 
