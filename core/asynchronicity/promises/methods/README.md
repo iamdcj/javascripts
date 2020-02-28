@@ -86,9 +86,14 @@ someBadPromise
 
 If there is no `catch` callback present, and something is amiss with the async. operation you will be presented with the following error;
 
-> `Uncaught (in promise) TypeError: [SOME EXCEPTION REASON]`
+```
+someBadPromise
+  .then(() => console.log('success'))
+```
 
-(👆 we didn't concern ourselves with handling any negative scenarios)
+If we don't concern ourselves with concern with handling negative scenarios, and something _does_ go wrong, we get the following;
+
+> `Uncaught (in promise) TypeError: [SOME EXCEPTION REASON]`
 
 #### Catching chained promises
 
@@ -99,19 +104,19 @@ somePromise
   .then(response => Promise.reject('inwalid jason').then(data => ...handle data))
 ```
 
-The above promise chain consists of the initial request, then we reject the returned promise if something is wrong with the data. If we add a `catch` at the top-level, it will grab any promise rejections;
+The above promise chain consists of the initial request, then we reject the returned promise if something is wrong with the data. If we add a `catch` at the top-level, it will grab any promise `reject`ions;
 
 ```
 somePromise
-  .then(...see above)
+  .then(response => Promise.reject('inwalid jason').then(data => ...handle data))
   .catch(e => console.error(e))
 ```
 
-This approach to dealing with chained or nested promises presents us from having dangling promises which are never handled, if `rejected`.
+This approach to dealing with chained or nested promises prevents us from having dangling promises, which aren't handled if they are `rejected`.
 
-#### Catching Errors
+#### Catching thrown errors
 
-If an error is thrown at some point in the promise chain, the promise is considered to be `reject`ed; allowing our `catch` method to handle the rejection.
+If an error is thrown at some point in the promise chain, the promise will be `reject`ed; allowing our `catch` method to handle the propagated rejection.
 
 ```
 fetch('/some-404')
