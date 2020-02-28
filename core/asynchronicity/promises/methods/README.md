@@ -84,7 +84,7 @@ someBadPromise
   .catch(e => console.error(e))
 ```
 
-If there is no `catch` callback present, and something is amiss with the async. operation you will be present with the following error;
+If there is no `catch` callback present, and something is amiss with the async. operation you will be presented with the following error;
 
 > `Uncaught (in promise) TypeError: [SOME EXCEPTION REASON]`
 
@@ -106,6 +106,8 @@ somePromise
   .then(...see above)
   .catch(e => console.error(e))
 ```
+
+This approach to dealing with chained or nested promises presents us from having dangling promises which are never handled, if `rejected`.
 
 ### `finally`
 
