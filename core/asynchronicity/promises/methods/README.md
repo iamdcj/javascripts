@@ -1,6 +1,6 @@
 # Resoluton Methods
 
-When a promise is settled and `resolved`, we can start to work with the `Promise` object via a number of built-in methods;
+When a promise has `resolved`, we can start to work with the `Promise` object via a number of built-in methods;
 
 ### `then`
 
@@ -94,4 +94,20 @@ somePromise
   .catch(e => console.error(e))
 ```
 
-### Finally
+### `finally`
+
+The `finally` method will fire whenever a promise has settled, i.e. when the promise has `fulfilled` or `rejected`. It allows us to run some 'clean-up' code, no matter what happens with promise.
+
+It is often used to set a 'loading' state to `false`, for example:
+
+```
+let loading = true;
+
+somePromise
+  .then(doSuccess)
+  .catch(doFailure)
+  .finally(() => loading = false)
+
+```
+
+If we didn't utilise the `finally` method, we would have to set loading in the `then` and `catch` methods.
