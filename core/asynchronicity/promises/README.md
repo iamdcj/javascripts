@@ -26,9 +26,9 @@ The majority of `Promise` use cases will be related to fetching some data(usuall
 
 ### Creating Promises
 
-We saw in the `fetch` example that some libraries/APIs utilise promises 'under-the-hood', especially ones dealing with data fetching, however there are times when you may want to create a new promise in your application.
+A number of libraries/APIs utilise promises 'under-the-hood', especially ones dealing with data fetching .e.g `fetch`, however there are times when you may want to create a new promise in your application.
 
-If you need to create a promise for some asynchronous operation, this is how it's done;
+If you do need to create a promise for some asynchronous operation, this is how it's done;
 
 #### Define a `new` Promise
 
