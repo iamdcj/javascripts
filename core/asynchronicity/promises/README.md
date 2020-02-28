@@ -40,7 +40,7 @@ const asyncThing = new Promise((resolve, reject) => {
 })
 ```
 
-##### the 'Executor' function
+#### The 'Executor' function
 
 It is within the executor function where you declare asynchronous operation, ultimately calling the `resolve` or `reject` methods when the operation succeeds and/or fails.
 
