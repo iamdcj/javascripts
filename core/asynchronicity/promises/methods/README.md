@@ -4,21 +4,25 @@ When a promise has `resolved`, we can start to work with the `Promise` object vi
 
 ### `then`
 
-If a promise is `fulfilled` it will trigger the provided `then` method - this method returns a promise, allowing allows engineers to handle the result of a fulfilled promised.
+If a promise has `resolved` it will trigger the provided `then` method - this method returns a promise, allowing allows engineers to handle the result of a `fulfilled` or `rejected` promised.
 
 `then` will allow engineers to handle success and failure cases by way of callbacks;
 
 ```
 aPromise
 .then(
-  success => {
+  onFulfilled => {
     ...success handling
   },
-  failure => {
+  onRejected => {
     ...failure handling
   }
 )
 ```
+
+It usually a better idea to use the `catch` method to handle rejections, opposed to the two-callback approach above 👆.
+
+#### Rejections in a chain
 
 The `then` method will also catch rejected promises return from earlier `then` method instances, for example;
 
