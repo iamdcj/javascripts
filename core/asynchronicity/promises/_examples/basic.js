@@ -20,3 +20,28 @@ testA
 testB
   .then(response => console.log(response))
   .catch(e => console.log(e.message)); // "tits up"
+
+// Always resolve promise
+const sleeper = timer =>
+  new Promise(resolve => {
+    setTimeout(resolve, timer);
+  });
+
+sleeper(10000).then(() => console.log("then"));
+console.log("now"); // now
+//...
+/// 10000ms later
+//...
+// then
+
+// chained
+
+sleeper(10000)
+  .then(() => {
+    console.log("10 seconds later");
+    return sleeper(10000); // return new promise
+  })
+  .then(() => console.log("20 seconds later"));
+
+// 10 seconds later
+// 20 seconds later

@@ -40,11 +40,19 @@ const asyncThing = new Promise((resolve, reject) => {
 })
 ```
 
-Define the asynchronous operation inside the executor function body, calling the `resolve` and `reject` methods when the operation succeeds or fails.
+##### the 'Executor' function
+
+It is within the executor function where you declare asynchronous operation, ultimately calling the `resolve` or `reject` methods when the operation succeeds and/or fails.
+
+There are a few things to remember when working with the exectuor;
+
+- The executor function runs immediately after the promise is created; **it is not asynchronous**.
+- The callback functons(`resolve`, `reject`) **do not** return anything.
+- If an error is thrown inside the executor, the promise is automatically `reject`ed.
 
 #### `resolve` executor callback
 
-The `resolve` method is called when the operation within the promise body is successful, with some value usually passed in the as an argument to the method.
+The `resolve` method is called when the operation within the promise body is successful, passing some value as a paramter to the function.
 
 #### `reject` executor callback
 
