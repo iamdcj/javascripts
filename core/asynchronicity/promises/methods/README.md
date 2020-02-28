@@ -73,11 +73,20 @@ aPromise
 
 ### `catch`
 
-If a promise is `rejected` it will trigger the provided `catch` callback - allow engineers to handle any errors. If there is no catch callback present, and something is amiss with the async. operation you will be present with the following error;
+If a promise is `rejected` it will trigger the provided `catch` callback - allowing engineers to handle any errors;
+
+```
+someBadPromise
+  .catch(e => console.error(e))
+```
+
+If there is no `catch` callback present, and something is amiss with the async. operation you will be present with the following error;
 
 > `Uncaught (in promise) TypeError: [SOME EXCEPTION REASON]`
 
-##### Catching chained promises
+(👆 we didn't concern ourselves with handling any negative scenarios)
+
+#### Catching chained promises
 
 The `catch` method will capture on rejections in a promise chain, not just at the top level, for example;
 
