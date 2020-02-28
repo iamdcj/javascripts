@@ -1,6 +1,6 @@
 # Comparison Operators
 
-Comparison operators allow engineers to comparison operands based on their type and/or their value. If the comparison is true, the engine will return `true`, else it will return `false`.
+Comparison operators allow engineers to compare operands based on their type and/or their value. If the comparison runs true, the engine will return `true`, else it will return `false`.
 
 Comparisons are usually ran to determine control flow in an application, for example;
 
