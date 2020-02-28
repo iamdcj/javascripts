@@ -109,6 +109,22 @@ somePromise
 
 This approach to dealing with chained or nested promises presents us from having dangling promises which are never handled, if `rejected`.
 
+#### Catching Errors
+
+If an error is thrown at some point in the promise chain, the promise is considered to be `reject`ed; allowing our `catch` method to handle the rejection.
+
+```
+fetch('/some-404')
+  .then(response => {
+    if(!response.ok) {
+      throw Error('tits up')
+    }
+  })
+  .catch(e => console.log(e.message))
+
+// tits up
+```
+
 ### `finally`
 
 The `finally` method will fire whenever a promise has settled, i.e. when the promise has `fulfilled` or `rejected`. It allows us to run some 'clean-up' code, no matter what happens with promise.
