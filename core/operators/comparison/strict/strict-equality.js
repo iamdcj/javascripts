@@ -1,3 +1,6 @@
+// ============================= //
+// ===== STRICT EQUALITY ===== //
+// ============================= //
 // IF either operands have different types;
 console.info(1 === "1"); // false
 
@@ -18,6 +21,7 @@ console.info(-Infinity === -Infinity); // true
 console.info(-Infinity === Infinity); // false
 
 // == STRINGS
+console.info("David" === "David"); // true
 console.info("David" === "dAvid"); // false
 console.info("David" === "Dvaid"); // false
 
