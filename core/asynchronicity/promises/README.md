@@ -1,6 +1,6 @@
 # Promise
 
-A `Promise` is an object which represents the resolution of an asynchronous operation. **The result of a promise can either be successful or failed.** It can be though of as a placeholder for the result of an async. operation;
+A `Promise` is an object which represents the resolution of an asynchronous operation. **The result of a promise can either be successful or failed.** A promise can be thought of as a placeholder for the result of an async. operation.
 
 So, a promise will capture whether the async. operation was good, and return the result value if so, _or_ it will return the reason it failed.
 
@@ -16,7 +16,7 @@ asyncPlaceholder.then(...success callback).catch(...fall callback)
 
 ### Why use `Promises`?
 
-Promises allow engineers to fire some asynchronous code, and handle the result of that code when it completes at some point in the future.
+Promises allow engineers to fire some asynchronous code, and handle the result of that code when it completes at some point in the future. In many ways similar to classic 'callback' functions, but cleaner and often much easier to managed/understand.
 
 > An easy to digest, real-world analogy is that of a phone call; you make the call, but you need to wait to see if someone answers or not, if they do ✅, if not ❌.
 
@@ -26,9 +26,9 @@ The majority of `Promise` use cases will be related to fetching some data(usuall
 
 ### Creating Promises
 
-We saw in the `fetch` example that some libraries/APIs utilise promises 'under-the-hood', especially ones dealing with data fetching, however there are times when you may want to create a new promise in your application.
+A number of libraries/APIs utilise promises 'under-the-hood', especially ones dealing with data fetching .e.g `fetch`, however there are times when you may want to create a new promise in your application.
 
-If you need to create a promise for some asynchronous operation, this is how it's done;
+If you do need to create a promise for some asynchronous operation, this is how it's done;
 
 #### Define a `new` Promise
 
@@ -40,11 +40,11 @@ const asyncThing = new Promise((resolve, reject) => {
 })
 ```
 
-##### the 'Executor' function
+#### The 'Executor' function
 
-It is within the executor function where you declare asynchronous operation, ultimately calling the `resolve` or `reject` methods when the operation succeeds and/or fails.
+It is within the executor function where you declare asynchronous operations, ultimately calling the `resolve` or `reject` methods when the operation succeeds or fails.
 
-There are a few things to remember when working with the exectuor;
+There are a few things to remember when working within the executor function body;
 
 - The executor function runs immediately after the promise is created; **it is not asynchronous**.
 - The callback functons(`resolve`, `reject`) **do not** return anything.
