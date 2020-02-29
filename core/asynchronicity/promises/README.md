@@ -1,20 +1,18 @@
 # Promise
 
-A `Promise` is an object which represents the resolution of an asynchronous operation. A promise can be thought of as a placeholder for the result of an async. operation.
+A `Promise` is an object which represents the resolution of an asynchronous operation, i.e a promise can be considered a placeholder for the result of an async. operation.
 
 ##### Syntax
 ```
 new Promise((resolve, reject) => {...body});
 ```
 
-**The result of a promise can either be successful or failed.** 
-
-A promise will capture whether the async. operation was good, and return the result value if so, _or_ it will return the reason it failed.
+A promise will capture whether the async. operation was good, and return the result value if so, _or_ if it fails, it will a reason for the failure.
 
 
 ### Why use `Promises`?
 
-Promises allow engineers to fire some asynchronous code, and handle the result of that code when it completes at some point in the future. In many ways similar to classic 'callback' functions, but cleaner and often much easier to managed/understand.
+Promises allow engineers to fire some asynchronous code, and handle the result of that code when it completes at some point in the future. In many ways similar to classic 'callback' functions, but cleaner and often much easier to managed/understand, especially when dealing with asynchronous operations.
 
 > A promise is similar to a phone call; you make the call, but you need to wait to see if someone answers or not, if they do ✅, if not ❌.
 
