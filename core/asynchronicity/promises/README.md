@@ -1,9 +1,12 @@
 # Promise
 
-A `Promise` is an object which represents the resolution of an asynchronous operation. **The result of a promise can either be successful or failed.** A promise can be thought of as a placeholder for the result of an async. operation.
+A `Promise` is an object which represents the resolution of an asynchronous operation. A promise can be thought of as a placeholder for the result of an async. operation.
 
-So, a promise will capture whether the async. operation was good, and return the result value if so, _or_ it will return the reason it failed.
+**The result of a promise can either be successful or failed.** 
 
+A promise will capture whether the async. operation was good, and return the result value if so, _or_ it will return the reason it failed.
+
+##### Syntax
 ```
 const asyncPlaceholder = new Promise(...);
 ```
