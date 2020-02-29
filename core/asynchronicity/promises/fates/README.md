@@ -1,9 +1,14 @@
 # The Fates of a `Promise`
 
-A promise has three states👆, but only the two fates;
+Every promise has two potential fates; `resolved` or `unresolved`
 
-- **Resolved**; any promise that isn't in the `pending` state, i.e. it has been `fulfilled` or `rejected`.
-- **Unresolved**; is any promise that is still in the `pending` state.
+### **Resolved**
+
+Any promise that isn't in the `pending` state, and has settled, i.e. it is `fulfilled` or `rejected`.
+
+### **Unresolved**
+
+If a promise hasn't been settled, and thus is not `fulfilled` or `rejected`, but is instead still in the `pending` state.
 
 ---
 
