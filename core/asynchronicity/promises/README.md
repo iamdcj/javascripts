@@ -8,7 +8,7 @@ A promise will capture whether the async. operation was good, and return the res
 
 ##### Syntax
 ```
-const asyncPlaceholder = new Promise(...);
+new Promise((resolve, reject) => {...body});
 ```
 
 The returned `Promise` object is attached with callback functions to run based on the result of the operation, take the following asynchronous functional call example;
