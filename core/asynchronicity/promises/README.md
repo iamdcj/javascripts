@@ -21,7 +21,7 @@ asyncPlaceholder.then(...success callback).catch(...fall callback)
 
 Promises allow engineers to fire some asynchronous code, and handle the result of that code when it completes at some point in the future. In many ways similar to classic 'callback' functions, but cleaner and often much easier to managed/understand.
 
-> An easy to digest, real-world analogy is that of a phone call; you make the call, but you need to wait to see if someone answers or not, if they do ✅, if not ❌.
+> A promise is similar to a phone call; you make the call, but you need to wait to see if someone answers or not, if they do ✅, if not ❌.
 
 So, we know that Promise's won't immediately return a value, as per say a regular event callback, but instead act as a bridge between a value, or the reason a value can't be returned.
 
