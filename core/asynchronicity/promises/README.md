@@ -1,24 +1,22 @@
 # Promise
 
-A `Promise` is an object which represents the resolution of an asynchronous operation. **The result of a promise can either be successful or failed.** A promise can be thought of as a placeholder for the result of an async. operation.
+A `Promise` is an object which represents the resolution of an asynchronous operation. A promise can be thought of as a placeholder for the result of an async. operation.
 
-So, a promise will capture whether the async. operation was good, and return the result value if so, _or_ it will return the reason it failed.
+##### Syntax
+```
+new Promise((resolve, reject) => {...body});
+```
 
-```
-const asyncPlaceholder = new Promise(...);
-```
+**The result of a promise can either be successful or failed.** 
 
-The returned `Promise` object is attached with callback functions to run based on the result of the operation, take the following asynchronous functional call example;
+A promise will capture whether the async. operation was good, and return the result value if so, _or_ it will return the reason it failed.
 
-```
-asyncPlaceholder.then(...success callback).catch(...fall callback)
-```
 
 ### Why use `Promises`?
 
 Promises allow engineers to fire some asynchronous code, and handle the result of that code when it completes at some point in the future. In many ways similar to classic 'callback' functions, but cleaner and often much easier to managed/understand.
 
-> An easy to digest, real-world analogy is that of a phone call; you make the call, but you need to wait to see if someone answers or not, if they do ✅, if not ❌.
+> A promise is similar to a phone call; you make the call, but you need to wait to see if someone answers or not, if they do ✅, if not ❌.
 
 So, we know that Promise's won't immediately return a value, as per say a regular event callback, but instead act as a bridge between a value, or the reason a value can't be returned.
 
@@ -72,7 +70,7 @@ A promise has three states👆, but only the two [fates](fates); `resolved` and 
 
 #### [Methods](methods)
 
-Promises allow you to handle the result of a promise once it has resolved, we do this via built-in[methods](methods); `then`, `catch`, and `finally`.
+Promises allow you to handle the result of a promise once it has resolved, we do this via built-in[methods](methods); `then`, `catch`, and `finally` which are attached to the promise object.
 
 ---
 
