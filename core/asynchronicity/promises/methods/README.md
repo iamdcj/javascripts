@@ -8,6 +8,8 @@ If a promise has `resolved` it will trigger the provided `then` method - this me
 
 `then` will allow engineers to handle success and failure cases by way of callbacks;
 
+##### Syntax
+
 ```
 aPromise
 .then(
@@ -79,6 +81,8 @@ aPromise
 
 If a promise is `rejected` it will trigger the provided `catch` callback - allowing engineers to handle any errors;
 
+##### Syntax
+
 ```
 someBadPromise
   .catch(e => console.error(e))
@@ -134,7 +138,15 @@ fetch('/some-404')
 
 The `finally` method will fire whenever a promise has settled, i.e. when the promise has `fulfilled` or `rejected`. It allows us to run some 'clean-up' code, no matter what happens with promise.
 
-It is often used to set a 'loading' state to `false`, for example:
+##### Syntax
+
+```
+somePromise
+  .finally(() => console.log('resolved'))
+
+```
+
+The `finally` method is often used to set a 'loading' state to `false`, for example:
 
 ```
 let loading = true;
