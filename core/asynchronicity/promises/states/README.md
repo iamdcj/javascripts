@@ -12,7 +12,7 @@ The promise enters the `fulfilled` when the promise has finished-up with the asy
 
 ### **Rejected**
 
-The promise enters this state when it has wrapped-up, but the operation was unsuccessful. i.e. it didn't return a value, but instead a reason as to why it failed.
+The promise enters the `rejected` state when it has wrapped-up, but the operation was unsuccessful. i.e. it didn't return a value, but instead a reason as to why it failed.
 
 ---
 
