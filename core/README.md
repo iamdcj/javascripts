@@ -2,6 +2,9 @@
 
 - [Lexical Structure](lexical-structure)
 - Execution
+  - [Execution Context](execution/execution-context/)
+  - Call Stack
+  - Event Loop
 - [Scope](scope)
   - [Lexical Scope](scope/lexical-scope)
   - [Closure](scope/closure)
@@ -28,7 +31,6 @@
 - Asynchronicity
   - [Promises](asynchronicity/promises)
   - async...await
-- Events
 - Modules
 - Dates
 - Errors
