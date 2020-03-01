@@ -1,11 +1,11 @@
 # Object-Oriented Programming
 
-Object-Oriented Programming is an approach to engineering which utilises objects in a programming language to 'model' things in our applications that exist in the real world - we can represent actual things in our programs using objects, and create easy-access to functionality and data.
+Object-Oriented Programming is an approach to engineering which utilises objects in a programming language in order to 'model' things in our applications that exist in the real world, using objects,
 
-This example models a football `player` using object syntax; the information related to the `player` is stored within a specific namespace.
+This example models a football `player` using `object` syntax; the information related to the `player` is stored within a specific namespace.
 
 ```
-const player = {
+const Player = {
   name: "Xavi Herndandez"
   position: "CM",
   age: 32,
@@ -13,32 +13,32 @@ const player = {
 }
 ```
 
-Classes are the cornerstone of OOP, and the following are the four main aspects of OOP;
-
-- [Object-Oriented Programming](#object-oriented-programming)
-    - [Classes](#classes)
-    - [**Encapsulation**](#encapsulation)
-    - [**Abstraction**](#abstraction)
-    - [**Inheritance**](#inheritance)
-    - [**Polymorphism**](#polymorphism)
-      - [References](#references)
-
 ---
 
 ### Classes
 
-A `class` represents a particular type of thing in an application, e.g. a car, an animal, or say a person - **classes are a classification of a thing**.
+A `class` represents a particular type of thing in an application, e.g. a car, an animal, or say a person; **classes are a classification of a thing**.
 
-Classes act as templates for any instance of that particular thing we create in our program; classes are the blueprints, **objects are created from the blueprint**.
+**Classes act as templates/blueprints for any instance of that particular thing we create in our program**.
 
-People(users) are often something you see in a program, and they play nice with object-oriented programming; you will often need to store a select set of information about a person, or multiple persons; name, age, gender, and you will want some way to print this all in a nice string, a biography.
+#### Example
+
+People(users) are often something you see in a program, and they play nice with OOP; you will often need to store a select set of information about a person, or multiple persons, e.g. their name, age, and gender.
 
 ```
 const PersonClass = {
   givenName: string,
   familyName: string,
   age: number,
-  gender: string,
+  gender: string
+}
+```
+
+And you will likely want some way to print this all in a nice string, so we can add a method which does exactly that;
+
+```
+PersonClass = {
+  ...rest,
   printBio(): {
     `this.name, this.age, this.gender`
   }
@@ -46,6 +46,8 @@ const PersonClass = {
 ```
 
 The above is a crude example of a `Person` class; we store a subset of information about a person(the information we need), and we attach functionality to our class which allows us to print the information whenever we desire.
+
+## Core Concepts
 
 ### **Encapsulation**
 

@@ -1,58 +1,81 @@
 # **Prototypes**
-JavaScript is a prototype-based language; prototypes are used to create inheritance from one object to another.
 
-### What are Prototypes in JavaScript?
+JavaScript is a prototype-based language; `prototype`s are used to create inheritance from one object to another, i.e. it is the prototypes which allow objects to share functionality and features.
+
+### What is a Prototype in JavaScript?
+
 A prototype `[[Prototype]]` is an internal property for each object.
 
-*The prototype proerty is a reference to another object - a prototype object*
+The `prototype` property is a reference to another object; **a prototype object**.
 
-These prototype objects can be thought of as templates, and objects can inherit methods and properties from these prototype objects; defining the inheritance model in JavaScript.
+These prototype objects can be thought of as templates, and objects can inherit methods and properties from these prototype objects; _defining the inheritance model in JavaScript._
 
-Prototype objects can also have prototype objects linked to them - this linkage forms what is know as the __Prototype chain__.
+Prototype objects can also have prototype objects linked to them - this linkage forms what is know as the **Prototype chain**. It is formed when objects inherit features from another object's `prototype` object, for example;
 
-#### Prototype Chain
-The prototype chain is a look-up resolution mechanism; objects can inherit from other objects via their prototypes, when this inheritance occurs it forms a chain of prototypes, thus when a property of an object is referenced, the prototypes of each object related by their respective prototypes will queried for that propety; this chain defines what properties and methods are available to a particular object.
+**Constructor**
 
-The following is a rough example of how prototype chains are/can be formed"
 ```
-Person object -- Person is a Prototype of Human -- Human is Prototype of Animal -- Prototype of Object
+function Player(name, age, position, skillLevel) {
+  this.name = name;
+  this.age = age;
+  this.position = position;
+  this.skillLevel = skillLevel;
+}
 ```
 
-__Accessing Object Properties and the Prototype Chain__
+**Instance**
 
-`Person.name`
+```
+const Ronaldinho = new Player("Ronaldinho Gaucho", 38, "AM", 96);
+```
 
-If we attempt to access property `name` on the `Person` object, the look-up will first start at the `Person` object, if the property cannot be found, it will then go 'up' the chain and look at `Person`s `Protoptype` object; `Human`, if it is not found here the look-up will continue to `Human`'s prototype; `Animal`, if it is not found here then  it will look at the `Animal`s prototype; the final link in the chain, `Object`.
+Now let's add something to the constructor function's prototype object;
 
-If the property look-up cannot be resolved on the chain, `undefined` is returned.
+```
+Player.prototype.bio = function() {
+  console.log(`
+    ${this.name} is a ${this.age}-year old ${this.position},
+    with a skill level of ${this.skillLevel}
+  `);
+};
+```
 
-*The Prototype chain examplifies how inheritance can be achieved using Prototypes.*
+So, we now have something on the `Player` constructor's prototype - this is inherited by all instances of `Player`;
 
+```
+Ronaldinho.bio();
 
-### Why use Prototypes?
-The above detail on Prototypes and the Prototype chain illustrate how Prototypes will allow programmers to leverage inheritance in JS applications, and the ability to inherit methods and properties from other objects is a powerful feature; you can define class-like template objects, which possess common properties and methods, and these can be shared across any instances which may require these properties or methods. 
+// Ronaldinho Gaucho is a 38-year old AM, with a skill level of 96
 
+```
 
-#### A note on ES6 classes
-Nowadays it is much more common for JS programmers to run with `class`es - it is syntatic sugar on-top of JS' prototype-based inheritance, however using `class`es provides a cleaner API when programmers want to declare a particular class of something.
+👆the `Ronaldinho` instance utilises the `bio` method from it's constructor via it's `prototype` object, but that doesn't seem like much of a chain?
+
+Well, any instance of `Player` will also have access to the `Player`'s own constructor function; `Object`;
+
+```
+Player.prototype
+
+// __proto__: Object
+```
+
+The `Ronaldinho` can now access native features from `Object`;
+
+```
+Ronaldinho.toString()
+
+// [object Object]
+```
+
+This is a basic, but clear example of how `prototypes` are 'chained', and how these connected `prototype` objects allow code reuse across any of the objects which are part of the chain.
 
 ---
 
-#### TL;DR
-* JavaScript is a prototype-based language
-* Each object has a `[[Prototype]]` property.
-* Prototypes can be thought of as blueprints.
-  * we can create multiple instances of something using these blueprints.
-  * these blueprints allow inheritance of properties and methods across all instances
-* Prototypes can also have prototypes which they inherit from
-  * prototypes of prototypes create a chain of prototypes; the prototypes chain.
-    * `get` actions will look-up the chain until it finds/doesn't find the member it is referencing.
-
----
 #### References
-* [YDKJS](https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch5.md)
-* [MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
-* [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
-* [Backticks and Tildes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
-* [Hackernoon](https://hackernoon.com/prototypes-in-javascript-5bba2990e04b)
-* [W3S](https://www.w3schools.com/js/js_object_prototypes.asp)
+
+- [YDKJS](https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch5.md)
+- [MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+- [Backticks and Tildes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes)
+- [Hackernoon](https://hackernoon.com/prototypes-in-javascript-5bba2990e04b)
+- [W3S](https://www.w3schools.com/js/js_object_prototypes.asp)
