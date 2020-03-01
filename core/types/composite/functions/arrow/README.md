@@ -13,7 +13,7 @@ Every use of an arrow function is a ['function expression'](../#expressions).
 
 ## Syntax
 
-The syntactical differences make for shorter function expressions;
+The syntactical differences make for shorter [function expressions](../#expressions);
 
 ##### Arrow
 
