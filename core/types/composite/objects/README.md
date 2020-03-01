@@ -194,3 +194,7 @@ User.date-of-birth;
 User['date-of-birth']
 // 05/13/87
 ```
+
+### [Inheritance](../../../../paradigms/object-oriented-programming/inheritance)
+
+Objects are the means to [inheriting](../../../../paradigms/object-oriented-programming/inheritance) features from other objects in javaScript, via an object's [prototype](../../../../paradigms/object-oriented-programming/inheritance/prototypes/) property'
