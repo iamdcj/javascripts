@@ -6,13 +6,13 @@
   - [Lexical Scope](scope/lexical-scope)
   - [Closure](scope/closure)
   - [Hoisting](scope/hoisting)
+- [_this_](this)
 - [Types](types)
   - Coercion
   - By value vs. By reference
 - [Objects](types/composite/objects)
 - [Classes](classes)
 - [Functions](types/composite/function)
-  - [_this_](this)
   - IIFE
   - Callbacks
   - HOF & Currying
@@ -24,12 +24,11 @@
 - [Statements](statements)
 - [Variables](variables)
 - Expressions
-- Operators
+- [Operators](operators)
 - Asynchronicity
-  - Promises
+  - [Promises](asynchronicity/promises)
   - async...await
 - Events
-
 - Modules
 - Dates
 - Errors

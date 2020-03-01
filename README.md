@@ -1,4 +1,4 @@
-# The Javascripts
+# The Javascript
 
 - [Core](core) - a breakdown of the core features/aspects of the language.
 - [Paradigms](paradigms) - the paradigms often used in javaScript applications.
@@ -9,9 +9,11 @@
 
 ### Overview
 
-The JavaScript language is a fully-fledged programming language, despite what some might say, and it possesses the following properties and features;
+The JavaScript language is a fully-fledged programming language(despite what some might say), and it possesses the following properties and features;
 
-- **Lightweight**- it is a fairly simple programming language without proper types, making it lightweight and portable.
+- **Single-Threaded** - it has a single call-stack and one memory heap. The programs we create execute top-to-bottom, and must finish doing X before moving onto Y.
+
+- **Lightweight** - it is a fairly simple programming language without proper types, making it lightweight and portable.
 
 - **High-Level** - it is highly abstracted from the machine code/instructions, making it a very programmer-friendly language to work with when engineering applications.
 
