@@ -1,8 +1,10 @@
 # Objects
 
+Pretty much everything in javaScript is an object; browser [APIs](../../../../apis) like the [dom](../../../../apis/DOM), arrays, and even strings become objects when we start working with them.
+
 #### `typeof` object
 
-Objects are an unordered collection of members; `property:value` pairs - the properties are labels which allow for easy reference to the values; which can be any valid type.
+Objects at their core are simply an unordered collection of members; `property:value` pairs - the properties are labels which allow for easy reference to the values; which can be any valid type.
 
 The property values are usually pieces of related data, accompanied by functions(methods) which perform a specific task on the related data.
 
@@ -198,3 +200,9 @@ User['date-of-birth']
 ### [Inheritance](../../../../paradigms/object-oriented-programming/inheritance)
 
 Objects are the means to [inheriting](../../../../paradigms/object-oriented-programming/inheritance) features from other objects in javaScript, via an object's [prototype](../../../../paradigms/object-oriented-programming/inheritance/prototypes/) property'
+
+---
+
+##### Resources
+
+- [MDN](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects)
