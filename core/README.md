@@ -15,7 +15,7 @@
   - By value vs. By reference
 - [Objects](types/composite/objects)
 - [Classes](classes)
-- [Functions](types/composite/function)
+- [Functions](types/composite/functions)
   - IIFE
   - Callbacks
   - HOF & Currying
