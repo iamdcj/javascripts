@@ -52,6 +52,6 @@ This paragraph does suggest that `let` and `const` are indeed 'hoisted':
 
 > The variables are created when their containing Lexical Environment is instantiated...
 
-but the engine prevents them from being accessed until the engine has evaluated the respective binding, i.e. the engine does not allow access to the variable until it performs a right-hand-side(execution) lookup on the variable.
+but the engine prevents them from being accessed until the engine has evaluated the respective binding, i.e. the engine does not allow access to the variable until it performs a right-hand-side(execution) lookup on the variable;
 
 > but may not be accessed in any way until the variable’s LexicalBinding is evaluated.

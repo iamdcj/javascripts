@@ -1,14 +1,19 @@
 # Hoisting
 
-The source bindings; variables and functions, are the first things to be evaluated by the engine, this evaluations occurs completely separate to the execution phase - the engine will analyze the left-hand side declarations, e.g. `var foo` before touching the right-hand side initializers, e.g. `"bar"`, and as a result of the valuation process the bindings in a particular lexical environment are essentially moved to the top of that lexical environments, this is known as **_hoisting_**.
+Hoisting is a conceptual thing which happens during the compilation phase of a javaScript program.
 
-**How hoisting occurs**;
+The compiler will analyze the left-hand side declarations, e.g. `var foo` before touching the right-hand side initializers, e.g. `"bar"`, resulting of the valuation process the bindings in a particular lexical environment are essentially moved to the top of that lexical environments, this is known as **_hoisting_**.
 
-1. Assess the lexical environment.
-2. Determine which declarations live in the lexical environment;
-3. Create a binding at the top of the lexical environment for the declarations;
-   1. Variables(including function expressions) are initialised to `undefined`.
-   2. Functions are initialised with their actual value.
+**The bindings aren't physically moved by the engine, but stored in memory whenever a new [execution context](../../execution/execution-context/) is created.**
+
+**Breakdown**;
+
+1. Compiler assess source code.
+2. Discovers a new function; [Execution Context Creation Phase](../../execution/#creation-phase)
+   1. Determines which declarations live in the lexical environment;
+   2. Stores a reference to each variable declaration in the lexical environment('moves up');
+      1. Variables(including function expressions) are initialised to `undefined`.
+      2. Function Declarations are initialised with their actual value.
 
 ## Hoisting In Action
 
