@@ -9,4 +9,4 @@ It's primary purpose is to ensure applications run as smooth as possible, avoidi
 
 The event loop keeps track of the call stack and the queue, ensuring any potential blocking items, e.g. timeouts and data fetching, are shifted to the task queue, and only added back to the call stack when it is empty.
 
-**The event loop prevents what is a single-threaded language from jamming-up the user interface**, via callbacks and other async. operations e.g. promises, to work in a JS application.
+**The event loop prevents what is a single-threaded language from jamming-up the user interface**
