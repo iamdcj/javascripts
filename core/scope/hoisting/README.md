@@ -1,6 +1,6 @@
 # Hoisting
 
-Hoisting is a conceptual thing which happens during the compilation phase of a javaScript program.
+Hoisting is a conceptual thing which occurs during the compilation phase of a javaScript program.
 
 The compiler will analyze the left-hand side declarations, e.g. `var foo` before touching the right-hand side initializers, e.g. `"bar"`, resulting of the valuation process the bindings in a particular lexical environment are essentially moved to the top of that lexical environments, this is known as **_hoisting_**.
 
@@ -14,6 +14,8 @@ The compiler will analyze the left-hand side declarations, e.g. `var foo` before
    2. Stores a reference to each variable declaration in the lexical environment('moves up');
       1. Variables(including function expressions) are initialised to `undefined`.
       2. Function Declarations are initialised with their actual value.
+
+---
 
 ## Hoisting In Action
 

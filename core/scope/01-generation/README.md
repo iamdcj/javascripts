@@ -2,13 +2,15 @@
 
 Scopes in JS are generated during the compilation/parsing phase of the program’s lifecycle.
 
-The generation of scopes occurs when the compiler looks through the source code and encounters formal declarations; bindings which have one following statements before the variable identifier: `var`, `const`, `let`, and `function`.
+The generation of scopes occurs when the compiler looks through the source code and encounters formal declarations; bindings which have one following statements before the variable identifier: `var`, `const`, `let`, and `function`. This is the phase which creates the [Execution Contexts](../../execution/execution-context) in the application.
 
 _Informal declarations, bindings without a statement, are left for the execution phase_.
 
+```
 {
 name = "David";
 }
+```
 
 The above will be overlooked by the compiler, and left for execution.
 
