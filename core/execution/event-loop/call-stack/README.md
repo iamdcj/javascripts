@@ -123,3 +123,25 @@ Uncaught Error: here // exception
 ```
 
 The above is a stack trace, showing what was called, and place in the stack things went wrong.
+
+#### Blocking the Stack
+
+The [task queue](../task-queue) defers any asynchronous callbacks to prevent the call stack from being blocked by potentially slow code, however if some synchronous task is slow or overly repetitive, then the call stack will jam-up until the slow code has done its thing - the big problem with this is that **it blocks user interactions**
+
+Let's say we a call to action in our markup;
+
+```
+<button>Click Me</button>
+```
+
+and we have a badly written, slow piece of running code in our javaScript application;
+
+```
+  let i = 0
+  while (i < 1000000000) {
+    i++
+  }
+  console.log(i);
+```
+
+the user will be unable to click the button until the `while` loop is complete.
