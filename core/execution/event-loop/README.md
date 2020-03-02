@@ -1,24 +1,24 @@
 # Event Loop
 
-JavaScript is a single-threaded runtime, i.e. it has one call stack, permitting it to do _one thing at a time_.
+The event loop is concurrent tracking model used to manage the execution JavaScript applications. It consists of the following parts; call stack and a memory heap.
 
-### Call Stack
+## Call Stack
 
 The call stack, a.k.a the execution stack, is a data structure with the purpose of **tracking where in a program we are**, that is what is currerntly executing at that time(see [execution contexts](./../execution-context)).
 
-#### How it works
+JavaScript is a single-threaded runtime, i.e. it has one **call stack**, permitting it to do _one thing at a time_.
 
-For each execution context we enter during the execution phase, we add an item to the stack, starting with our global execution context;
+### How it works
 
-##### Stack Tracing
+For each execution context we enter during the execution phase, we add an item to the stack, starting with the global execution context.
 
-We have yet to call any functions, but the global execution context fires automatically when the program downloads;
+We have yet to call any functions, but the global execution context fires automatically when the program downloads, putting it first on the stack;
 
 ```
 GLOBAL()
 ```
 
-Then for every function we invoke, a new item is added onto the stack;
+Then for every function we invoke, a new item is added to the stack;
 
 ```
 function c() {
@@ -39,16 +39,16 @@ a()
 // HELLO WORLD
 ```
 
-So, lets update our stack based on the above 👆
+So, lets update our stack based on the program above 👆
 
-We call `a` first, and `b` calls `c`;
+First we call `a`
 
 ```
 GLOBAL()
 a()
 ```
 
-which then calls `b`,
+which then calls `b`
 
 ```
 GLOBAL()
@@ -67,20 +67,26 @@ c()
 
 Now, every time we call a function we add it to the stack, but every time we `return`(or reach the end) from a function we remove it from the stack;
 
-`c` returns a string,
+`c` returns a string
 
-- GLOBAL()
-- a()
-- b()
+```
+GLOBAL()
+a()
+b()
+```
 
 `b` returns a call to `c`,
 
-- GLOBAL()
-- a()
+```
+GLOBAL()
+a()
+```
 
 `a` doesn't return, but completes after the log statement.
 
-- GLOBAL()
+```
+GLOBAL()
+```
 
 The program has no more functions to deal with, and it is done.
 
@@ -88,7 +94,9 @@ The program has no more functions to deal with, and it is done.
 [ EMPTY ]
 ```
 
-Stack Tracing is something which becomes apparent when an error is thrown in a application; it is this stack trace which gives some insight to the call stack data structure, for example;
+#### Stack Tracing
+
+A stack trace is something which becomes apparent, and useful, when an error is thrown in a application; it is this stack trace which gives some insight to the call stack data structure, for example;
 
 ```
 function c() {
