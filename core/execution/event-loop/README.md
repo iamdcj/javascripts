@@ -1,8 +1,8 @@
 # Event Loop
 
-The event loop is concurrent tracking model used to manage the execution JavaScript applications.
+The event loop is an tracking mechanism used to manage the execution order of JavaScript applications.
 
-It's primary purpose is to ensure applications run as smooth as possible, avoiding any blocking operations by tracking the following data structures;
+It's primary purpose is to ensure applications run as smooth as possible, avoiding any blocking operations by monitoring the following data structures;
 
 - [**Call Stack**](call-stack), a.k.a execution tracks where we are in an application relative to the functions we call.
 - [**Task Queue**](task-queue) handles any asynchronous operations we declare in our code to prevent functions from blocking the call stack.
