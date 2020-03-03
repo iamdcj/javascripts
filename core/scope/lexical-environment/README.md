@@ -1,6 +1,6 @@
 # Lexical Environment
 
-A lexical environment is a place in a program where code lives. It is a section of the source where functions and variables are declared, also known as scope.
+A lexical environment is a place in a program where code lives. It is a section of the source where functions and variables are declared, _also known as scope_.
 
 > A Lexical Environment is a specification type used to define the association of Identifiers to specific variables and functions based upon the lexical nesting structure of ECMAScript code - [JS Spec.](https://tc39.es/ecma262/#sec-lexical-environments)
 
