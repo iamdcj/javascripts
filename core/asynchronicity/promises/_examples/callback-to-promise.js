@@ -13,13 +13,17 @@ fileSystem.readFile("basic.js", "utf8", (error, stuff) => {
 // Promise-based alternative
 
 const ReadFile = (path, encoding) => {
-  return Promise((resolve, reject) => {
-    fileSystem.readFile("basic.js", "utf8", (error, stuff) => {
+  return new Promise((resolve, reject) => {
+    fileSystem.readFile(path, encoding, (error, stuff) => {
       if (error) {
-        resolve(reject);
+        reject(error);
       } else {
         resolve(stuff);
       }
     });
   });
 };
+
+ReadFile("bollocks.js", "utf8")
+  .then(response => console.log(response))
+  .catch(e => console.log(e.message));
