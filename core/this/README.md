@@ -2,11 +2,13 @@
 
 The `this` keyword is a pointer to an object, and its value is a reference to the current calling object - this is known as the **context**.
 
-So, the 'context' translates to the calling object of the function; the object which calls the function - the context(`this`) is generated when a function is called, and the program enters a new execution context.
+So, the 'context' translates to the calling object of the function; the object which calls the function - the context(`this`) is defined when a function is called (see [execution contexts]('../../../execution/execution-context/'))
+
+`this` is defined during the execution phase of a program.
 
 ### Global `this`
 
-If this is referenced at the top-level of a JS application - global context, its value will always be equal to the global object;
+If `this` is referenced at the top-level of a JS application - global context, its value will always be equal to the global object;
 
 #### Client-side
 
@@ -170,3 +172,14 @@ David.returnName();
 The object `David` is the receiver of the `returnName()` method.
 
 ```
+
+---
+
+## TL;DR
+
+- `this` is a refererence to the calling object ~ the object which calls the function
+- it is referred to as the (calling)'context'
+- it is defined during the execution phase
+- anonymous functions will bind to the global object
+- arrow functions will bind to the parent context
+- the context can be set using the `apply`, `call` or `bind` methods
