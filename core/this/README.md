@@ -1,181 +1,57 @@
 # `this`
 
-The `this` keyword is a pointer to an object, and its value is a reference to the current calling object - this is known as the **context**.
+The `this` keyword is a pointer to an object, and its value is a reference to the current calling object, i.e. the object which calls the function.
 
-So, the 'context' translates to the calling object of the function; the object which calls the function - the context(`this`) is defined when a function is called (see [execution contexts]('../../../execution/execution-context/'))
+`this` is known as the **context**.
 
-`this` is defined during the execution phase of a program.
+The context(`this`) is defined when a function is called(see [execution contexts]('../../../execution/execution-context/'))
 
-### Global `this`
+### **Why use `this`?**
 
-If `this` is referenced at the top-level of a JS application - global context, its value will always be equal to the global object;
+The `this` key comes into its own whenever we want to reuse functions in different parts of our applications; the `this` keyword allows us to apply the same behaviour when called against a different objects.
 
-#### Client-side
+### **Determining `this`**
 
-```
-this === window
+The object which `this` points to is determined by a number of different things;
 
-// true
-```
+- **How the function is called;** was it called with an implicit binding, or an explicit binding;
+- **Where the function was called;** was it called on an object method, or is was it a callback to some event/web API.
+  - `call`, `apply`, or `bind`.
+- **The type of function used;** is it a regular function, a constructor function, or an arrow function.
+- **The operating mode;** if the program or function is in `strict` mode.
 
-#### Server-side (node)
+Any number of combinations of the above can affect the object assigned to `this`.
 
-```
-this === global
+### **Implicit Binding**
 
-// true
-```
+If we call an object method, then we will usually be using an implicit binding, i.e. the function is bound to that object implicitly, opposed to using one of the `call`, `apply`, `bind` methods.
 
-### Function context
+If function is called with something to the left of it, e.g. `someObject.myMethod()` then you're dealing with implicit binding.
 
-The return value of `this` when referenced within a function call differs dependant on the following;
-
-### Function type
-
-#### Regular function (non-strict)
-
-If `this` is referenced in a regular function call, not operating in `strict` mode, the value of this will be the global object;
+The following example demonstrates how implicit bindings work;
 
 ```
-function test() {
- console.log(this);
-}
-
-test();
-
-// Window
-```
-
-#### Regular function (strict mode)
-
-If `this` is referenced in a regular function call, operating in `strict` mode, the value of this will be `undefined`;
-
-```
-function test() {
- console.log(this);
-}
-
-test();
-
-// undefined
-```
-
-It is usually always preferred to have `this` be initialised to `undefined` vs. the global object; throwing a reference error is better than unintentionally assigning properties to the global object.
-
-In the following function the value of `this` is a reference to the global object
-
-```
-function Person(first, last) {
-  this.firstName = first;
-  this.lastName = last;
+const user = {
+  name: "David",
+  age: 32,
+  logName() {
+    console.log(this.name)
+  }
 }
 ```
 
-If you call the function, it will create two properties on the global object;
+The `logName` method references `this`, which points to the `user` object, and would be invoked thus;
 
 ```
-Person('David', 'Jones');
-
-console.log(window.firstName); // David
-console.log(window.lastName); // Jones
-```
-
-It is never a good idea to be playing around with the global object, and creating global variables.
-
-`use strict`
-
-If we operate in strict mode, the above will throw an error;
-
-```
-'use strict'
-
-function Person(first, last) {
-  this.firstName = first;
-  this.lastName = last;
-}
-
-Person('David', 'Jones');
-
-// Cannot set property 'firstName' of undefined
-```
-
-The error is letting us know we should be doing something differently
-
-### Using a constructor
-
-If we call the function with the `new` operator we have a constructor call, and the constructor will generate a context(`object`) to safely work with;
-
-```
-'use strict'
-
-function Person(first, last) {
-  this.firstName = first;
-  this.lastName = last;
-}
-
-const person = new Person('David', 'Jones');
-
-console.log(person.firstName)
-
+user.logName();
 // "David"
 ```
 
-#### Context generation via constructor
-
-In the above example we know that a new context is generated, the following demonstrates how this happens in a little more detail;
-
-```
-function Person(first, last) {
-  console.log(this);
-
-  this.firstName = first;
-  console.log(this);
-
-  this.lastName = last;
-  console.log(this);
-}
-```
-
-The console prints the context generation, and shows the member generation in action;
-
-```
-Person {}
-Person {firstName: "David"}
-Person {firstName: "David", lastName: "Jones"}
-```
-
-The new context(object) gets linked to the `Person`'s prototype property (see [Prototypes]('../objects/../../../../objects/object-oriented-programming/inheritance/prototypes))
-
-Despite the lack of an explicit `return` statement in the `Person` function, the new context is returned implicitly;
-
-```
-console.log(person)
-
-// Person {firstName: "David", lastName: "Jones"}
-```
-
-### Method context
-
-If `this` is referenced within an object method, the value is set to that of the calling object
-
-```
-const David = {
-  surname: 'Jones',
-  returnName() {
-    console.log(`David ${this.surname}`);
-  }
-}
-
-David.returnName();
-// David Jones
-
-The object `David` is the receiver of the `returnName()` method.
-
-```
+Essentiallty the same as using `console.log(user.name)`.
 
 ---
 
-## TL;DR
+### TL;DR
 
 - `this` is a refererence to the calling object ~ the object which calls the function
 - it is referred to as the (calling)'context'
@@ -183,3 +59,10 @@ The object `David` is the receiver of the `returnName()` method.
 - anonymous functions will bind to the global object
 - arrow functions will bind to the parent context
 - the context can be set using the `apply`, `call` or `bind` methods
+
+---
+
+##### Resources
+
+- [Tyler McGinnis](https://tylermcginnis.com/this-keyword-call-apply-bind-javascript/)
+- [this in depth](https://egghead.io/courses/understand-javascript-s-this-keyword-in-depth)
