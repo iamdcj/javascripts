@@ -1,45 +1,27 @@
 # Core JavaScript
 
-<!--
+This section contains information and examples related to the common key concepts in JavaScript; [scope](scope), [hoisting](scope/hoisting), [this](this),[closure](scope/closure/), [event loop](execution/event-loop), [callbacks](types/composite/functions/callbacks), [type coercion](./types/coercion), [asynchronous javascript](asynchronicity/).
 
-Execution Context
-- [Closure](scope/closure)
-this
-Type Coercion
-Async.
--->
+...and a bunch of other important stuff.
+
+---
+
+#### Contents
 
 - [Lexical Structure](lexical-structure)
 - Execution
-  - [Execution Context](execution/execution-context/)
-  - [Event Loop](./execution/event-loop/README.md)
-    - [Call Stack](./execution/event-loop/call-stack/README.md)
 - [Scope](scope)
-  - [Lexical Scope](scope/lexical-scope)
-  - [Closure](scope/closure)
-  - [Hoisting](scope/hoisting)
 - [_this_](this)
 - [Types](types)
-  - Coercion
-  - By value vs. By reference
 - [Objects](types/composite/objects)
 - [Classes](classes)
 - [Functions](types/composite/functions)
-  - IIFE
-  - Callbacks
-  - HOF & Currying
-  - Decorators
-- Collections;
-  - [arrays](types/composite/arrays),
-  - sets,
-  - maps
+- Collections
 - [Statements](statements)
 - [Variables](variables)
 - Expressions
 - [Operators](operators)
 - Asynchronicity
-  - [Promises](asynchronicity/promises)
-  - async...await
 - Modules
 - Dates
 - Errors
