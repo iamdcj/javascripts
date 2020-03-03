@@ -16,7 +16,6 @@ function timeout(timeout, promise) {
 
   return Promise.race([promise, timeoutPromise]).finally(() => {
     clearTimeout(timer);
-    console.log("CLEARED");
   });
 }
 
