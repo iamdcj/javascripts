@@ -1,8 +1,6 @@
 # Lexical Environment
 
-A lexical environment is a place in a program where code lives. It is a section of the source where functions and variables are declared.
-
-I personally consider lexical environment interchangable with scope ~ _**a place in the program where bindings live**_.
+A lexical environment is a place in a program where code lives. It is a section of the source where functions and variables are declared, also known as scope.
 
 > A Lexical Environment is a specification type used to define the association of Identifiers to specific variables and functions based upon the lexical nesting structure of ECMAScript code - [JS Spec.](https://tc39.es/ecma262/#sec-lexical-environments)
 
@@ -14,7 +12,7 @@ Every program contains bindings, and these bindings belong to a specific lexical
 
 Each time we create a new _**function**_, _**block**_ or _**module**_ a lexical environment will be generated when the source code is compiled/interpreted;
 
-> Usually a Lexical Environment is associated with some specific syntactic structure of ECMAScript code such as a FunctionDeclaration, a BlockStatement, or a Catch clause of a TryStatement and a new Lexical Environment is created each time such code is evaluated - [JS Spec.](https://tc39.es/ecma262/#sec-lexical-environments)
+> Usually a Lexical Environment is associated with some specific syntactic structure of ECMAScript code such as a `FunctionDeclaration`, a `BlockStatement`, or a Catch clause of a `TryStatement` and a new Lexical Environment is created each time such code is evaluated - [JS Spec.](https://tc39.es/ecma262/#sec-lexical-environments)
 
 #### Lexical Environment Contents?
 
@@ -32,7 +30,7 @@ The following are the different types of Lexical Environments that can be genera
 
 #### Global Environment (Global Scope)
 
-A lexical environment without an outer lexical environment is the global environment;
+A lexical environment without an outer lexical environment is the 'global environment';
 
 > global environment is a Lexical Environment which does not have an outer environment. - [JS Spec.](https://tc39.es/ecma262/#sec-lexical-environments)
 

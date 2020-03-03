@@ -1,4 +1,4 @@
 // Module Lexical Environment
-export const moduleLogger = (sumink) => {
-  console.log(sumink)
-}
+export const moduleLogger = sumink => {
+  console.log(sumink);
+};

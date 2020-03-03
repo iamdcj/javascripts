@@ -1,12 +1,14 @@
 # Scoped Code Execution
 
-Scoped code is the code which has been sorted into lexical environments during the lexing phase; [scope generation](../01-generation).
+The lexical environments are defined during the lexing phase; [scope generation](../01-generation), thus creating the scope.
 
-The execution phase does not bother with formal(with a preceeding statement), LHS declarations, they have been taken care of during the [generation phase](../01-generation).
+## Scope Exeuction Process
 
-This phase essentially executes all the created [Execution Contexts](../../execution/execution-context) in the application.
+This phase runs back through the 'scoped' code, and executes all the created [Execution Contexts](../../execution/execution-context) in the application.
 
-## Nested Scopes
+The execution phase does not bother with formal LHS declarations, they have been taken care of during the [generation phase](../01-generation).
+
+### Nested Scopes
 
 The compilation phase creates the buckets of declarations(lexical environments), and each time a function is encountered, a new scope is created, thus creating what is known as the scope chain; a look-up chain which contains the variables for each scope present in the chain.
 

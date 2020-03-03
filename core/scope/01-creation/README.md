@@ -1,36 +1,28 @@
 # Scope Generation
 
-Scopes in JS are generated during the compilation/parsing phase of the program’s lifecycle.
+Scope in JS is generated during the compilation/parsing phase of the program’s lifecycle.
 
-The generation of scopes occurs when the compiler looks through the source code and encounters formal declarations; bindings which have one following statements before the variable identifier: `var`, `const`, `let`, and `function`. This is the phase which creates the [Execution Contexts](../../execution/execution-context) in the application.
+The creation phase of each [execution context](../../execution/execution-context) in the application, is what to shapes the scope of the application, and results in [hoisting](../hoisting).
 
-_Informal declarations, bindings without a statement, are left for the execution phase_.
+### Scope Creation Process
 
-```
-{
-name = "David";
-}
-```
+The compiler looks through the source code, entering each function looking for formal declarations; bindings which have one following statements before the variable identifier: `var`, `const`, `let`, and `function`.
 
-The above will be overlooked by the compiler, and left for execution.
+The compiler sorts these formal declarations into buckets, these buckets are known as `lexical environments` - these buckets contain all the declarations that are declared in that particular part of the program. **This is what is referred to as scope.**
 
-## Process
+There are three main types of buckets/scope;
 
-When our source code is being compiled the compiler sorts formal declarations into buckets, these buckets are known as `lexical environments` - these buckets contain all the declarations that are declared in that particular part of the program.
-
-There are three main types of buckets;
-
-#### Global Buckets
+#### Global
 
 Any formal declarations which live in the global environment are added to the global lexical environment - this is known as the **global scope**.
 
-#### Function Buckets
+#### Function
 
 Any formal declarations which are present within a function body get added to the bucket for that particular function - this is known as **function scope**.
 
 The following is an high-level overview of the process undertaken by the compiler when it is generating scopes;
 
-#### Block Buckets
+#### Block
 
 Any formal `const` or `let` declarations present in a block(`{}`) will get added to the bucket for that particular block - this is known as **block scope**.
 
@@ -61,7 +53,7 @@ A Function's declaration and value definition is handled at the compiler stage, 
 
 —
 
-#### Breaking-up Statements
+### Breaking-up Statements
 
 The compiling phase only considers a variable's identifier, the value initialisation is an execution phase concern - variables are `undefined` until executuion, see [hoisting](../hoisiting).
 
@@ -88,4 +80,4 @@ const foo;
 foo = “bar"
 ```
 
-This process is what results in [hoisting](../hoisting); the compiler assesses formal declarations, moving them to the top of their lexical environmemnt, but leaves the initialization for the execution phase.
+This process is what results in [hoisting](../hoisting).

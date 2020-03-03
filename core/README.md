@@ -1,13 +1,14 @@
 # Core JavaScript
 
-<!-- - [Lexical Scope](scope/lexical-scope)
+<!--
+
+Execution Context
 - [Closure](scope/closure)
-- [Hoisting](scope/hoisting)
-- Event Loop
-- [Scope](scope)
-- Type Coercion
-- Callbacks
-- Async. -->
+this
+Type Coercion
+Callbacks
+Async.
+-->
 
 - [Lexical Structure](lexical-structure)
 - Execution

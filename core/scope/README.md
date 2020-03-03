@@ -4,7 +4,7 @@ Usually when talking about scope, we are referring to how we lookup and retrieve
 
 **_Scope is the set of rules which govern where bindings are stored and retrieved._**
 
-##### Scope is code accessibility
+#### Scope is code accessibility
 
 It defines what bindings are accessible within the current [execution context](../execution/execution-context/), i.e. what bindings can be successfully retrieved inside `function` X when it is invoked.
 
