@@ -98,7 +98,6 @@ function callBack() {
 }
 
 _CTA.addEventListener('click', callBack);
-
 ```
 
 #### Timing APIs
