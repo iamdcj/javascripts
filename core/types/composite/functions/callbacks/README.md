@@ -79,7 +79,7 @@ makeSandwich(['bacon', 'lettuce', 'tomato'])
 
 we get the same result, but instead of waiting around, we instead run a **callback** when the `Promise` resolves with our sandwich.
 
-### Callback Varieties
+### **Callback Varieties**
 
 The above 👆 example runs a callback on an engineer defined promise, however there are a number of common cases for utilising callback functions; [user events](../../../../../apis/DOM/events), [timeouts](../../../../../apis/DOM/timeouts), [data fetching](../../../../../apis/fetch)
 
@@ -120,8 +120,6 @@ setTimeout(callBack, 2000);
 ```
 
 **Interval**
-
-**Timeout**
 The `setInterval` method provides a means to repeatedly run a time-delayed operation, via a **callback**.
 
 ```
@@ -148,7 +146,6 @@ The `fetch` API is now the goto for fetching data from some server, and utilises
 fetch('some-url/posts')
   .then(response => console.log(response))
   .catch(error => console.error(error.message))
-
 ```
 
 **[XHR](../../../../../apis/XHR)**
@@ -166,5 +163,4 @@ request.addEventListener('load', callBack);
 
 request.open("GET", "https://jsonplaceholder.typicode.com/todos/1");
 request.send();
-
 ```
