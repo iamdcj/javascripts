@@ -6,7 +6,6 @@ Execution Context
 - [Closure](scope/closure)
 this
 Type Coercion
-Callbacks
 Async.
 -->
 
