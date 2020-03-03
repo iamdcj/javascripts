@@ -163,3 +163,21 @@ request.addEventListener('load', callBack);
 request.open("GET", "https://jsonplaceholder.typicode.com/todos/1");
 request.send();
 ```
+
+#### Node
+
+Callbacks are a big thing in `node`, i.e. they are used all over the place in node applications.
+
+```
+const fileSystem = require("fs");
+
+function nodeCallBack(error, stuff) {
+  if (error) {
+    console.log(error);
+  } else {
+    console.log(stuff);
+  }
+}
+
+fileSystem.readFile("basic.js", "utf8", nodeCallBack);
+```
