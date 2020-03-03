@@ -61,9 +61,9 @@ b()
 c()
 ```
 
-Now, every time we call a function we add it to the stack, but every time we `return`(or reach the end) from a function we remove it from the stack;
+Now, every time we call a function we add it to the stack, but every time we `return` from/reach the end of a function we remove it from the stack;
 
-`c` returns a string
+`c` returns a string; **remove**
 
 ```
 GLOBAL()
@@ -71,14 +71,14 @@ a()
 b()
 ```
 
-`b` returns a call to `c`,
+`b` returns a call to `c`; **remove**
 
 ```
 GLOBAL()
 a()
 ```
 
-`a` doesn't return, but completes after the log statement.
+`a` doesn't return, but completes after the log statement; **remove**
 
 ```
 GLOBAL()
@@ -145,3 +145,17 @@ and we have a badly written, slow piece of running code in our javaScript applic
 ```
 
 the user will be unable to click the button until the `while` loop is complete.
+
+#### Blowing the Stack
+
+Any time we run a function that iterates many times, or takes an abnormal of time to complete, e.g. an infinite loop, the stack will be blown, that is the browser will kill the application because it is consuming too much memory.
+
+```
+const foo = () => {
+  foo()
+}
+
+foo();
+
+// VM48:1 Uncaught RangeError: Maximum call stack size exceeded
+```
