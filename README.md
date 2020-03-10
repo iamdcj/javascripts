@@ -19,7 +19,7 @@ The JavaScript language is a fully-fledged programming language(despite what som
 
 - **Interpreted/JIT-compiled** - it is classicaly perceived to be an interpreted language, however newer engines such as Chrome's V8 perform Just-In-Time compilation; the code is not compiled ahead of time into a bytecode, instead it is compiled on-the-fly as the code is being executed.
 
-- **Cross-Platform** - it has mainly been used as a client-side language, and pretty much exclusively in web browsers, however over the years JS has crossed platforms and started to be used for back-end development, thanks mainly to the advent of the [NodeJS](https://nodejs.org/en/) runtime.
+- **Cross-Platform** - since its incpetions it has mainly been used as a client-side language, and pretty much exclusively in web browsers, however over recent years JS has crossed platforms and started to be used for back-end development via V8-powered [NodeJS](https://nodejs.org/en/) runtime.
 
   - **Client-Side** - The most popular variant of JS extends the core language via objects which allow programs to interact with the browser and the website's [DOM](APIs/DOM) - this is how we add functionality to an otherwise static website.
 
