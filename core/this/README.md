@@ -120,7 +120,7 @@ Explicit bindings are determined by the engineer when they want to assign a part
 
 There are a number of ways to do this, starting will the `call` method;
 
-#### Call
+### Call
 
 The `call` method provides a means to explicitly setting a function's calling context via its initial argument;
 
@@ -178,7 +178,7 @@ The function is then invoked immediately;
 // Bolton
 ```
 
-#### Apply
+### Apply
 
 The `apply` method is pretty much the same as `call` 👆;
 
