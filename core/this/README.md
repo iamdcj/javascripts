@@ -122,21 +122,31 @@ There are a number of ways to do this, starting will the `call` method;
 
 #### Call
 
-The `call` method will assign a context to a function via its initial argument;
+The `call` method provides a means to explicitly setting a function's calling context via its initial argument;
 
 ```
 const user = {
-  name: "David"
+  username: "David"
 }
 
 function sayName() {
-  console.log(this.name);
+  console.log(this.username);
 }
+```
 
+Note that the `sayName` function doesn't take any arguments, but references `this` in it's body - invoking the function with setting a context will likely result in undesired behaviour;
+
+```
+sayName(); // undefined
+```
+
+The `this` binding will point to the `window` object, which does not have a `username` property(unless defined) - `call` to the rescue;
+
+```
 sayName.call(user) // David
 ```
 
-**Additional Arguments**
+`call` is self-invoking, meaning it will fire the function it is applied to immediately, taking the desired context as an argument.
 
 ---
 
