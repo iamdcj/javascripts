@@ -203,7 +203,7 @@ function sayName(age, hometown) {
 Pass array of arguments after initial context argument;
 
 ```
-sayName.call(user, [32, 'Bolton'])
+sayName.apply(user, [32, 'Bolton'])
 
 // David
 // 32
