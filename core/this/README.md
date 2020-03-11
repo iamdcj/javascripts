@@ -164,11 +164,15 @@ function sayName(age, hometown) {
 }
 ```
 
-We pass any additional arguments
+We pass any additional arguments after the first context argument;
 
 ```
 sayName.call(user, 32, 'Bolton') // David
+```
 
+The function is then invoked immediately;
+
+```
 // David
 // 32
 // Bolton
