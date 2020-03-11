@@ -146,7 +146,33 @@ The `this` binding will point to the `window` object, which does not have a `use
 sayName.call(user) // David
 ```
 
-`call` is self-invoking, meaning it will fire the function it is applied to immediately, taking the desired context as an argument.
+`call` is 'self-invoking', meaning it will fire the function it is applied to immediately, taking the desired context as an argument.
+
+**Additional Arguments**
+
+The `call` method expects a context object to be passed as an initial argument, but will also allow for additional arguments to be passed to the function it is applied to;
+
+```
+const user = {
+  username: "David"
+}
+
+function sayName(age, hometown) {
+  console.log(this.username);
+  console.log(age);
+  console.log(hometown);
+}
+```
+
+We pass any additional arguments
+
+```
+sayName.call(user, 32, 'Bolton') // David
+
+// David
+// 32
+// Bolton
+```
 
 ---
 
@@ -169,3 +195,7 @@ sayName.call(user) // David
 
 - [Tyler McGinnis](https://tylermcginnis.com/this-keyword-call-apply-bind-javascript/)
 - [this in depth](https://egghead.io/courses/understand-javascript-s-this-keyword-in-depth)
+
+```
+
+```
