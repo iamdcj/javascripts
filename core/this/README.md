@@ -178,6 +178,38 @@ The function is then invoked immediately;
 // Bolton
 ```
 
+#### Apply
+
+The `apply` method is pretty much the same as `call` 👆;
+
+- Explicitly sets the context/value of `this`
+- Context is passed as first argument
+- Self-invoking
+
+The main difference is how additiona arguments are passed to the function `apply` is applied to; **arguments are passed as an array**, opposed to a comma-separated list as per `call`.
+
+```
+const user = {
+  username: "David"
+}
+
+function sayName(age, hometown) {
+  console.log(this.username);
+  console.log(age);
+  console.log(hometown);
+}
+```
+
+Pass array of arguments after initial context argument;
+
+```
+sayName.call(user, [32, 'Bolton'])
+
+// David
+// 32
+// Bolton
+```
+
 ---
 
 ## Function Type
