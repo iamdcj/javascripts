@@ -210,6 +210,70 @@ sayName.apply(user, [32, 'Bolton'])
 // Bolton
 ```
 
+### Bind
+
+The `bind` method also allows you to explicitly set the context of a function, however this method is not self-invoking, instead it allows the engineer to store a context-defined function within a variable.
+
+```
+const user = {
+  username: "David"
+}
+
+function sayName(age, hometown) {
+  console.log(this.username);
+  console.log(age);
+  console.log(hometown);
+}
+```
+
+Store bound function in a new variable, passing initial arguments during initialization;
+
+```
+const printInfo = sayName.bind(user, 32, 'Bolton');
+```
+
+Call the new context-bound function later;
+
+```
+printInfo();
+
+// David
+// 32
+// Bolton
+```
+
+#### Passing Arguments Later
+
+We can see from above that arguments can be passed during the initialization phase, i.e. we can set the values of the function arguments during the context binding, however it could be that we just want to bind the function to a context, and pass argumnets when the function is called some time in the future;
+
+```
+const user = {
+  username: "David"
+}
+
+function sayName(age, hometown) {
+  console.log(this.username);
+  console.log(age);
+  console.log(hometown);
+}
+```
+
+Bind the context to the `sayName` function, without passing arguments;
+
+```
+const printInfo = sayName.bind(user);
+```
+
+Call the new context-bound function later, passing arguments at 'call-time';
+
+```
+printInfo(32, 'Boston');
+
+// David
+// 32
+// Boston
+```
+
 ---
 
 ## Function Type
@@ -231,6 +295,10 @@ sayName.apply(user, [32, 'Bolton'])
 
 - [Tyler McGinnis](https://tylermcginnis.com/this-keyword-call-apply-bind-javascript/)
 - [this in depth](https://egghead.io/courses/understand-javascript-s-this-keyword-in-depth)
+
+```
+
+```
 
 ```
 
