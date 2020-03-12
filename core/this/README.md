@@ -8,14 +8,16 @@ The context(`this`) is defined when a function is called(see [execution contexts
 
 ### **Why use `this`?**
 
-The `this` key comes into its own whenever we want to reuse functions in different parts of our applications; the `this` keyword allows us to apply the same behaviour when called against a different objects.
+The `this` key comes into its own whenever we want to reuse functions in different parts of our applications; the `this` keyword allows us to apply the same behaviour when called against a different object.
+
+It also provides a shortcut to the calling object's bindings, ensuring we are referencing only the values that live within a particular namespace/context.
 
 ### **Determining `this`**
 
 The object which `this` points to is determined by a number of different things;
 
-- **How the function is called;** was it called with an **implicit** binding i.e. against an object `something.func()`, or was it **explicitly** bound using:`call`, `apply`, or `bind`.
-- **The type of function used;** is it a regular function, a constructor function, or an arrow function.
+- **How the function is called;** was it called with an **implicit** binding i.e. against an object `something.func()`, or was it **explicitly** bound using: `call`, `apply`, or `bind`.
+- **The type of function used;** is it a regular function, a constructor function, or an arrow function?
 - **The operating mode;** if the program or function is in `strict` mode.
 
 #### Initial Value
