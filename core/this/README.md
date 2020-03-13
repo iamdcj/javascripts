@@ -278,9 +278,37 @@ printInfo(32, 'Boston');
 
 ---
 
-## Function Type
+## **Function Type**
 
-## Operating Mode
+There are two different sytnaxes for `function`s; the classic function declaration or express using the `function` statement, or the newer 'fat arrow' function - these both behave in similar ways, i.e. they run chunks of executable code, however the way they handle context/`this` differs.
+
+### **`function`**
+
+The way regular `function`s handle context is most covered above; if a function isn't called against a method, or with one of the binding methods then its `this` will be bound to the global object `window` - however there are a still a couple more things to consider.
+
+#### Constructors (`new`)
+
+If a function is created with the `new` constructor keyword;
+
+```
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+
+  console.log(this);
+}
+
+const David = new Person('David', 32);
+```
+
+then a new context will be created and bound to that function;
+
+```
+David
+
+// Person {name: "David", age: 32}
+
+```
 
 ## TL;DR
 
