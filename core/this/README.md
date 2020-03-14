@@ -310,6 +310,48 @@ David
 
 ```
 
+#### Nested `function`s
+
+As above, when using the `function` statement to declare a function, the calling context will be that of the global object;
+
+```
+function test() {
+  console.log(this);
+}
+```
+
+And the same applies when functions are called within object methods;
+
+```
+const user = {
+  name: "David",
+  age: 32,
+  logger() {
+    console.log(this.name);
+
+    function logAge() {
+      console.log(this.age)
+    }
+
+    logAge()
+  }
+}
+
+user.logger()
+// David
+// undefined
+```
+
+The `logger` method logs the `name` property from its implicitly bound context, but the nested `logAge` function is bound to the `window` object, which doesn't possess an `age` property.
+
+This sort of behaviour will usually frustrate developers that work with the `this` binding, however arrow functions behave in a more expected fashion.
+
+### **Arrow Function** (`() => {}`)
+
+The way arrow functions deal with the `this` binding is much appreciated by most developers that work with the `this` keyword - instead of always defaulting to the global object, it will inherit the context from its wrapping lexical environment;
+
+## Operating Mode
+
 ## TL;DR
 
 - `this` is a refererence to the calling object ~ the object which calls the function
