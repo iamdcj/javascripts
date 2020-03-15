@@ -398,6 +398,42 @@ user.logger();
 
 ## Operating Mode
 
+The final thing which can affect the value of the `this` binding is the operating mode, i.e. is the program or function operating in the `strict` mode, or 'sloppy' mode.
+
+### `use strict`
+
+If the operating mode is set to `strict`, and a reference is made to the `this` keyword which would usually be implicitly bound to the `window` object, it will throw;
+
+```
+'use strict'
+
+window.name = "David"
+
+function test() {
+  console.log(this.name)
+}
+
+test()
+// Uncaught TypeError: Cannot read property 'name' of undefined
+```
+
+**Strict mode prevents the `this` keyword being referenced whevever it is implicitly bound to the global context**
+
+It is worth noting that explicitly setting the context to the `window` object is permitted, however this should only be done _if absolutely necessary_, for example;
+
+```
+'use strict'
+
+window.name = "David"
+
+function test() {
+  console.log(this.name)
+}
+
+test.call(window)
+// David
+```
+
 ## TL;DR
 
 - `this` is a refererence to the calling object ~ the object which calls the function
