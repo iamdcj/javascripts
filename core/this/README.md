@@ -359,7 +359,42 @@ This 👆 behaviour will usually frustrate developers that work with the `this` 
 
 ### **Arrow Function** (`() => {}`)
 
-The way arrow functions deal with the `this` binding is much appreciated by most developers that work with the `this` keyword - instead of always defaulting to the global object, it will inherit the context from its wrapping lexical environment;
+The way arrow functions deal with the `this` binding is much appreciated by most developers that work with the keyword - instead of always defaulting to the global object, it will inherit the context from its wrapping lexical environment.
+
+If we take the example above, and modify the nested `logAge` function syntax to that of an arrow function;
+
+```
+const user = {
+  name: "David",
+  age: 32,
+  logger() {
+    console.log(this.name);
+
+    const logAge = () => {
+      console.log(this.age)
+    }
+
+    logAge()
+  }
+}
+```
+
+then we see the benefits of binding the `this` keyword to the lexical context
+
+```
+user.logger();
+
+// David
+// 32
+```
+
+👆`this` will point to the `user` object, which is its lexical context, ensuring it references properties of that context successfully;
+
+```
+// 32
+```
+
+**Arrow Functions bind `this` to their lexical context, resulting in any invocation staying true to its 'nearest' calling context**
 
 ## Operating Mode
 
