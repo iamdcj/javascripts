@@ -344,7 +344,18 @@ user.logger()
 
 The `logger` method logs the `name` property from its implicitly bound context, but the nested `logAge` function is bound to the `window` object, which doesn't possess an `age` property.
 
-This sort of behaviour will usually frustrate developers that work with the `this` binding, however arrow functions behave in a more expected fashion.
+```
+const logAge = () => {
+  console.log(this)
+  console.log(this.age)
+}
+
+user.logger()
+// David
+// Window {...}
+```
+
+This 👆 behaviour will usually frustrate developers that work with the `this` binding, however arrow functions behave in a more expected fashion.
 
 ### **Arrow Function** (`() => {}`)
 
