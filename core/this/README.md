@@ -1,10 +1,8 @@
 # `this`
 
-The `this` keyword is a pointer to an object, and its value is a reference to the current calling object, i.e. the object which calls the function.
+The `this` keyword is a pointer to an object`*`, and its value is a reference to the current calling object, i.e. the object which calls the function - `this` is known as the **context**.
 
-`this` is known as the **context**.
-
-The context(`this`) is defined when a function is called(see [execution contexts]('../../../execution/execution-context/')), and the a new execution context is generated;
+The context is defined whenever a function is invoked(see [execution contexts]('../../../execution/execution-context/')), resulting in a new execution context being generated.
 
 ### **Why use `this`?**
 
