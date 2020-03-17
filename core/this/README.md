@@ -271,7 +271,7 @@ printInfo(32, 'Boston');
 
 ---
 
-### **Function Type**
+### **Functions and `this`**
 
 There are two different sytnaxes for `function`s; the classic function declaration or express using the `function` statement, or the newer 'fat arrow' function - these both behave in similar ways, i.e. they run chunks of executable code, however the way they handle context/`this` differs.
 
