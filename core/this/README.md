@@ -443,10 +443,3 @@ test.call(window)
 - [Tyler McGinnis](https://tylermcginnis.com/this-keyword-call-apply-bind-javascript/)
 - [this in depth](https://egghead.io/courses/understand-javascript-s-this-keyword-in-depth)
 
-```
-
-```
-
-```
-
-```
