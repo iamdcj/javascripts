@@ -8,11 +8,9 @@ It defines what bindings are available to us when we are in a given lexical envi
 
 #### Defining the Scope(s)
 
-The scopes of a program are determined by the author; the code they create informs the engine of the program's intended scopes - these scopes are then cemented during the compilation/interpretation phase of the program’s lifecycle; [scope creation](01-creation).
+The scopes of a program are determined by the author; the code they create informs the engine of the program's intended scopes - these scopes are then cemented during the compilation/interpretation phase of the program’s lifecycle; [scope creation](01-creation). Scope defined by the authored source code structure is known as [lexical scope](./lexical-scope) - this is the scoping model used in JavaScript.
 
-Scope defined by the authored source code structure is known as [lexical scope](./lexical-scope).
-
-Once the scopes have been generated using the scoping rules, we can then executed our scoped code; [execution of scoped code](02-execution).
+Once the scopes have been generated using the language's scoping rules, we can then execute our scoped code; [execution of scoped code](02-execution).
 
 #### Scope levels
 
