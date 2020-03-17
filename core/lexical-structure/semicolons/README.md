@@ -21,6 +21,9 @@ const test = "David"
 import ( x ) from './y'
 ```
 
+---
+#### Resources
+
 **None of the above statements require finishing-off with a semicolon.**
 
 If there are two or more statements on the same line, then semicolons are required to signify the end of each statement, _aside from the last statement on the line_.
