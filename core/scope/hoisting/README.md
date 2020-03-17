@@ -2,16 +2,16 @@
 
 Hoisting is a conceptual thing which occurs during the compilation phase of a javaScript program.
 
-The compiler will analyze the left-hand side declarations, e.g. `var foo` before touching the right-hand side initializers, e.g. `"bar"`, resulting of the valuation process the bindings in a particular lexical environment are essentially moved to the top of that lexical environments, this is known as **_hoisting_**.
+The compiler will analyze the left-hand side declarations, e.g. `var foo`, leaving the right-hand side initializers, i.e. the values, for the execution phase - the result of this initial pass of the source code is that the variables are shifted to the top of their respective lexical environment. 
 
-**The bindings aren't physically moved by the engine, but stored in memory whenever a new [execution context](../../execution/execution-context/) is created.**
+**The bindings aren't physically moved by the engine, but stored in memory whenever a new [execution context](../../execution/execution-context/) is created.** - this is what is known as 'hoisting'.
 
 **Breakdown**;
 
 1. Compiler assess source code.
 2. Discovers a new function; [Execution Context Creation Phase](../../execution/#creation-phase)
    1. Determines which declarations live in the lexical environment;
-   2. Stores a reference to each variable declaration in the lexical environment('moves up');
+   2. Stores a reference to each variable declaration in the lexical environment('hoists');
       1. Variables(including function expressions) are initialised to `undefined`.
       2. Function Declarations are initialised with their actual value.
 
