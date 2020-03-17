@@ -1,30 +1,23 @@
 # `this`
 
-The `this` keyword is a pointer to an object, and its value is a reference to the current calling object, i.e. the object which calls the function.
-
-`this` is known as the **context**.
-
-The context(`this`) is defined when a function is called(see [execution contexts]('../../../execution/execution-context/')), and the a new execution context is generated;
+The `this` keyword is a pointer to an object`*`, and its value references the current calling object(the object which calls the function), `this` is known as the **context**.
 
 ### **Why use `this`?**
 
-The `this` key comes into its own whenever we want to reuse functions in different parts of our applications; the `this` keyword allows us to apply the same behaviour when called against a different object.
+The `this` key comes into its own whenever we want to reuse functions in different parts of our applications by providing.a shortcut to the object the function is 'attached to', thus providing a mechanism to reference the properties on the calling object, see [function mixin](#function-mixin). The ability to resuse functions across contexts is a powerful feature.
 
-It also provides a shortcut to the calling object's bindings, ensuring we are referencing only the values that live within a particular namespace/context.
-
-### **Determining `this`**
-
-The object which `this` points to is determined by a number of different things;
+## Determining `this` 
+The context is defined whenever a function is invoked(see [execution contexts]('../../../execution/execution-context/')), resulting in a new execution context being generated, setting the value of `this` based on a number of different factors;
 
 - **How the function is called;** was it called with an **implicit** binding i.e. against an object `something.func()`, or was it **explicitly** bound using: `call`, `apply`, or `bind`.
 - **The type of function used;** is it a regular function, a constructor function, or an arrow function?
 - **The operating mode;** if the program or function is in `strict` mode.
 
-#### Initial Value
+### Initial `this`
 
-Initially the `this` value is initialised with the value of `undefined`, unless you are working outside of `strict` mode, whereas it is then set to the `window` object. **Not ideal**.
+Initially the value of `this` is initialised with the value of `undefined`, unless you are working outside of `strict` mode, where it is then set to the `window` object.
 
-## **Implicit Binding**
+### **Implicit Binding**
 
 If we call an object method, then we will usually be using an implicit binding, i.e. the function is bound to that object implicitly, opposed to using one of the `call`, `apply`, `bind` methods.
 
@@ -114,7 +107,7 @@ user.wife.logName() // Stephanie
 
 **Whatever is directly to the left will be the implicitly bound calling context**
 
-## **Expliciting Binding**
+### **Expliciting Binding**
 
 Explicit bindings are determined by the engineer when they want to assign a particular context to a function without passing an object as an argument.
 
@@ -122,7 +115,7 @@ Explicit bindings are determined by the engineer when they want to assign a part
 
 There are a number of ways to do this, starting will the `call` method;
 
-### Call
+#### Call
 
 The `call` method provides a means to explicitly setting a function's calling context via its initial argument;
 
@@ -180,7 +173,7 @@ The function is then invoked immediately;
 // Bolton
 ```
 
-### Apply
+#### Apply
 
 The `apply` method is pretty much the same as `call` 👆;
 
@@ -212,7 +205,7 @@ sayName.apply(user, [32, 'Bolton'])
 // Bolton
 ```
 
-### Bind
+#### Bind
 
 The `bind` method also allows you to explicitly set the context of a function, however this method is not self-invoking, instead it allows the engineer to store a context-defined function within a variable.
 
@@ -244,7 +237,7 @@ printInfo();
 // Bolton
 ```
 
-#### Passing Arguments Later
+##### Passing Arguments Later
 
 We can see from above that arguments can be passed during the initialization phase, i.e. we can set the values of the function arguments during the context binding, however it could be that we just want to bind the function to a context, and pass argumnets when the function is called some time in the future;
 
@@ -278,11 +271,11 @@ printInfo(32, 'Boston');
 
 ---
 
-## **Function Type**
+### **Functions and `this`**
 
 There are two different sytnaxes for `function`s; the classic function declaration or express using the `function` statement, or the newer 'fat arrow' function - these both behave in similar ways, i.e. they run chunks of executable code, however the way they handle context/`this` differs.
 
-### **`function`**
+#### **`function`**
 
 The way regular `function`s handle context is most covered above; if a function isn't called against a method, or with one of the binding methods then its `this` will be bound to the global object `window` - however there are a still a couple more things to consider.
 
@@ -396,11 +389,11 @@ user.logger();
 
 **Arrow Functions bind `this` to their lexical context, resulting in any invocation staying true to its 'nearest' calling context**
 
-## Operating Mode
+### Operating Mode
 
 The final thing which can affect the value of the `this` binding is the operating mode, i.e. is the program or function operating in the `strict` mode, or 'sloppy' mode.
 
-### `use strict`
+#### `use strict`
 
 If the operating mode is set to `strict`, and a reference is made to the `this` keyword which would usually be implicitly bound to the `window` object, it will throw;
 
@@ -439,9 +432,9 @@ test.call(window)
 - `this` is a refererence to the calling object ~ the object which calls the function
 - it is referred to as the (calling)'context'
 - it is defined during the execution phase
-- anonymous functions will bind to the global object
-- arrow functions will bind to the parent context
-- the context can be set using the `apply`, `call` or `bind` methods
+- anonymous regular `function`s will point to the global object, unless in `strict` mode
+  - the context can be set using the `apply`, `call` or `bind` methods
+- arrow functions will bind to the lexical context
 
 ---
 
@@ -450,10 +443,3 @@ test.call(window)
 - [Tyler McGinnis](https://tylermcginnis.com/this-keyword-call-apply-bind-javascript/)
 - [this in depth](https://egghead.io/courses/understand-javascript-s-this-keyword-in-depth)
 
-```
-
-```
-
-```
-
-```
