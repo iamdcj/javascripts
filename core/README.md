@@ -1,6 +1,6 @@
 # Core JavaScript
 
-This section contains information and examples related to the common key concepts in JavaScript; [scope](scope), [hoisting](scope/hoisting), [this](this),[closure](scope/closure/), [event loop](execution/event-loop), [callbacks](types/composite/functions/callbacks), [type coercion](./types/coercion), [asynchronous javascript](asynchronicity/).
+This section contains information and examples related to the common key concepts in JavaScript; [scope](scope), [hoisting](scope/hoisting), [this](this), [closure](scope/closure/), [event loop](execution/event-loop), [callbacks](types/composite/functions/callbacks), [type coercion](./types/coercion), [asynchronous javascript](asynchronicity/).
 
 ...and a bunch of other important stuff.
 
