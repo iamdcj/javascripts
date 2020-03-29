@@ -8,11 +8,13 @@ It is the outermost lexical environemt ~= root lexical environment.
 
 ## Dangers of working in Global Scope
 
-It could be considered useful to have code available to all parts of the program, and in some cases it is, however the global object is something which can be mutated by all the various scripts loaded into a page
+It could be considered useful to have code available to all parts of the program, and in some cases it is, however the global object is something which can be mutated by all the various scripts loaded into a page - global scope is essentially fair game for any loaded scripts, and this is bad because;
 
 **_Third-party scripts could overwrite any global bindings we've created, and vice-versa._**
 
 Avoiding global declarations where possible is considered good practice, this way there can be no conflicts which would result in program errors.
+
+You can still have code global to your lexical scopes, but that global(ish) code doesn't need to leak into the _actual_ global lexical environment.
 
 ### Collision
 
