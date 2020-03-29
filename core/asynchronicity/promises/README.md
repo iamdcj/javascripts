@@ -68,7 +68,7 @@ A promise has three states👆, but only the two [fates](fates); `resolved` and 
 
 #### [Methods](methods)
 
-Promises allow you to handle the result of a promise once it has resolved, i.e. the promise object, and also the actual promises instances, via a number of built-in [tethods](methods).
+Promises allow you to handle the result of a promise once it has resolved, i.e. the promise object, and also the actual promises instances, via a number of built-in [methods](methods).
 
 ---
 
