@@ -3,12 +3,12 @@
 A `Promise` is an object which represents the resolution of an asynchronous operation, i.e a promise can be considered a placeholder for the result of an async. operation.
 
 ##### Syntax
+
 ```
 new Promise((resolve, reject) => {...body});
 ```
 
 A promise will capture whether the async. operation was good, and return the result value if so, _or_ if it fails it will a reason for the failure.
-
 
 ### Why use `Promises`?
 
@@ -68,7 +68,7 @@ A promise has three states👆, but only the two [fates](fates); `resolved` and 
 
 #### [Methods](methods)
 
-Promises allow you to handle the result of a promise once it has resolved, i.e. the promise object, and also the actual promises instances, via a number of built-in [methods](methods).
+Promises allow you to handle the result of a promise once it has resolved, i.e. the promise object, and engineers can apply methods which monitor a collection of promises, via a number of built-in [methods](methods).
 
 ---
 

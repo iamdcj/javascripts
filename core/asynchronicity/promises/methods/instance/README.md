@@ -4,6 +4,8 @@ A `Promise` instance has a number of methods which can be ran before the promise
 
 ### `Promise.all()`
 
+The `all` method will capture a collection in another `Promise`, and return once all the promises in the collection of promises are settled.
+
 ### `Promise.any()`
 
 ### `Promise.race()`
