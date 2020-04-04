@@ -2,8 +2,6 @@
 
 A `Promise` class has a number of static methods, these methods can be used to handle the outcome of an individual promise instance, or a collection of promise instances.
 
-### Reject and Resolve
-
 ### `Promise.all()`
 
 The `all` method will capture a collection in another `Promise`, and return once all the promises in the collection of promises are settled.
