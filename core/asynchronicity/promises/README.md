@@ -16,7 +16,7 @@ Promises allow engineers to fire some asynchronous code, and handle the result o
 
 > A promise is similar to a phone call; you make the call, but you need to wait to see if someone answers or not, if they do ✅, if not ❌.
 
-So, we know that Promise's won't immediately return a value, as per say a regular event callback, but instead act as a bridge between a value, or the reason a value can't be returned.
+So, we know that Promise's won't immediately return a value, but instead act as a bridge between a return value, or the reason a value can't be returned.
 
 The majority of `Promise` use cases will be related to fetching some data(usually `json`) from a remote.
 
