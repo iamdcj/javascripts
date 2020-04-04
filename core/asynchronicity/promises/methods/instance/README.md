@@ -1,6 +1,6 @@
 # Resoluton Methods
 
-Each promise instance comes with a number of members, these methods can be used to deal the the outcome of a settled promise, whether that be a failed outcome, or a successful one.
+Each promise instance comes with a number of members, these methods can be used to deal with the outcome of a settled promise - whether that be a failed, or a successful outcome.
 
 ### `then`
 
