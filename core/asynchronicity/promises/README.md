@@ -56,7 +56,7 @@ The `reject` method is called when the operation within the promise body is unsu
 
 ### Handling Promises
 
-Once we create a new promise, we are going to want to handle whatever is returned further down the line. In order to do this successfully, it is good to know the lifecycle and the possible outcomes for every promise we create.
+Once we create a new promise, we are going to want to handle whatever is returned further down the line (the object). In order to do this successfully, it is good to know the lifecycle and the possible outcomes for every promise we create;
 
 #### The [States](states) of a `Promise`
 
@@ -68,12 +68,13 @@ A promise has three states👆, but only the two [fates](fates); `resolved` and 
 
 #### [Methods](methods)
 
-Promises allow you to handle the result of a promise once it has resolved, i.e. the promise object, and engineers can apply methods which monitor a collection of promises, via a number of built-in [methods](methods).
+Promises allow you to handle the result of a promise once it has resolved, i.e. the promise object, and engineers can apply methods which monitor a collection of promise instances, via a number of built-in [methods](methods).
 
 ---
 
 ##### Resources
 
+- [Google Developers](https://developers.google.com/web/fundamentals/primers/promises)
 - [Using Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises)
 - [Promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 - [States and Fates](https://github.com/domenic/promises-unwrapping/blob/master/docs/states-and-fates.md)
