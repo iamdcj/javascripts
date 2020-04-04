@@ -8,10 +8,10 @@ These methods provide the engineer with extremely useful ways of handling contro
 
 These methods are built-in methods which allow the engineer to explicitly handle the [state](../states) of a promise instance.
 
-## [Instance Methods](./instance)
+## [Static Methods](./static)
 
 These methods provide a way for engineers to handle a `Promise` instance, or a collection of `Promise` instances.
 
-## [Resolution Methods](./resolution)
+## [Instance Methods](./instance)
 
 These methods deal with the outcome of the Promises, whether that be a solitary promise, or a collection of promises.
