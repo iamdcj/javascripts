@@ -14,11 +14,11 @@ A promise will capture whether the async. operation was good, and return the res
 
 Promises allow engineers to fire some asynchronous code, and handle the result of that code when it completes at some point in the future. In many ways similar to classic 'callback' functions, but cleaner and often much easier to managed/understand, especially when dealing with asynchronous operations.
 
-> A promise is similar to a phone call; you make the call, but you need to wait to see if someone answers or not, if they do ✅, if not ❌.
+> A promise is similar to a phone call; you make the call, potentially continue with some other task whilst you wait to see if the call is answered, if they do you can have the conversation, if not the call ends.
 
-So, we know that Promise's won't immediately return a value, but instead act as a bridge between a return value, or the reason a value can't be returned.
+So, we know that Promise's won't immediately return a value, but instead act as a bridge between a return value/the reason a value can't be returned.
 
-The majority of `Promise` use cases will be related to fetching some data(usually `json`) from a remote.
+The majority of `Promise` use cases will be related to fetching some data(usually `json`) from a server - it is these expensive and potentially time-consuming operations that promises are perfect for handling; you can do X, carry-on with Y, and when X is ready, handle the outcome.
 
 ### Creating Promises
 
