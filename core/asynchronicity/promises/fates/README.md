@@ -1,6 +1,6 @@
 # The Fates of a `Promise`
 
-Every promise has two potential fates; `resolved` or `unresolved`
+Every promise has two potential fates; `resolved` or `unresolved`.
 
 ### **Resolved**
 
