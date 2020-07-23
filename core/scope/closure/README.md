@@ -79,7 +79,7 @@ inner();
 
 ### Why use closures?
 
-Closures come into their own when you want to restrict the availability of features and/or information - let's say we have an API which does many things, but the user is only concerned with on aspect of the APIs functionality, we can leverage closure by only returning the function(s) which the end-user needs access, and we hide the rest of the data/functions within; the API can still access
+Closures come into their own when you want to restrict the availability of features and/or information - let's say we have an API which does many things, but the user is only concerned with an aspect of the APIs functionality, we can leverage closure by only returning the function(s) which the end-user needs access to, and we hide the rest of the data/functions within; the API can still access
 
 #### Principle of Least Privilege
 
