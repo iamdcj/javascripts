@@ -27,7 +27,7 @@ functionB(functionA);
 // function A
 ```
 
-We can see from above that functions can be successfully passed around to other lexical environments.
+We can see from above that functions can be successfully passed around to, and invoked within other lexical environments.
 
 #### **2. Lexical Scoping**
 
