@@ -24,7 +24,7 @@ Up until the release of ECMAScript 2015, there was only ever one function syntax
 
 ### Creating Functions
 
-There are two ways of creating function; **declarations** and **experessions**.
+There are two ways of creating function; **declarations** and **expressions**.
 
 ### Declarations
 
