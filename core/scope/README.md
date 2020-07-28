@@ -1,6 +1,6 @@
 # Scope
 
-Usually when talking about scope, we are referring to the process of looking-up and retrieving pieces of code in our applications.
+Usually when talking about scope, we are referring to the process of looking-up and retrieving pieces of code in our applications; binding accessibility.
 
 **_Scope is the set of rules which govern where bindings are stored and retrieved._**
 
