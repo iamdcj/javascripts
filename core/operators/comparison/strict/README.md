@@ -37,4 +37,4 @@ This comparison `1 === 1` is an example of a strict equality comparison which wo
 
 Essentially the strict equality 👆in reverse; if a value is the same type and same value, it will return `false`, if they differ in type and/or value it will return `true`.
 
-This comparison `1 !== 1` is an example of a strict inequality comparison which would return `false`; the types are the same, but the values differ, however `'1' !== 1` would return `true` because the types are different.
+This comparison `1 !== 1` is an example of a strict inequality comparison which would return `false`; the types and the values are the same, however `'1' !== 1` would return `true` because the types are different.
