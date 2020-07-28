@@ -76,7 +76,7 @@ function foo() {
 
 #### **Compilation**
 
-However at #### **Compilation** time the function declaration is hoisted to the top of the scope.
+However at **Compilation** time the function declaration is hoisted to the top of the scope.
 function foo
 
 #### **Execution**
