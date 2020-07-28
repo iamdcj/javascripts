@@ -137,7 +137,7 @@ In this case we get a TypeError, opposed to `undefined` as per the previous exam
 
 From the above it is clear that function and variable declarations are hoisted to the top of their respective scopes, however which are hoisted first(or to the top)?
 
-Function declarations are king; they hoist before variance declarations
+Function declarations are king; they hoist before variable declarations
 
 Function vs. Variable
 This example consists of a function declaration labelled foo, and a regular variable declaration named foo;
