@@ -85,7 +85,7 @@ There are a total of seven built-in JS types, and they fall into two categories 
 
 ### **Primitive Types**
 
-A primitive type is any type which is not an object - these types have no methods, and are at the lowest level of a language's implementation.
+A primitive type is any type which is not a collection of values(object/array) - these types are just solitary, standalone values - thethave no methods, and are at the lowest level of a language's implementation.
 
 **Primitives are immutable**; the original cannot be altered - _*Primitives are passed by value, not by reference*_.
 
