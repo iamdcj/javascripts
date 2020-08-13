@@ -4,6 +4,8 @@
 
 Arrays are numerically ordered collections of data; they tend to contain numerous pieces of related data, but can be used as ordered containers for any type.
 
+Arrays are zero-indexed, i.e. the first item in the array is position `0`, the second at `1`, and so forth. This provides the engineer an ability to retrieve items from an array by associating it with its index(see below)
+
 ###### String array
 
 ```
