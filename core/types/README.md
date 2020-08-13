@@ -10,7 +10,14 @@ This definition, like most things I know about JS, is from Kyle Simpson's [YDKJS
 
 > a type is an intrinsic, built-in set of characteristics that uniquely identifies the behavior of a particular value and distinguishes it from other values, both to the engine and to the developer. - K. Simpson
 
-So, a type is a thing in a language which is recognisable by its make-up; engine/engineer knows that type _X_ is type _X_ by the way it looks. It is this recognition/knowledge which allows engineers to utilise a particular types properties/methods to engineer functionality in an application.
+So, a type is a thing in a language which is recognisable by its make-up; engine/engineer knows that the value of _X_ is of type _X_ by the way it looks, for example;
+
+```
+const _X_ = 42; // it is a number, because it looks like a number
+const _X_ = "David"; // it is a string, because it looks like a string of characters
+```
+
+It is this recognition/knowledge which allows engineers to utilise a particular types properties/methods to engineer functionality in an application.
 
 _You need to know what it is you're working with, before you work with it._
 
