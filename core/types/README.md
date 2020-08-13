@@ -2,11 +2,12 @@
 
 JavaScript, like all programming has a set a of (data)types that can be manipulated in order to build applications.
 
-Types are the building blocks of applications, without a number of types to manipulate, programs would be very limited in their functionality.
+Types are the building blocks of applications, without a number of types to manipulate, programs would be very limited in their functionality. **Types in JS relate to values, not to variables**.
+
 
 #### Type, a definition
 
-This definition, like most things I know about JS, is from Kyle Simpson's [YDKJS](https://github.com/getify/You-Dont-Know-JS) series;
+This definition, like most things I know about JS, comes from Kyle Simpson's [YDKJS](https://github.com/getify/You-Dont-Know-JS) series;
 
 > a type is an intrinsic, built-in set of characteristics that uniquely identifies the behavior of a particular value and distinguishes it from other values, both to the engine and to the developer. - K. Simpson
 
