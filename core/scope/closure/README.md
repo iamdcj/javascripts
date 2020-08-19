@@ -1,6 +1,6 @@
 # Closure
 
-**A closure is a function which can access its lexical scope when invoked outside of its lexical environment.** In other words if you call a function outside of its original 'scope', it can still access variables from that original scope.
+**A closure is a function which can access its lexical scope even when invoked outside of its lexical environment.** In other words if you call a function outside of its original 'scope', it can still access variables from that original scope.
 
 Closure is a result of two language features; **first-class functions** and **lexical scoping**. Any applications written using a language which supports **first-class functions** and **lexical scoping** will most likely utilise closures somewhere in the source code.
 
