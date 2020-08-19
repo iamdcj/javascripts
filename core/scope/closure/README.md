@@ -8,7 +8,7 @@ Closure is a result of two language features; **first-class functions** and **le
 
 #### **1. First-class Functions**
 
-In JavaScript functions are first-class members, i.e. they can be; passed around as arguments to other functions/lexical environments, return from other functions, and can be assigned as a value to a varialble.
+In JavaScript functions are first-class members, i.e. they can be; passed around as arguments to other functions, returned from other functions, and can be assigned as a value to a varialble.
 
 ```
 function functionA() {
