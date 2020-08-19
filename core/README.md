@@ -11,6 +11,7 @@ This section contains information and examples related to the common key concept
 - [Lexical Structure](lexical-structure)
 - Execution
 - [Scope](scope)
+- [Closure](scope/closure)
 - [_this_/Context](this)
 - [Types](types)
 - [Objects](types/composite/objects)
