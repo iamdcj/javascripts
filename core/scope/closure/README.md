@@ -55,7 +55,7 @@ functionA()
 // functionA says hello
 ```
 
-You can see above that nested lexical environments(scopes) can access their parents scopes right upto the global scope; `Lexical Scope`.
+You can see above that nested lexical environments(scopes) can access their parents scopes right upto the global scope; `Lexical Scope`. In the above example functionA 'closes' over functionB.
 
 Closures 'close' over bindings, preserving access to these bindings whenever the 'closure' is executed outside of its original lexical environment.
 
