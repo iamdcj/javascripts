@@ -2,15 +2,23 @@
 
 JavaScript, like all programming has a set a of (data)types that can be manipulated in order to build applications.
 
-Types are the building blocks of applications, without a number of types to manipulate, programs would be very limited in their functionality.
+Types are the building blocks of applications, without a number of types to manipulate, programs would be very limited in their functionality. **Types in JS relate to values, not to variables**.
 
-#### Type, a definition
 
-This definition, like most things I know about JS, is from Kyle Simpson's [YDKJS](https://github.com/getify/You-Dont-Know-JS) series;
+### Definition
+
+This definition, like most things I know about JS, comes from Kyle Simpson's [YDKJS](https://github.com/getify/You-Dont-Know-JS) series;
 
 > a type is an intrinsic, built-in set of characteristics that uniquely identifies the behavior of a particular value and distinguishes it from other values, both to the engine and to the developer. - K. Simpson
 
-So, a type is a thing in a language which is recognisable by its make-up; engine/engineer knows that type _X_ is type _X_ by the way it looks. It is this recognition/knowledge which allows engineers to utilise a particular types properties/methods to engineer functionality in an application.
+So, a type is a thing in a language which is recognisable by its make-up; engine/engineer knows that the value of _X_ is of type _X_ by the way it looks, for example;
+
+```
+const _X_ = 42; // it is a number, because it looks like a number
+const _X_ = "David"; // it is a string, because it looks like a string of characters
+```
+
+It is this recognition/knowledge which allows engineers to utilise a particular types properties/methods to engineer functionality in an application.
 
 _You need to know what it is you're working with, before you work with it._
 
@@ -78,7 +86,7 @@ There are a total of seven built-in JS types, and they fall into two categories 
 
 ### **Primitive Types**
 
-A primitive type is any type which is not an object - these types have no methods, and are at the lowest level of a language's implementation.
+A primitive type is any type which is not a collection of values(object/array) - these types are just solitary, standalone values - thethave no methods, and are at the lowest level of a language's implementation.
 
 **Primitives are immutable**; the original cannot be altered - _*Primitives are passed by value, not by reference*_.
 

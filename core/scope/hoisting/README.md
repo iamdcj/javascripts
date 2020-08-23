@@ -1,6 +1,6 @@
 # Hoisting
 
-Hoisting is a conceptual thing which occurs during the compilation phase of a javaScript program.
+Hoisting is a conceptual thing which occurs during the compilation/creation phase of a javaScript program.
 
 The compiler will analyze the left-hand side declarations, e.g. `var foo`, leaving the right-hand side initializers, i.e. the values, for the execution phase - the result of this initial pass of the source code is that the variables are shifted to the top of their respective lexical environment. 
 
@@ -76,7 +76,7 @@ function foo() {
 
 #### **Compilation**
 
-However at #### **Compilation** time the function declaration is hoisted to the top of the scope.
+However at **Compilation** time the function declaration is hoisted to the top of the scope.
 function foo
 
 #### **Execution**
@@ -137,7 +137,7 @@ In this case we get a TypeError, opposed to `undefined` as per the previous exam
 
 From the above it is clear that function and variable declarations are hoisted to the top of their respective scopes, however which are hoisted first(or to the top)?
 
-Function declarations are king; they hoist before variance declarations
+Function declarations are king; they hoist before variable declarations
 
 Function vs. Variable
 This example consists of a function declaration labelled foo, and a regular variable declaration named foo;

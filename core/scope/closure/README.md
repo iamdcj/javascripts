@@ -1,6 +1,6 @@
 # Closure
 
-**A closure is a function which can access its lexical scope when invoked outside of its lexical environment.** In other words if you call a function outside of its original 'scope', it can still access variables from that original scope.
+**A closure is a function which can access its lexical scope even when invoked outside of its lexical environment.** In other words if you call a function outside of its original 'scope', it can still access variables from that original scope.
 
 Closure is a result of two language features; **first-class functions** and **lexical scoping**. Any applications written using a language which supports **first-class functions** and **lexical scoping** will most likely utilise closures somewhere in the source code.
 
@@ -8,7 +8,7 @@ Closure is a result of two language features; **first-class functions** and **le
 
 #### **1. First-class Functions**
 
-In JavaScript functions are first-class members, i.e. they can be; passed around as arguments to other functions/lexical environments, return from other functions, and can be assigned as a value to a varialble.
+In JavaScript functions are first-class members, i.e. they can be; passed around as arguments to other functions, returned from other functions, and can be assigned as a value to a varialble.
 
 ```
 function functionA() {
@@ -55,7 +55,9 @@ functionA()
 // functionA says hello
 ```
 
-You can see above that nested lexical environments(scopes) can access their parents scopes right upto the global scope; `Lexical Scope`.
+You can see above that nested lexical environments(scopes) can access their parents scopes right upto the global scope; `Lexical Scope`. 
+
+In the above example functionA 'closes' over functionB. **If you nest a function within another function, and reference any of the parent's bindings in the child function you have closure.**
 
 Closures 'close' over bindings, preserving access to these bindings whenever the 'closure' is executed outside of its original lexical environment.
 
