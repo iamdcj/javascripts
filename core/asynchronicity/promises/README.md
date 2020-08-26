@@ -60,7 +60,7 @@ Once we create a new promise, we are going to want to handle whatever is returne
 
 #### The [States](states) of a `Promise`
 
-Every `Promise` has three [states](states) throughout its lifecycle; `fulfilled`, `resolved`, and `rejected`.
+Every `Promise` has three [states](states) throughout its lifecycle; `pending`, `fulfilled`, and `rejected`.
 
 #### The [Fates](fates) of a `Promise`
 
